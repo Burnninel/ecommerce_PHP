@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bokor&family=Luckiest+Guy&display=swap');
+
+#logo {
+    font-family: "Bokor", serif;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 3vh;
+}
+
+.swiper-button-next:hover:after,
+.swiper-button-prev:hover::after {
+    font-size: 4vh;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #fff;
+}
+
+.swiper-pagination-bullet {
+    width: 3vw; 
+    height: 1vh;
+    border-radius: 0;
+}
