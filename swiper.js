@@ -12,15 +12,28 @@ var bannerInitial = new Swiper(".bannerInitial", {
   },
 });
 
-
-const bannerAutoLoop = new Swiper('.bannerAutoLoop', {
-  loop: true, 
-  speed: 10000, 
-  spaceBetween: 0,
+new Swiper('.bannerAutoLoop', {
+  slidesPerView: 3, 
+  speed: 3000,
   autoplay: {
     delay: 0, 
-    disableOnInteraction: false,
+    disableOnInteraction: false, 
   },
-  slidesPerView: 'auto',
+  loop: true, 
+  breakpoints: {
+    0: {
+      slidesPerView: 1, 
+      spaceBetween: 10,
+      speed: 4000,
+    },
+    640: {
+      slidesPerView: 2, 
+      spaceBetween: 30,
+    },
+    1024: {
+      slidesPerView: 3, 
+      spaceBetween: 20,
+    },
+  },
   allowTouchMove: false,
 });
