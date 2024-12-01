@@ -61,7 +61,7 @@
             <div class="swiper-pagination"></div>
         </section>
 
-        <section class="swiper bannerAutoLoop flex flex-nowrap size-2/3 text-[2vh] font-semibold text-zinc-400 h-[14vh]">
+        <section class="swiper bannerAutoLoop flex flex-nowrap size-2/3 text-[2vh] font-semibold text-zinc-400 h-[13vh]">
             <div class="swiper-wrapper">
                 <div class="swiper-slide flex justify-around">
                     <figure class="flex text-center items-center">
