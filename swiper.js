@@ -30,7 +30,7 @@ new Swiper('.bannerAutoLoop', {
       slidesPerView: 2, 
       spaceBetween: 30,
     },
-    1024: {
+    1280: {
       slidesPerView: 3, 
       spaceBetween: 20,
     },
