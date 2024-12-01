@@ -1,4 +1,4 @@
-var swiper = new Swiper(".swiper", {
+var bannerInitial = new Swiper(".bannerInitial", {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
@@ -10,4 +10,17 @@ var swiper = new Swiper(".swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+});
+
+
+const bannerAutoLoop = new Swiper('.bannerAutoLoop', {
+  loop: true, 
+  speed: 10000, 
+  spaceBetween: 0,
+  autoplay: {
+    delay: 0, 
+    disableOnInteraction: false,
+  },
+  slidesPerView: 'auto',
+  allowTouchMove: false,
 });
