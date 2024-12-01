@@ -61,17 +61,21 @@
             <div class="swiper-pagination"></div>
         </section>
 
-        <section class="swiper bannerAutoLoop size-2/3 text-[2vh] font-semibold text-zinc-400 h-[14vh]">
+        <section class="swiper bannerAutoLoop flex flex-nowrap size-2/3 text-[2vh] font-semibold text-zinc-400 h-[14vh]">
             <div class="swiper-wrapper">
                 <div class="swiper-slide flex justify-around">
                     <figure class="flex text-center items-center">
                         <img src="/img/skate.png" alt="Icone Skateboarding" class="h-[4vh] mr-2">
                         <figcaption>5% de desconto no Pix</figcaption>
                     </figure>
+                </div>
+                <div class="swiper-slide flex justify-around">
                     <figure class="flex text-center items-center">
                         <img src="/img/girafa.png" alt="Icone Girafa LRG" class="h-[4vh] mr-2">
                         <figcaption>Sua 1ª troca é grátis</figcaption>
                     </figure>
+                </div>
+                <div class="swiper-slide flex justify-around">
                     <figure class="flex text-center items-center">
                         <img src="/img/chave.png" alt="Icone Chave" class="h-[4vh] mr-2">
                         <figcaption>Compre 10x Sem Juros</figcaption>
@@ -79,16 +83,8 @@
                 </div>
                 <div class="swiper-slide flex justify-around">
                     <figure class="flex text-center items-center">
-                        <img src="/img/skate.png" alt="Icone Skateboarding" class="h-[4vh] mr-2">
-                        <figcaption class="flex">Atendimento Online</figcaption>
-                    </figure>
-                    <figure class="flex text-center items-center">
-                        <img src="/img/girafa.png" alt="Icone Girafa LRG" class="h-[4vh] mr-2">
-                        <figcaption>Sua 1ª troca é grátis</figcaption>
-                    </figure>
-                    <figure class="flex text-center items-center">
-                        <img src="/img/chave.png" alt="Icone Chave" class="h-[4vh] mr-2">
-                        <figcaption>Compre 10x Sem Juros</figcaption>
+                        <img src="/img/girafa.png" alt="Icone Chave" class="h-[4vh] mr-2">
+                        <figcaption>Atendimento Online</figcaption>
                     </figure>
                 </div>
             </div>
