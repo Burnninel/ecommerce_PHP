@@ -61,7 +61,7 @@
             <div class="swiper-pagination"></div>
         </section>
 
-        <section class="swiper bannerAutoLoop flex flex-nowrap size-2/3 text-[2vh] font-semibold text-zinc-400 h-[13vh]">
+        <section class="swiper bannerAutoLoop flex size-2/3 text-[2vh] font-semibold text-zinc-400 h-[13vh]">
             <div class="swiper-wrapper">
                 <div class="swiper-slide flex justify-around">
                     <figure class="flex text-center items-center">
@@ -87,6 +87,25 @@
                         <figcaption>Atendimento Online</figcaption>
                     </figure>
                 </div>
+            </div>
+        </section>
+
+        <section class="flex justify-center items-center text-center">
+            <div class="relative h-[33vw] w-[33vw] cursor-pointer">
+                <img src="/img/bolovoFrente2.png" alt="Imagem da frente"
+                    class="absolute inset-0 w-full h-full object-cover 
+                           transition-opacity duration-500 hover:opacity-0">
+                <img src="/img/bolovoCostas2.png" alt="Imagem de costas"
+                    class="absolute inset-0 w-full h-full object-cover 
+                           transition-opacity duration-500 opacity-0 hover:opacity-100">
+            </div>
+            <div class="relative h-[33vw] w-[33vw] cursor-pointer">
+                <img src="/img/bolovoCostas.png" alt="Imagem da frente"
+                    class="absolute inset-0 w-full h-full object-cover 
+                           transition-opacity duration-500 hover:opacity-0">
+                <img src="/img/bolovoFrente.png" alt="Imagem de costas"
+                    class="absolute inset-0 w-full h-full object-cover 
+                           transition-opacity duration-500 opacity-0 hover:opacity-100">
             </div>
         </section>
     </main>
