@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="/swiper.css">
 </head>
 
-<body class="bg-stone-100">
-    <header class="tracking-wide">
+<body class="bg-stone-100 tracking-wide">
+    <header>
         <nav class="bg-zinc-900 text-center">
             <div id="logo"
                 class="text-5xl uppercase text-emerald-900 py-4
@@ -46,7 +46,7 @@
     </header>
 
     <main>
-        <section class="swiper bannerInitial size-4/5 mt-6">
+        <section class="swiper bannerInitial size-5/6 mt-6">
             <div class="swiper-wrapper flex items-center h-full">
                 <div class="swiper-slide flex items-center text-center justify-center">
                     <a href="#" class="w-full"><img src="./img/lancamentos.png" alt="Lançamentos 2025" class="w-full"></a>
@@ -61,7 +61,7 @@
             <div class="swiper-pagination"></div>
         </section>
 
-        <section class="swiper bannerAutoLoop flex size-4/5 text-[2vh] font-semibold text-zinc-400 h-[13vh]">
+        <section class="swiper bannerAutoLoop flex size-5/6 text-[2vh] font-semibold text-zinc-400 h-[13vh]">
             <div class="swiper-wrapper">
                 <div class="swiper-slide flex justify-around">
                     <figure class="flex text-center items-center">
@@ -90,8 +90,8 @@
             </div>
         </section>
 
-        <section class="flex justify-center items-center text-center">
-            <div class="relative h-[33vw] size-2/5 cursor-pointer">
+        <section class="flex justify-center items-center w-5/6 mx-auto gap-1">
+            <div class="relative h-[40vw] w-1/2 cursor-pointer">
                 <img src="/img/bolovoFrente2.png" alt="Imagem da frente"
                     class="absolute inset-0 w-full h-full object-cover 
                            transition-opacity duration-500 hover:opacity-0">
@@ -99,13 +99,31 @@
                     class="absolute inset-0 w-full h-full object-cover 
                            transition-opacity duration-500 opacity-0 hover:opacity-100">
             </div>
-            <div class="relative h-[33vw] size-2/5 cursor-pointer">
+            <div class="relative h-[40vw] size-1/2 cursor-pointer">
                 <img src="/img/bolovoCostas.png" alt="Imagem da frente"
                     class="absolute inset-0 w-full h-full object-cover 
                            transition-opacity duration-500 hover:opacity-0">
                 <img src="/img/bolovoFrente.png" alt="Imagem de costas"
                     class="absolute inset-0 w-full h-full object-cover 
                            transition-opacity duration-500 opacity-0 hover:opacity-100">
+            </div>
+        </section>
+
+        <section class="flex justify-center items-center text-center w-5/6 mx-auto">
+            <div class="w-full">
+                <h1 class="text-[4vh] font-semibold text-zinc-600 uppercase my-[3.5vh]">Camisetas HIGH</h1>
+                <ul class="flex flex-wrap gap-[1vh]">
+                    <li class="w-[calc(25%-1vh)]">
+                        <div class="relative h-[22vw]">
+                            <img src="/img/bolovoFrente2.png" alt="Imagem da frente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 hover:opacity-0">
+                            <img src="/img/bolovoCostas2.png" alt="Imagem de costas" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 hover:opacity-100">
+                        </div>
+                        <div class="flex justify-between uppercase text-[1.4vh] text-zinc-800 py-[0.5vh]">
+                            <p class="font-bold">Camisa High Street</p>
+                            <p>R$270,90</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
