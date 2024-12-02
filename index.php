@@ -7,11 +7,7 @@
     <title>Shopninel</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bokor&family=Luckiest+Guy&display=swap" rel="stylesheet">
-
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/swiper.css">
 </head>
@@ -90,7 +86,7 @@
             </div>
         </section>
 
-        <section class="flex justify-center items-center w-5/6 mx-auto gap-1">
+        <section class="flex justify-center items-center w-5/6 mx-auto gap-2">
             <div class="relative h-[40vw] w-1/2 cursor-pointer">
                 <img src="/img/bolovoFrente2.png" alt="Imagem da frente"
                     class="absolute inset-0 w-full h-full object-cover 
@@ -111,7 +107,7 @@
 
         <section class="flex justify-center items-center text-center w-5/6 mx-auto">
             <div class="w-full">
-                <h1 class="text-[4vh] font-semibold text-zinc-600 uppercase my-[3.5vh]">Camisetas HIGH</h1>
+                <h1 class="text-[2.5vh] font-bold text-gray-900 uppercase my-[4vh]">Camisetas HIGH</h1>
                 <ul class="flex flex-wrap gap-[1vh]">
                     <li class="w-[calc(25%-1vh)]">
                         <div class="relative h-[22vw]">
