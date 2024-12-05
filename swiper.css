@@ -8,22 +8,42 @@ body {
     font-family: "Bokor", serif;
 }
 
-.swiper-button-next::after,
-.swiper-button-prev::after {
+.bannerInitial .swiper-button-next::after,
+.bannerInitial .swiper-button-prev::after {
     font-size: 3vh;
 }
 
-.swiper-button-next:hover:after,
-.swiper-button-prev:hover::after {
+.bannerInitial .swiper-button-next:hover:after,
+.bannerInitial .swiper-button-prev:hover::after {
     font-size: 4vh;
 }
 
-.swiper-pagination-bullet-active {
+.bannerInitial .swiper-pagination-bullet-active {
     background-color: #fff;
 }
 
-.swiper-pagination-bullet {
-    width: 3vw; 
+.bannerInitial .swiper-pagination-bullet {
     height: 1vh;
+    width: 3vw;
     border-radius: 0;
+}
+
+.bannerBestSellers .swiper-button-next::after,
+.bannerBestSellers .swiper-button-prev::after {
+    content: '';
+}
+
+.bannerBestSellers .swiper-button-next svg,
+.bannerBestSellers .swiper-button-prev svg {
+    position: absolute;
+    transform: translateY(50%);
+    height: 6vh;
+    width: 2vw;
+    stroke: #000;
+    transition: transform 0.3s ease;
+}
+
+.bannerBestSellers .swiper-button-next:hover svg,
+.bannerBestSellers .swiper-button-prev:hover svg {
+    transform: translateY(45%);
 }

@@ -52,8 +52,8 @@
                 </div>
             </div>
 
-            <div class="swiper-button-next text-gray-100"></div>
-            <div class="swiper-button-prev text-gray-100"></div>
+            <div class="swiper-button-next nextBannerInitial text-gray-100"></div>
+            <div class="swiper-button-prev prevBannerInitial text-gray-100"></div>
             <div class="swiper-pagination"></div>
         </section>
 
@@ -84,6 +84,82 @@
                     </figure>
                 </div>
             </div>
+        </section>
+
+        <section class="swiper bannerBestSellers size-5/6 my-[4vh]">
+            <h1 class="text-[2.5vh] font-bold text-gray-900 uppercase text-center mb-[2vh]">mais vendidos</h1>
+            <div class="swiper-wrapper flex items-center h-full w-full">
+                <article class="swiper-slide flex w-[calc(25%)] justify-around">
+                    <div class="w-full">
+                        <div class="relative h-[40vw] sm:h-[30vw] md:h-[25vw] lg:h-[20vw]">
+                            <img src="/img/bolovoFrente2.png" alt="Imagem da frente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 hover:opacity-0">
+                            <img src="/img/bolovoCostas2.png" alt="Imagem de costas" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 hover:opacity-100">
+                        </div>
+                        <div class="flex flex-col sm:flex-row justify-between uppercase sm:text-[1.4vh] text-[1vh] text-zinc-800 py-[0.5vh]">
+                            <h2 class="font-bold">Camisa High Street</h2>
+                            <p>R$270,90</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="swiper-slide flex w-[calc(25%)] justify-around">
+                    <div class="w-full">
+                        <div class="relative h-[40vw] sm:h-[30vw] md:h-[25vw] lg:h-[20vw]">
+                            <img src="/img/bolovoFrente2.png" alt="Imagem da frente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 hover:opacity-0">
+                            <img src="/img/bolovoCostas2.png" alt="Imagem de costas" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 hover:opacity-100">
+                        </div>
+                        <div class="flex flex-col sm:flex-row justify-between uppercase sm:text-[1.4vh] text-[1vh] text-zinc-800 py-[0.5vh]">
+                            <h2 class="font-bold">Camisa High Street</h2>
+                            <p>R$270,90</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="swiper-slide flex w-[calc(25%)] justify-around">
+                    <div class="w-full">
+                        <div class="relative h-[40vw] sm:h-[30vw] md:h-[25vw] lg:h-[20vw]">
+                            <img src="/img/bolovoFrente2.png" alt="Imagem da frente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 hover:opacity-0">
+                            <img src="/img/bolovoCostas2.png" alt="Imagem de costas" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 hover:opacity-100">
+                        </div>
+                        <div class="flex flex-col sm:flex-row justify-between uppercase sm:text-[1.4vh] text-[1vh] text-zinc-800 py-[0.5vh]">
+                            <h2 class="font-bold">Camisa High Street</h2>
+                            <p>R$270,90</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="swiper-slide flex w-[calc(25%)] justify-around">
+                    <div class="w-full">
+                        <div class="relative h-[40vw] sm:h-[30vw] md:h-[25vw] lg:h-[20vw]">
+                            <img src="/img/bolovoFrente2.png" alt="Imagem da frente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 hover:opacity-0">
+                            <img src="/img/bolovoCostas2.png" alt="Imagem de costas" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 hover:opacity-100">
+                        </div>
+                        <div class="flex flex-col sm:flex-row justify-between uppercase sm:text-[1.4vh] text-[1vh] text-zinc-800 py-[0.5vh]">
+                            <h2 class="font-bold">Camisa High Street</h2>
+                            <p>R$270,90</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="swiper-slide flex w-[calc(25%)] justify-around">
+                    <div class="w-full">
+                        <div class="relative h-[40vw] sm:h-[30vw] md:h-[25vw] lg:h-[20vw]">
+                            <img src="/img/bolovoFrente2.png" alt="Imagem da frente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 hover:opacity-0">
+                            <img src="/img/bolovoCostas2.png" alt="Imagem de costas" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 hover:opacity-100">
+                        </div>
+                        <div class="flex flex-col sm:flex-row justify-between uppercase sm:text-[1.4vh] text-[1vh] text-zinc-800 py-[0.5vh]">
+                            <h2 class="font-bold">Camisa High Street</h2>
+                            <p>R$270,90</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <button class="swiper-button-next nextBannerBestSellers">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                </svg>
+            </button>
+            <button class="swiper-button-prev prevBannerBestSellers">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+                </svg>
+            </button>
         </section>
 
         <section class="flex justify-center items-center w-5/6 mx-auto gap-2">
@@ -125,28 +201,28 @@
     </main>
 
     <footer class="mt-[10vh] bg-gray-900 p-[2vh] text-gray-400 text-center space-y-[2vh]">
-            <div class="text-center text-[6vh] uppercase max-w-screen-lg mx-auto">
-                <a href="#" class="text-emerald-900" id="logo">shopninel</a>
-                <div class="text-center text-[1.3vh] font-normal">
-                    Desde 2001, a Shopninel inspira autenticidade e estilo.
-                    Mais que moda, criamos conexões e peças que convidam você a explorar o mundo com confiança.
-                    Aprendemos que viver intensamente faz toda a diferença.
-                    <br> - Wear Your Story.
-                </div>
+        <div class="text-center text-[6vh] uppercase max-w-screen-lg mx-auto">
+            <a href="#" class="text-emerald-900" id="logo">shopninel</a>
+            <div class="text-center text-[1.3vh] font-normal">
+                Desde 2001, a Shopninel inspira autenticidade e estilo.
+                Mais que moda, criamos conexões e peças que convidam você a explorar o mundo com confiança.
+                Aprendemos que viver intensamente faz toda a diferença.
+                <br> - Wear Your Story.
             </div>
+        </div>
 
-            <ul class="font-semibold text-center">
-                <li class="text-center text-[3vh] uppercase text-emerald-900 mb-[1vh]">Fale conosco</li>
-                <li class="text-[1.3vh]">
-                    INSTAGRAM: <span class="text-gray-400 ml-2">@bruno_i79</span>
-                </li>
-                <li class="text-[1.3vh]">
-                    WHATSAPP: <span class="text-gray-400 ml-2">(11) 99999-9999</span>
-                </li>
-                <li class="text-[1.3vh]">
-                    EMAIL: <span class="text-gray-400 ml-2">contato@shopininel.com</span>
-                </li>
-            </ul>
+        <ul class="font-semibold text-center">
+            <li class="text-center text-[3vh] uppercase text-emerald-900 mb-[1vh]">Fale conosco</li>
+            <li class="text-[1.3vh]">
+                INSTAGRAM: <span class="text-gray-400 ml-2">@bruno_i79</span>
+            </li>
+            <li class="text-[1.3vh]">
+                WHATSAPP: <span class="text-gray-400 ml-2">(11) 99999-9999</span>
+            </li>
+            <li class="text-[1.3vh]">
+                EMAIL: <span class="text-gray-400 ml-2">contato@shopininel.com</span>
+            </li>
+        </ul>
         <p class="text-center text-gray-400 text-[1.2vh] mt-4">
             © SHOPNINEL | BRNO - TECNOLOGIA EM ECOMMERCE | CNPJ: 77779999/0001-99
         </p>
