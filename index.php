@@ -46,7 +46,7 @@
             <a href="#"><img src="./img/bolovoBanner.jpg" alt="Lançamentos 2025" class=""></a>
         </section>
 
-        <section class="swiper bannerAutoLoop flex size-5/6 text-[2vh] font-semibold text-zinc-400 h-[13vh]">
+        <section class="swiper bannerAutoLoop flex text-[2vh] font-semibold text-zinc-400 h-[13vh]">
             <div class="swiper-wrapper">
                 <div class="swiper-slide flex justify-around">
                     <figure class="flex text-center items-center">
