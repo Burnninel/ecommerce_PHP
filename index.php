@@ -122,7 +122,7 @@
             </div>
         </section>
 
-        <section class="flex justify-center items-center text-center w-5/6 mx-auto">
+        <section class="flex justify-center items-center text-center">
             <div class="w-full">
                 <h1 class="text-[2.5vh] font-bold text-gray-900 uppercase my-[4vh]">Camisetas HIGH</h1>
                 <ul class="flex flex-wrap gap-[1vh]">
