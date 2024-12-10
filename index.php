@@ -43,7 +43,7 @@
 
     <main class="px-[4vh]">
         <section class="bannerInitial pt-[0.3vh]">
-            <a href="#"><img src="./img/bolovoBanner.jpg" alt="Lançamentos 2025" class=""></a>
+            <a href="#"><img src="./img/bolovoBanner.jpg" alt="Lançamentos 2025" class="w-full"></a>
         </section>
 
         <section class="swiper bannerAutoLoop flex text-[2vh] font-semibold text-zinc-400 h-[13vh]">
