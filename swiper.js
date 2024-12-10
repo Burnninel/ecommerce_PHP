@@ -1,18 +1,3 @@
-var bannerInitial = new Swiper(".bannerInitial", {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".nextBannerInitial",
-    prevEl: ".prevBannerInitial",
-  },
-  
-});
-
 new Swiper(".bannerAutoLoop", {
   slidesPerView: 3,
   speed: 3000,

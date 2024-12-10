@@ -8,26 +8,6 @@ body {
     font-family: "Bokor", serif;
 }
 
-.bannerInitial .swiper-button-next::after,
-.bannerInitial .swiper-button-prev::after {
-    font-size: 3vh;
-}
-
-.bannerInitial .swiper-button-next:hover:after,
-.bannerInitial .swiper-button-prev:hover::after {
-    font-size: 4vh;
-}
-
-.bannerInitial .swiper-pagination-bullet-active {
-    background-color: #fff;
-}
-
-.bannerInitial .swiper-pagination-bullet {
-    height: 1vh;
-    width: 3vw;
-    border-radius: 0;
-}
-
 .bannerBestSellers .swiper-button-next::after,
 .bannerBestSellers .swiper-button-prev::after {
     content: '';

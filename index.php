@@ -41,20 +41,9 @@
         </nav>
     </header>
 
-    <main>
-        <section class="swiper bannerInitial size-5/6 mt-6">
-            <div class="swiper-wrapper flex items-center h-full">
-                <div class="swiper-slide flex items-center text-center justify-center">
-                    <a href="#" class="w-full"><img src="./img/lancamentos.png" alt="Lançamentos 2025" class="w-full"></a>
-                </div>
-                <div class="swiper-slide flex items-center text-center justify-center">
-                    <a href="#" class="w-full"><img src="./img/high.png" alt="Produtos High" class="w-full"></a>
-                </div>
-            </div>
-
-            <div class="swiper-button-next nextBannerInitial text-gray-100"></div>
-            <div class="swiper-button-prev prevBannerInitial text-gray-100"></div>
-            <div class="swiper-pagination"></div>
+    <main class="px-[4vh]">
+        <section class="bannerInitial pt-[0.3vh]">
+            <a href="#"><img src="./img/bolovoBanner.jpg" alt="Lançamentos 2025" class=""></a>
         </section>
 
         <section class="swiper bannerAutoLoop flex size-5/6 text-[2vh] font-semibold text-zinc-400 h-[13vh]">
@@ -89,54 +78,6 @@
         <section class="swiper bannerBestSellers size-5/6 my-[4vh]">
             <h1 class="text-[2.5vh] font-bold text-gray-900 uppercase text-center mb-[2vh]">mais vendidos</h1>
             <div class="swiper-wrapper flex items-center h-full w-full">
-                <article class="swiper-slide flex w-[calc(25%)] justify-around">
-                    <div class="w-full">
-                        <div class="relative h-[40vw] sm:h-[30vw] md:h-[25vw] lg:h-[20vw]">
-                            <img src="/img/bolovoFrente2.png" alt="Imagem da frente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 hover:opacity-0">
-                            <img src="/img/bolovoCostas2.png" alt="Imagem de costas" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 hover:opacity-100">
-                        </div>
-                        <div class="flex flex-col sm:flex-row justify-between uppercase sm:text-[1.4vh] text-[1vh] text-zinc-800 py-[0.5vh]">
-                            <h2 class="font-bold">Camisa High Street</h2>
-                            <p>R$270,90</p>
-                        </div>
-                    </div>
-                </article>
-                <article class="swiper-slide flex w-[calc(25%)] justify-around">
-                    <div class="w-full">
-                        <div class="relative h-[40vw] sm:h-[30vw] md:h-[25vw] lg:h-[20vw]">
-                            <img src="/img/bolovoFrente2.png" alt="Imagem da frente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 hover:opacity-0">
-                            <img src="/img/bolovoCostas2.png" alt="Imagem de costas" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 hover:opacity-100">
-                        </div>
-                        <div class="flex flex-col sm:flex-row justify-between uppercase sm:text-[1.4vh] text-[1vh] text-zinc-800 py-[0.5vh]">
-                            <h2 class="font-bold">Camisa High Street</h2>
-                            <p>R$270,90</p>
-                        </div>
-                    </div>
-                </article>
-                <article class="swiper-slide flex w-[calc(25%)] justify-around">
-                    <div class="w-full">
-                        <div class="relative h-[40vw] sm:h-[30vw] md:h-[25vw] lg:h-[20vw]">
-                            <img src="/img/bolovoFrente2.png" alt="Imagem da frente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 hover:opacity-0">
-                            <img src="/img/bolovoCostas2.png" alt="Imagem de costas" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 hover:opacity-100">
-                        </div>
-                        <div class="flex flex-col sm:flex-row justify-between uppercase sm:text-[1.4vh] text-[1vh] text-zinc-800 py-[0.5vh]">
-                            <h2 class="font-bold">Camisa High Street</h2>
-                            <p>R$270,90</p>
-                        </div>
-                    </div>
-                </article>
-                <article class="swiper-slide flex w-[calc(25%)] justify-around">
-                    <div class="w-full">
-                        <div class="relative h-[40vw] sm:h-[30vw] md:h-[25vw] lg:h-[20vw]">
-                            <img src="/img/bolovoFrente2.png" alt="Imagem da frente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 hover:opacity-0">
-                            <img src="/img/bolovoCostas2.png" alt="Imagem de costas" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 hover:opacity-100">
-                        </div>
-                        <div class="flex flex-col sm:flex-row justify-between uppercase sm:text-[1.4vh] text-[1vh] text-zinc-800 py-[0.5vh]">
-                            <h2 class="font-bold">Camisa High Street</h2>
-                            <p>R$270,90</p>
-                        </div>
-                    </div>
-                </article>
                 <article class="swiper-slide flex w-[calc(25%)] justify-around">
                     <div class="w-full">
                         <div class="relative h-[40vw] sm:h-[30vw] md:h-[25vw] lg:h-[20vw]">
