@@ -103,8 +103,8 @@
             </button>
         </section>
 
-        <section class="flex justify-center items-center w-5/6 mx-auto gap-2">
-            <div class="relative h-[40vw] w-1/2 cursor-pointer">
+        <section class="flex justify-center items-center gap-[1vh]">
+            <div class="relative h-[50vw] w-1/2 cursor-pointer">
                 <img src="/img/bolovoFrente2.png" alt="Imagem da frente"
                     class="absolute inset-0 w-full h-full object-cover 
                            transition-opacity duration-500 hover:opacity-0">
@@ -112,7 +112,7 @@
                     class="absolute inset-0 w-full h-full object-cover 
                            transition-opacity duration-500 opacity-0 hover:opacity-100">
             </div>
-            <div class="relative h-[40vw] size-1/2 cursor-pointer">
+            <div class="relative h-[50vw] w-1/2 cursor-pointer">
                 <img src="/img/bolovoCostas.png" alt="Imagem da frente"
                     class="absolute inset-0 w-full h-full object-cover 
                            transition-opacity duration-500 hover:opacity-0">
