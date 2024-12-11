@@ -75,7 +75,7 @@
             </div>
         </section>
 
-        <section class="swiper bannerBestSellers my-[4vh]">
+        <section class="swiper bannerBestSellers mb-[4vh]">
             <h1 class="text-[2.5vh] font-bold text-gray-900 uppercase text-center mb-[2vh]">mais vendidos</h1>
             <div class="swiper-wrapper flex items-center h-full w-full">
                 <article class="swiper-slide flex w-[calc(25%)] justify-around">
