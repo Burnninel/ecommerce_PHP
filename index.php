@@ -122,7 +122,7 @@
             </div>
         </section>
 
-        <section class="flex justify-center items-center text-center">
+        <section class="flex justify-center items-center">
             <div class="w-full">
                 <h1 class="text-[2.5vh] font-bold text-gray-900 uppercase my-[4vh]">Camisetas HIGH</h1>
                 <ul class="flex flex-wrap gap-[1vh]">
@@ -131,8 +131,8 @@
                             <img src="/img/bolovoFrente2.png" alt="Imagem da frente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 hover:opacity-0">
                             <img src="/img/bolovoCostas2.png" alt="Imagem de costas" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 hover:opacity-100">
                         </div>
-                        <div class="flex justify-between uppercase text-[1.4vh] text-zinc-800 py-[0.5vh]">
-                            <p class="font-bold">Camisa High Street</p>
+                        <div class="flex flex-col sm:flex-row justify-between uppercase sm:text-[1.4vh] text-[1vh] text-zinc-800 py-[0.5vh]">
+                            <h2 class="font-bold">Camisa High Street</h2>
                             <p>R$270,90</p>
                         </div>
                     </li>
