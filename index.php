@@ -124,7 +124,7 @@
 
         <section class="flex justify-center items-center">
             <div class="w-full">
-                <h1 class="text-[2.5vh] font-bold text-gray-900 uppercase my-[4vh]">Camisetas HIGH</h1>
+                <h1 class="text-[2.5vh] font-bold text-gray-900 uppercase my-[4vh] text-center">Camisetas HIGH</h1>
                 <ul class="flex flex-wrap gap-[1vh]">
                     <li class="w-[calc(25%-1vh)] cursor-pointer">
                         <div class="relative h-[22vw]">
