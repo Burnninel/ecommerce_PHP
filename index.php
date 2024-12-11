@@ -78,7 +78,7 @@
         <section class="swiper bannerBestSellers mb-[4vh]">
             <h1 class="text-[2.5vh] font-bold text-gray-900 uppercase text-center mb-[2vh]">mais vendidos</h1>
             <div class="swiper-wrapper flex items-center h-full w-full">
-                <article class="swiper-slide flex w-[calc(25%)] justify-around">
+                <article class="swiper-slide flex w-[calc(25%)] justify-around cursor-pointer">
                     <div class="w-full">
                         <div class="relative h-[45vw] sm:h-[35vw] md:h-[30vw] lg:h-[25vw]">
                             <img src="/img/bolovoFrente2.png" alt="Imagem da frente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 hover:opacity-0">
@@ -126,7 +126,7 @@
             <div class="w-full">
                 <h1 class="text-[2.5vh] font-bold text-gray-900 uppercase my-[4vh]">Camisetas HIGH</h1>
                 <ul class="flex flex-wrap gap-[1vh]">
-                    <li class="w-[calc(25%-1vh)]">
+                    <li class="w-[calc(25%-1vh)] cursor-pointer">
                         <div class="relative h-[22vw]">
                             <img src="/img/bolovoFrente2.png" alt="Imagem da frente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 hover:opacity-0">
                             <img src="/img/bolovoCostas2.png" alt="Imagem de costas" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 hover:opacity-100">
