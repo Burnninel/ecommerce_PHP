@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/swiper.css">
 </head>
 
-<body class="bg-stone-100 tracking-wide">
+<body class="tracking-wide">
     <header>
         <nav class="bg-zinc-900 text-center">
             <div id="logo"
@@ -41,8 +41,18 @@
         </nav>
     </header>
 
-    <main class="px-[4vh] h-[100vh]">
-        
+    <main class="px-[4vh]">
+        <!-- sessão do produto -->
+        <section class="flex justify-center">
+            <!-- imagem do produto -->
+            <div class="w-3/6">
+                <img src="/img/camisaBolovo.png" alt="" class="h-[40vw]">
+            </div>
+            <!-- Dados do produto -->
+            <div class="flex w-2/6 bg-gray-500">
+                ola
+            </div>
+        </section>
     </main>
 
     <footer class="mt-[10vh] bg-gray-900 p-[2vh] text-gray-400 text-center space-y-[2vh]">
