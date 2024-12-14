@@ -49,7 +49,7 @@
                 <img src="/img/camisaBolovo.png" class="h-[40vw]">
             </div>
             <!-- Dados do produto -->
-            <div class="w-1/4 pt-[8vh]">
+            <div class="w-1/3 mt-[8vh]">
                 <h2 class="text-md font-semibold">Camiseta Sloking Team Off White</h2>
                 <span class="text-md">R$189,00</span>
                 <ul class="flex justify-between py-[4vh] uppercase text-sm">
@@ -72,7 +72,7 @@
                 </ul>
 
                 <div class="my-6">
-                    <table id="medidasProduto" class="hidden w-full uppercase text-xs">
+                    <table id="medidasProduto" class="hidden w-full uppercase text-[0.6rem]">
                         <thead>
                             <tr class="text-sm">
                                 <th class="p-1 text-left"></th>
