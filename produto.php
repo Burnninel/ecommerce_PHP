@@ -43,13 +43,13 @@
 
     <main class="px-[4vh]">
         <!-- sessão do produto -->
-        <section class="flex justify-center">
+        <section class="w-full lg:flex justify-center">
             <!-- imagem do produto -->
-            <div class="w-1/2">
-                <img src="/img/camisaBolovo.png" class="h-[40vw]">
+            <div class="flex w-full lg:w-1/2 justify-center">
+                <img src="/img/camisaBolovo.png" class="">
             </div>
             <!-- Dados do produto -->
-            <div class="w-1/3 mt-[8vh]">
+            <div class="flex flex-col lg:w-1/3 mt-[8vh]">
                 <h2 class="text-md font-semibold">Camiseta Sloking Team Off White</h2>
                 <span class="text-md">R$189,00</span>
                 <ul class="flex justify-between py-[4vh] uppercase text-sm">
