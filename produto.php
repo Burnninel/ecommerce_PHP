@@ -43,9 +43,7 @@
     </header>
 
     <main class="lg:px-[4vh]">
-        <!-- sessão do produto -->
         <section class="w-full lg:flex justify-center">
-            <!-- imagem do produto -->
             <div class="flex w-full lg:w-1/2 justify-center lg:py-[6vh]">
                 <div class="swiper bannerProductImg h-full lg:h-[80vh]">
                     <div class="swiper-wrapper lg:ml-[4vh]">
@@ -156,6 +154,33 @@
             </div>
         </section>
 
+        <section class="swiper bannerBestSellers my-[6vh]">
+            <h2 class="text-[1.5vh] font-bold text-gray-900 uppercase mb-[2vh]">Mais vendidos</h2>
+            <div class="swiper-wrapper flex items-center h-full w-full">
+                <article class="swiper-slide flex w-[calc(25%)] justify-around cursor-pointer">
+                    <div class="w-full">
+                        <div class="relative h-[45vw] sm:h-[35vw] md:h-[30vw] lg:h-[25vw]">
+                            <img src="/img/bolovoFrente2.png" alt="Imagem da frente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 hover:opacity-0">
+                            <img src="/img/bolovoCostas2.png" alt="Imagem de costas" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 hover:opacity-100">
+                        </div>
+                        <div class="flex flex-col sm:flex-row justify-between uppercase sm:text-[1.4vh] text-[1vh] text-zinc-800 py-[0.5vh]">
+                            <h2 class="font-bold">Camisa High Street</h2>
+                            <p>R$270,90</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <button class="swiper-button-next nextBannerBestSellers">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                </svg>
+            </button>
+            <button class="swiper-button-prev prevBannerBestSellers">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+                </svg>
+            </button>
+        </section>
     </main>
 
     <footer class="mt-[10vh] bg-gray-900 p-[2vh] text-gray-400 text-center space-y-[2vh]">
