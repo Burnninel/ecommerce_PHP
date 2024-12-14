@@ -9,6 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="/swiper.css">
 </head>
 
@@ -41,15 +42,33 @@
         </nav>
     </header>
 
-    <main class="px-[4vh]">
+    <main class="lg:px-[4vh]">
         <!-- sessão do produto -->
         <section class="w-full lg:flex justify-center">
             <!-- imagem do produto -->
-            <div class="flex w-full lg:w-1/2 justify-center">
-                <img src="/img/camisaBolovo.png" class="">
+            <div class="flex w-full lg:w-1/2 justify-center lg:py-[6vh]">
+                <div class="swiper bannerProductImg h-full lg:h-[80vh]">
+                    <div class="swiper-wrapper lg:ml-[4vh]">
+                        <div class="swiper-slide">
+                            <img src="/img/camisaBolovo.png" class="h-full">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/img/camisaBolovo2.png" class="h-full">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/img/camisaBolovo.png" class="h-full">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/img/camisaBolovo.png" class="h-full">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination">
+                        <span class="swiper-pagination-progressbar-fill"></span>
+                    </div>
+                </div>
             </div>
             <!-- Dados do produto -->
-            <div class="flex flex-col lg:w-1/3 mt-[8vh]">
+            <div class="flex flex-col lg:w-1/3 mt-[8vh] px-[4vh]">
                 <h2 class="text-md font-semibold">Camiseta Sloking Team Off White</h2>
                 <span class="text-md">R$189,00</span>
                 <ul class="flex justify-between py-[4vh] uppercase text-sm">
@@ -129,13 +148,14 @@
                             _Obs: A coloração dos produtos em fotos externas ou de campanha podem apresentar alterações. Na dúvida sobre a cor real do produto, veja a foto com fundo branco._
                         </p>
                     </div>
-                    
+
                     <div id="lavagemProduto" class="hidden text-sm">
                         <p>Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.</p>
                     </div>
                 </div>
             </div>
         </section>
+
     </main>
 
     <footer class="mt-[10vh] bg-gray-900 p-[2vh] text-gray-400 text-center space-y-[2vh]">

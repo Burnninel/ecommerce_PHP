@@ -22,3 +22,20 @@ function exibirElemento($b, $e, elementos) {
   exibirElemento("medidas", "medidasProduto", ["medidasProduto", "composicaoPorduto", "lavagemProduto"]);
   exibirElemento("composicao", "composicaoPorduto", ["medidasProduto", "composicaoPorduto", "lavagemProduto"]);
   exibirElemento("lavagem", "lavagemProduto", ["medidasProduto", "composicaoPorduto", "lavagemProduto"]);
+
+
+  var swiper = new Swiper(".bannerProductImg", {
+    direction: "horizontal",
+    slidesPerView: 1,
+    mousewheel: true,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "progressbar",
+    },
+    breakpoints: {
+      1024: {
+        direction: "vertical",
+        slidesPerView: 1.08,
+      },
+    },
+  });

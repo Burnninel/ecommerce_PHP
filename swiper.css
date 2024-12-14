@@ -27,3 +27,27 @@ body {
 .bannerBestSellers .swiper-button-prev:hover svg {
     transform: translateY(45%);
 }
+
+.swiper-pagination .swiper-pagination-progressbar-fill {
+    background-color: black;
+}
+
+.swiper-pagination {
+    top: auto !important; 
+    bottom: 0 !important;
+    width: 0.1vh !important;
+}
+
+@media (min-width: 1024px) {
+    .swiper-pagination {
+        width: 0.1vh !important;
+        height: 100% !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .swiper-pagination {
+        height: 0.3vh !important;
+        width: 100% !important;
+    }
+}
