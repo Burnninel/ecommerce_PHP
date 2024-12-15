@@ -1,3 +1,7 @@
+<?php
+require("dados.php")
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -76,6 +80,7 @@
         </section>
 
         <section class="swiper bannerBestSellers mb-[4vh]">
+            <?php if ($produtos["categoria"] === 'bestSellers'): ?> 
             <h1 class="text-[2.5vh] font-bold text-gray-900 uppercase text-center mb-[2vh]">mais vendidos</h1>
             <div class="swiper-wrapper flex items-center h-full w-full">
                 <article class="swiper-slide flex w-[calc(25%)] justify-around cursor-pointer">
@@ -85,8 +90,8 @@
                             <img src="/img/bolovoCostas2.png" alt="Imagem de costas" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 hover:opacity-100">
                         </div>
                         <div class="flex flex-col sm:flex-row justify-between uppercase sm:text-[1.4vh] text-[1vh] text-zinc-800 py-[0.5vh]">
-                            <h2 class="font-bold">Camisa High Street</h2>
-                            <p>R$270,90</p>
+                            <h2 class="font-bold"><?= $produtos['nome'] ?></h2>
+                            <p><?= $produtos['preco'] ?></p>
                         </div>
                     </div>
                 </article>
@@ -101,6 +106,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
                 </svg>
             </button>
+            <?php endif; ?> 
         </section>
 
         <section class="flex justify-center items-center gap-[1vh]">
