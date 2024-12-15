@@ -80,21 +80,24 @@ require("dados.php")
         </section>
 
         <section class="swiper bannerBestSellers mb-[4vh]">
-            <?php if ($produtos["categoria"] === 'bestSellers'): ?> 
             <h1 class="text-[2.5vh] font-bold text-gray-900 uppercase text-center mb-[2vh]">mais vendidos</h1>
             <div class="swiper-wrapper flex items-center h-full w-full">
-                <article class="swiper-slide flex w-[calc(25%)] justify-around cursor-pointer">
-                    <div class="w-full">
-                        <div class="relative h-[45vw] sm:h-[35vw] md:h-[30vw] lg:h-[25vw]">
-                            <img src="/img/bolovoFrente2.png" alt="Imagem da frente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 hover:opacity-0">
-                            <img src="/img/bolovoCostas2.png" alt="Imagem de costas" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 hover:opacity-100">
-                        </div>
-                        <div class="flex flex-col sm:flex-row justify-between uppercase sm:text-[1.4vh] text-[1vh] text-zinc-800 py-[0.5vh]">
-                            <h2 class="font-bold"><?= $produtos['nome'] ?></h2>
-                            <p><?= $produtos['preco'] ?></p>
-                        </div>
-                    </div>
-                </article>
+                <?php foreach ($produtos as $produto): ?>
+                    <?php if ($produto["categoria"] === 'bestSellers'): ?>
+                        <article class="swiper-slide flex w-[calc(25%)] justify-around cursor-pointer">
+                            <div class="w-full">
+                                <div class="relative h-[45vw] sm:h-[35vw] md:h-[30vw] lg:h-[25vw]">
+                                    <img src="/img/<?= $produto['imagems']['imagem1'] ?>.png" alt="Imagem da frente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 hover:opacity-0">
+                                    <img src="/img/<?= $produto['imagems']['imagem2'] ?>.png" alt="Imagem de costas" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 hover:opacity-100">
+                                </div>
+                                <div class="flex flex-col sm:flex-row justify-between uppercase sm:text-[1.4vh] text-[1vh] text-zinc-800 py-[0.5vh]">
+                                    <h2 class="font-bold"><?= $produto['nome'] ?></h2>
+                                    <p><?= $produto['preco'] ?></p>
+                                </div>
+                            </div>
+                        </article>
+                    <?php endif; ?>
+                <?php endforeach; ?>
             </div>
             <button class="swiper-button-next nextBannerBestSellers">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -106,7 +109,6 @@ require("dados.php")
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
                 </svg>
             </button>
-            <?php endif; ?> 
         </section>
 
         <section class="flex justify-center items-center gap-[1vh]">
