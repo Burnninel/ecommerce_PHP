@@ -87,8 +87,8 @@ require("dados.php")
                         <article class="swiper-slide flex w-[calc(25%)] justify-around cursor-pointer">
                             <div class="w-full">
                                 <div class="relative h-[45vw] sm:h-[35vw] md:h-[30vw] lg:h-[25vw]">
-                                    <img src="/img/<?= $produto['imagems']['imagem1'] ?>.png" alt="Imagem da frente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 hover:opacity-0">
-                                    <img src="/img/<?= $produto['imagems']['imagem2'] ?>.png" alt="Imagem de costas" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 hover:opacity-100">
+                                    <img src="/img/<?= $produto['imagens']['frente'] ?>.png" alt="Imagem da frente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 hover:opacity-0">
+                                    <img src="/img/<?= $produto['imagens']['costas'] ?>.png" alt="Imagem de costas" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 hover:opacity-100">
                                 </div>
                                 <div class="flex flex-col sm:flex-row justify-between uppercase sm:text-[1.4vh] text-[1vh] text-zinc-800 py-[0.5vh]">
                                     <h2 class="font-bold"><?= $produto['nome'] ?></h2>
@@ -112,22 +112,23 @@ require("dados.php")
         </section>
 
         <section class="flex justify-center items-center gap-[1vh]">
-            <div class="relative h-[50vw] w-1/2 cursor-pointer">
-                <img src="/img/bolovoFrente2.png" alt="Imagem da frente"
-                    class="absolute inset-0 w-full h-full object-cover 
-                           transition-opacity duration-500 hover:opacity-0">
-                <img src="/img/bolovoCostas2.png" alt="Imagem de costas"
-                    class="absolute inset-0 w-full h-full object-cover 
-                           transition-opacity duration-500 opacity-0 hover:opacity-100">
-            </div>
-            <div class="relative h-[50vw] w-1/2 cursor-pointer">
-                <img src="/img/bolovoCostas.png" alt="Imagem da frente"
-                    class="absolute inset-0 w-full h-full object-cover 
-                           transition-opacity duration-500 hover:opacity-0">
-                <img src="/img/bolovoFrente.png" alt="Imagem de costas"
-                    class="absolute inset-0 w-full h-full object-cover 
-                           transition-opacity duration-500 opacity-0 hover:opacity-100">
-            </div>
+            <?php
+            $produtosComBanner = array_filter($produtos, function ($produto) {
+                return $produto['banner'] === true;
+            });
+            $produtosComBanner = array_slice($produtosComBanner, 0, 2);
+            foreach ($produtosComBanner as $index => $produto): ?>
+                <div class="relative h-[50vw] w-1/2 cursor-pointer">
+                    <img src="/img/<?= ($index % 2 === 0) ? $produto['imagens']['vestidaFrente'] : $produto['imagens']['costas'] ?>.png"
+                        alt="Imagem da frente"
+                        class="absolute inset-0 w-full h-full object-cover 
+                        transition-opacity duration-500 hover:opacity-0">
+                    <img src="/img/<?= ($index % 2 === 0) ? $produto['imagens']['costas'] : $produto['imagens']['vestidaFrente'] ?>.png"
+                        alt="Imagem de costas"
+                        class="absolute inset-0 w-full h-full object-cover 
+                        transition-opacity duration-500 opacity-0 hover:opacity-100">
+                </div>
+            <?php endforeach; ?>
         </section>
 
         <section class="flex justify-center items-center">
