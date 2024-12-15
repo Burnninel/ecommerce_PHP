@@ -14,19 +14,25 @@ $medidas = [
 ];
 
 $produtos = [
-    'id' => 00001,
-    'nome' => 'Camiseta Smoking Team Off White',
-    'preco' => 'R$189,00',
-    'descricao' => 'Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm',
-    'tags' => '#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.',
-    'fabricacao' => 'FABRICADO NO BRASIL',
-    'medidas' => $medidas,
-    'composicao' => $composicao,
-    'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
-    'tipo' => '',
-    'categoria' => 'bestSellers',
-    'imagems' => [
-        'imagem1' => 'bolovoFrente',
-        'imagem2' => 'bolovoCostas',
+    [
+        'id' => 00001,
+        'nome' => 'Camiseta Smoking Team Off White',
+        'preco' => 'R$189,00',
+        'marca' => 'bolovo',
+        'descricao' => 'Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm',
+        'tags' => '#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'camisetas',
+        'categoria' => 'bestSellers',
+        'banner' => true,
+        'imagens' => [
+            'frete' => 'bolovoFrente',
+            'costas' => 'bolovoCostas',
+            'vestidaFrente' => 'bolovoCostas',
+            'vestidaCostas' => 'bolovoCostas',
+        ]
     ],
 ];
