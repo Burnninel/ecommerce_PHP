@@ -133,7 +133,7 @@ require("dados.php")
 
         <section class="flex justify-center items-center">
             <div class="w-full">
-                <h1 class="text-[2.5vh] font-bold text-gray-900 uppercase my-[4vh] text-center">Camisetas HIGH</h1>
+                <h1 class="text-[2.5vh] font-bold text-gray-900 uppercase my-[4vh] text-center">Lançamentos</h1>
                 <ul class="flex flex-wrap gap-[1vh]">
                     <?php
                     $produtosLancamento = array_filter($produtos, function ($produto) {
