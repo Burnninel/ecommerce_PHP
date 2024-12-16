@@ -1,4 +1,10 @@
+<?php
+if (isset($_GET['id'])) {
+    $produtoId = $_GET['id'];
+}
 
+require 'dados.php';
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -67,93 +73,73 @@
                     </div>
                 </div>
             </div>
-            <!-- Dados do produto -->
-            <div class="flex flex-col lg:w-1/3 mt-[8vh] px-[4vh]">
-                <h2 class="text-md font-semibold">Camiseta Sloking Team Off White</h2>
-                <span class="text-md">R$189,00</span>
-                <ul class="flex justify-between py-[4vh] uppercase text-sm">
-                    <li tabindex="0" autofocus class="border hover:border-gray-200 rounded-lg px-2 cursor-pointer focus:bg-gray-900 focus:text-gray-50">p</li>
-                    <li tabindex="0" class="border hover:border-gray-200 rounded-lg px-2 cursor-pointer focus:bg-gray-900 focus:text-gray-50">m</li>
-                    <li tabindex="0" class="border hover:border-gray-200 rounded-lg px-2 cursor-pointer focus:bg-gray-900 focus:text-gray-50">g</li>
-                    <li tabindex="0" class="border hover:border-gray-200 rounded-lg px-2 cursor-pointer focus:bg-gray-900 focus:text-gray-50">gg</li>
-                    <li tabindex="0" class="border hover:border-gray-200 rounded-lg px-2 cursor-pointer focus:bg-gray-900 focus:text-gray-50">xgg</li>
-                </ul>
-                <button class="w-full border-2 border-gray-900 rounded-xl border-gray-900 p-1 hover:bg-gray-900 hover:text-gray-50 font-medium uppercase">comprar</button>
-                <div class="flex flex-col pt-[4vh]">
-                    <p class="text-sm">Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm</p>
-                    <p class="text-sm">#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
-                    <p class="uppercase pt-4">fabricado no brasil</p>
-                </div>
-                <ul class="flex uppercase gap-4 mt-[3vh]">
-                    <li id="medidas" class="cursor-pointer">medidas</li>
-                    <li id="composicao" class="cursor-pointer">composição</li>
-                    <li id="lavagem" class="cursor-pointer">lavagem</li>
-                </ul>
+            <?php foreach ($produtos as $produto): ?>
+                <?php if ($produto['id'] ==  $produtoId): ?>
+                    <div class="flex flex-col lg:w-1/3 mt-[8vh] px-[4vh]">
+                        <h2 class="text-md font-semibold"><?= $produto['nome'] ?></h2>
+                        <span class="text-md"><?= $produto['preco'] ?></span>
+                        <ul class="flex justify-between py-[4vh] uppercase text-sm">
+                            <?php foreach ($produto['medidas']['tamanhos'] as $tamanhos): ?>
+                                <li tabindex="0" class="border hover:border-gray-200 rounded-lg px-2 cursor-pointer focus:bg-gray-900 focus:text-gray-50"><?= $tamanhos ?></li>
+                            <?php endforeach; ?>
+                        </ul>
+                        <button class="w-full border-2 border-gray-900 rounded-xl border-gray-900 p-1 hover:bg-gray-900 hover:text-gray-50 font-medium uppercase">comprar</button>
+                        <div class="flex flex-col pt-[4vh]">
+                            <p class="text-sm"><?= $produto['descricao'] ?></p>
+                            <p class="text-sm"><?= $produto['tags'] ?></p>
+                            <p class="uppercase pt-4"><?= $produto['fabricacao'] ?></p>
+                        </div>
+                        <ul class="flex uppercase gap-4 mt-[3vh]">
+                            <li id="medidas" class="cursor-pointer">medidas</li>
+                            <li id="composicao" class="cursor-pointer">composição</li>
+                            <li id="lavagem" class="cursor-pointer">lavagem</li>
+                        </ul>
 
-                <div class="my-6">
-                    <table id="medidasProduto" class="hidden w-full uppercase text-[0.6rem]">
-                        <thead>
-                            <tr class="text-sm">
-                                <th class="p-1 text-left"></th>
-                                <th class="p-1 text-center">PP</th>
-                                <th class="p-1 text-center">P</th>
-                                <th class="p-1 text-center">M</th>
-                                <th class="p-1 text-center">G</th>
-                                <th class="p-1 text-center">GG</th>
-                                <th class="p-1 text-center">XGG</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="border border-black p-1 text-left">Peito</td>
-                                <td class="border border-black p-1 text-center">49 cm</td>
-                                <td class="border border-black p-1 text-center">53 cm</td>
-                                <td class="border border-black p-1 text-center">56 cm</td>
-                                <td class="border border-black p-1 text-center">59 cm</td>
-                                <td class="border border-black p-1 text-center">62 cm</td>
-                                <td class="border border-black p-1 text-center">65 cm</td>
-                            </tr>
-                            <tr>
-                                <td class="border border-black p-1 text-left">Comprimento</td>
-                                <td class="border border-black p-1 text-center">70 cm</td>
-                                <td class="border border-black p-1 text-center">72 cm</td>
-                                <td class="border border-black p-1 text-center">74 cm</td>
-                                <td class="border border-black p-1 text-center">76 cm</td>
-                                <td class="border border-black p-1 text-center">80 cm</td>
-                                <td class="border border-black p-1 text-center">84 cm</td>
-                            </tr>
-                            <tr>
-                                <td class="border border-black p-1 text-left">Manga</td>
-                                <td class="border border-black p-1 text-center">21 cm</td>
-                                <td class="border border-black p-1 text-center">22 cm</td>
-                                <td class="border border-black p-1 text-center">23 cm</td>
-                                <td class="border border-black p-1 text-center">24 cm</td>
-                                <td class="border border-black p-1 text-center">25 cm</td>
-                                <td class="border border-black p-1 text-center">26 cm</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                        <div class="my-6">
+                            <table id="medidasProduto" class="hidden w-full uppercase text-[0.6rem]">
+                                <thead>
+                                    <tr class="text-sm">
+                                        <th class="p-1 text-left"></th>
+                                        <?php foreach ($produto['medidas']['tamanhos'] as $tamanhos): ?>
+                                            <th class="p-1 text-center"><?= $tamanhos ?></th>
+                                        <?php endforeach; ?>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="border border-black p-1 text-left">Peito</td>
+                                        <?php foreach ($produto['medidas']['peito'] as $peito): ?>
+                                            <td class="border border-black p-1 text-center"><?= $peito ?></td>
+                                        <?php endforeach; ?>
+                                    </tr>
+                                    <tr>
+                                        <td class="border border-black p-1 text-left">Comprimento</td>
+                                        <?php foreach ($produto['medidas']['comprimento'] as $comprimento): ?>
+                                            <td class="border border-black p-1 text-center"><?= $comprimento ?></td>
+                                        <?php endforeach; ?>
+                                    </tr>
+                                    <tr>
+                                        <td class="border border-black p-1 text-left">Manga</td>
+                                        <?php foreach ($produto['medidas']['manga'] as $manga): ?>
+                                            <td class="border border-black p-1 text-center"><?= $manga ?></td>
+                                        <?php endforeach; ?>
+                                    </tr>
+                                </tbody>
+                            </table>
 
-                    <div id="composicaoPorduto" class="hidden space-y-1 text-sm">
-                        <p>
-                            Camiseta manga curta preta com silk colorido na frente, e preto e branco costas.
-                        </p>
-                        <p>
-                            Composição: 100% algodão, pré-encolhido com gramatura de 0,175g. que pode variar 3% para mais ou para menos.
-                        </p>
-                        <p>
-                            As medidas podem variar em 1cm para mais ou para menos em comparação com a grade de tamanhos.
-                        </p>
-                        <p class="pt-4">
-                            _Obs: A coloração dos produtos em fotos externas ou de campanha podem apresentar alterações. Na dúvida sobre a cor real do produto, veja a foto com fundo branco._
-                        </p>
+                            <div id="composicaoPorduto" class="hidden space-y-1 text-sm">
+                                <?php foreach ($produto['composicao'] as $composicao): ?>
+                                    <p><?= $composicao ?></p>
+                                <?php endforeach; ?>
+                            </div>
+
+                            <div id="lavagemProduto" class="hidden text-sm">
+                                <p><?= $produto['lavagem'] ?></p>
+                            </div>
+                        </div>
                     </div>
-
-                    <div id="lavagemProduto" class="hidden text-sm">
-                        <p>Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.</p>
-                    </div>
-                </div>
-            </div>
+                <?php endif; ?>
+            <?php endforeach; ?>
         </section>
 
         <section class="swiper bannerBestSellers my-[6vh]">
