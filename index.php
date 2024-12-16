@@ -82,19 +82,19 @@ require("dados.php")
         <section class="swiper bannerBestSellers mb-[4vh]">
             <h1 class="text-[2.5vh] font-bold text-gray-900 uppercase text-center mb-[2vh]">mais vendidos</h1>
             <div class="swiper-wrapper flex items-center h-full w-full">
-                <?php foreach ($produtos as $produto): ?>
-                    <?php if ($produto["categoria"] === 'bestSellers'): ?>
+                <?php foreach ($produtos as $bestSellers): ?>
+                    <?php if ($bestSellers["categoria"] === 'bestSellers'): ?>
                         <article class="swiper-slide flex w-[calc(25%)] justify-around cursor-pointer">
-                            <div class="w-full">
+                            <a href="/produto.php?id=<?= $bestSellers['id'] ?>" class="w-full">
                                 <div class="relative h-[45vw] sm:h-[35vw] md:h-[30vw] lg:h-[25vw]">
-                                    <img src="/img/<?= $produto['imagens']['frente'] ?>.png" alt="Imagem da frente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 hover:opacity-0">
-                                    <img src="/img/<?= $produto['imagens']['costas'] ?>.png" alt="Imagem de costas" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 hover:opacity-100">
+                                    <img src="/img/<?= $bestSellers['imagens']['frente'] ?>.png" alt="Imagem da frente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 hover:opacity-0">
+                                    <img src="/img/<?= $bestSellers['imagens']['costas'] ?>.png" alt="Imagem de costas" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 hover:opacity-100">
                                 </div>
                                 <div class="flex flex-col sm:flex-row justify-between uppercase sm:text-[1.4vh] text-[1vh] text-zinc-800 py-[0.5vh]">
-                                    <h2 class="font-bold"><?= $produto['nome'] ?></h2>
-                                    <p><?= $produto['preco'] ?></p>
+                                    <h2 class="font-bold"><?= $bestSellers['nome'] ?></h2>
+                                    <p><?= $bestSellers['preco'] ?></p>
                                 </div>
-                            </div>
+                            </a>
                         </article>
                     <?php endif; ?>
                 <?php endforeach; ?>
