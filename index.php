@@ -135,16 +135,27 @@ require("dados.php")
             <div class="w-full">
                 <h1 class="text-[2.5vh] font-bold text-gray-900 uppercase my-[4vh] text-center">Camisetas HIGH</h1>
                 <ul class="flex flex-wrap gap-[1vh]">
-                    <li class="w-[calc(25%-1vh)] cursor-pointer">
-                        <div class="relative h-[22vw]">
-                            <img src="/img/bolovoFrente2.png" alt="Imagem da frente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 hover:opacity-0">
-                            <img src="/img/bolovoCostas2.png" alt="Imagem de costas" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 hover:opacity-100">
-                        </div>
-                        <div class="flex flex-col sm:flex-row justify-between uppercase sm:text-[1.4vh] text-[1vh] text-zinc-800 py-[0.5vh]">
-                            <h2 class="font-bold">Camisa High Street</h2>
-                            <p>R$270,90</p>
-                        </div>
-                    </li>
+                    <?php
+                    $produtosLancamento = array_filter($produtos, function ($produto) {
+                        return $produto['categoria'] == 'lancamento';
+                    });
+
+                    $produtosLancamento = array_slice($produtosLancamento, 0, 8);
+
+                    foreach ($produtosLancamento as $lancamento): ?>
+                        <li class="w-[calc(25%-1vh)] cursor-pointer">
+                            <a href="/produto.php?id=<?= $lancamento['id'] ?>">
+                                <div class="relative h-[22vw]">
+                                    <img src="/img/<?= $lancamento['imagens']['frente'] ?>.png" alt="Imagem da frente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 hover:opacity-0">
+                                    <img src="/img/<?= $lancamento['imagens']['costas'] ?>.png" alt="Imagem de costas" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 hover:opacity-100">
+                                </div>
+                                <div class="flex flex-col sm:flex-row justify-between uppercase sm:text-[1.4vh] text-[1vh] text-zinc-800 py-[0.5vh]">
+                                    <h2 class="font-bold"><?= $lancamento['nome'] ?></h2>
+                                    <p>R$270,90</p>
+                                </div>
+                            </a>
+                        </li>
+                    <?php endforeach; ?>
                 </ul>
             </div>
         </section>
