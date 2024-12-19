@@ -18,7 +18,7 @@
             <div id="logo"
                 class="text-5xl uppercase text-emerald-900 py-4
                        hover:animate-pulse cursor-pointer">
-                <a href="#">shopninel</a>
+                <a href="/">shopninel</a>
             </div>
             <ul class="sm:text-sm text-[0.6rem] text-gray-950 bg-zinc-50 uppercase font-bold flex">
                 <li class="cursor-pointer py-2 w-1/4
