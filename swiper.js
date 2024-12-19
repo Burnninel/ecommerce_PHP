@@ -48,3 +48,44 @@ new Swiper(".bannerBestSellers", {
     },
   },
 });
+
+var swiper = new Swiper(".bannerProductImg", {
+  direction: "horizontal",
+  slidesPerView: 1,
+  mousewheel: true,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "progressbar",
+  },
+  breakpoints: {
+    1024: {
+      direction: "vertical",
+      slidesPerView: 1.08,
+    },
+  },
+});
+
+new Swiper(".bannerBestSellers", {
+  slidesPerView: 4,
+  spaceBetween: 10,
+  allowTouchMove: true,
+  loop: true,
+  navigation: {
+    nextEl: ".nextBannerBestSellers",
+    prevEl: ".prevBannerBestSellers",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+    },
+  },
+});
