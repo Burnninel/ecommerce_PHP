@@ -119,14 +119,16 @@ require("dados.php")
             $produtosComBanner = array_slice($produtosComBanner, 0, 2);
             foreach ($produtosComBanner as $index => $produto): ?>
                 <div class="relative h-[50vw] w-1/2 cursor-pointer">
-                    <img src="/img/camisas/<?= ($index % 2 === 0) ? $produto['imagens']['adicional'] : $produto['imagens']['costas'] ?>.png"
-                        alt="Imagem da frente"
-                        class="absolute inset-0 w-full h-full object-cover 
-                        transition-opacity duration-500 hover:opacity-0">
-                    <img src="/img/camisas/<?= ($index % 2 === 0) ? $produto['imagens']['costas'] : $produto['imagens']['adicional'] ?>.png"
-                        alt="Imagem de costas"
-                        class="absolute inset-0 w-full h-full object-cover 
-                        transition-opacity duration-500 opacity-0 hover:opacity-100">
+                    <a href="/produto.php?id=<?= $produto['id'] ?>">
+                        <img src="/img/camisas/<?= ($index % 2 === 0) ? $produto['imagens']['adicional'] : $produto['imagens']['costas'] ?>.png"
+                            alt="Imagem da frente"
+                            class="absolute inset-0 w-full h-full object-cover 
+                            transition-opacity duration-500 hover:opacity-0">
+                        <img src="/img/camisas/<?= ($index % 2 === 0) ? $produto['imagens']['costas'] : $produto['imagens']['adicional'] ?>.png"
+                            alt="Imagem de costas"
+                            class="absolute inset-0 w-full h-full object-cover 
+                            transition-opacity duration-500 opacity-0 hover:opacity-100">
+                    </a>
                 </div>
             <?php endforeach; ?>
         </section>
