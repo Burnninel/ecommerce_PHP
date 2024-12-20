@@ -1,5 +1,5 @@
 <section class="bannerInitial pt-[0.3vh]">
-    <a href="#"><img src="./img/bolovoBanner.jpg" alt="Lançamentos 2025" class="w-full"></a>
+    <a href="#lancamentos"><img src="./img/bolovoBanner.jpg" alt="Lançamentos 2025" class="w-full"></a>
 </section>
 
 <section class="swiper bannerAutoLoop flex text-[2vh] font-semibold text-zinc-400 h-[13vh]">
@@ -85,7 +85,7 @@
     <?php endforeach; ?>
 </section>
 
-<section class="flex justify-center items-center">
+<section class="flex justify-center items-center" id="lancamentos">
     <div class="w-full">
         <h1 class="text-[2.5vh] font-bold text-gray-900 uppercase my-[4vh] text-center">Lançamentos</h1>
         <ul class="flex flex-wrap gap-[1vh]">
