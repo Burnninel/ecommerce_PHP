@@ -105,7 +105,7 @@
                         </div>
                         <div class="flex flex-col sm:flex-row justify-between uppercase sm:text-[1.4vh] text-[1vh] text-zinc-800 py-[0.5vh]">
                             <h2 class="font-bold"><?= $lancamento['nome'] ?></h2>
-                            <p>R$270,90</p>
+                            <p><?= $lancamento['preco'] ?></p>
                         </div>
                     </a>
                 </li>
