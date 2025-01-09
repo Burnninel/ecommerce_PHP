@@ -380,90 +380,90 @@ $produtos = [
         'categoria' => 'lancamento',
         'banner' => false,
         'imagens' => [
-            'frente' => 'explore-branca-frente',
-            'costas' => 'explore-branca-costas',
-            'zoom' => 'explore-branca-zoom',
-            'adicional' => 'explore-branca-costas-inteira',
+            'frente' => 'preta-frente',
+            'costas' => 'preta-costas',
+            'zoom' => 'preta-zoom',
+            'adicional' => 'preta-adicional',
         ]
     ],
     // 19
     [
         'id' => 19,
-        'nome' => 'Camiseta Bolovo Day Frames',
-        'preco' => 'R$189,00',
+        'nome' => 'Calça Que Vira Shorts Em Alta Velocidade',
+        'preco' => 'R$ 389,00',
         'marca' => 'bolovo',
         'descricao' => '
-            <p class="text-xs">Quer sair de casa bem arrumado, mas no conforto que você pediu pra Jah? A gente também quer. Por isso desenvolvemos nossa Good Times Pants.</p>
-            <p class="text-xs mt-1">Parece que você ta usando uma Chino, mas o nível de conforto é outro.</p>
+            <p class="text-xs">Calça que vira shorts, já começa sendo um benefício, porque é dois em um. Você me parece alguém que adora multifuncionalidade.</p>
+            <p class="text-xs mt-1">Calça de tactel é ótima pra atividades ao ar livre e esportes radicais, porque é leve e protege dos mosquitos.</p>
+            <p class="text-xs mt-1">Mas se passar um repelente e estiver se sentindo sortudo, ou só pro caso de esquentar demais… Vira um shorts! E aí fica mais confortável pra correr, escalar, trotar, como preferir.</p>
+            <p class="text-xs mt-1">Faça do seu jeito!</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
         'medidas' => $medidas,
         'composicao' => $composicao,
-        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'lavagem' => 'Peça colorida, lavar separadamente. Lavagem manual com água fria. Secar no varal. Não usar alvejante. Não colocar na máquina de lavar. Não colocar na secadora. Não lavar a seco. Passar em temperatura média.',
         'tipo' => 'calcas',
         'categoria' => 'lancamento',
         'banner' => false,
         'imagens' => [
-            'frente' => 'frames-branca-frente',
-            'costas' => 'frames-branca-costas',
-            'zoom' => 'frames-branca-zoom',
-            'adicional' => 'frames-branca-frente-inteira',
+            'frente' => 'vira-shorts-frente',
+            'costas' => 'vira-shorts-costas',
+            'zoom' => 'vira-shorts-zoom',
+            'adicional' => 'vira-shorts-adicional',
         ]
     ],
     // 20
     [
         'id' => 20,
-        'nome' => 'Camiseta Loucuras de Acostamento',
-        'preco' => 'R$189,00',
+        'nome' => 'Calça Good Times Chumbo',
+        'preco' => 'R$ 329,00',
         'marca' => 'bolovo',
         'descricao' => '
             <p class="text-xs">Quer sair de casa bem arrumado, mas no conforto que você pediu pra Jah? A gente também quer. Por isso desenvolvemos nossa Good Times Pants.</p>
-            <p class="text-xs mt-1">Parece que você ta usando uma Chino, mas o nível de conforto é outro.</p>
+            <p class="text-xs mt-1">Parece que você ta usando uma Chino, mas o nível de conforto é outro. Em sarja 100% algodão cinza chumbo, elegante e versátil para férias de inverno e rolês com amigos em geral.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
         'medidas' => $medidas,
         'composicao' => $composicao,
-        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'lavagem' => 'Peça colorida, lavar separadamente. Lavagem manual com água fria. Secar no varal. Não usar alvejante. Não colocar na máquina de lavar. Não colocar na secadora. Não lavar a seco. Passar em temperatura média.',
         'tipo' => 'calcas',
         'categoria' => 'lancamento',
         'banner' => false,
         'imagens' => [
-            'frente' => 'locuras-branca-frente',
-            'costas' => 'locuras-branca-costas',
-            'zoom' => 'locuras-branca-zoom',
-            'adicional' => 'locuras-branca-costas-inteira',
+            'frente' => 'chumbo-frente',
+            'costas' => 'chumbo-costas',
+            'zoom' => 'chumbo-zoom',
+            'adicional' => 'chumbo-adicional',
         ]
     ],
     // 21
     [
         'id' => 21,
-        'nome' => 'Camiseta Expeditions Team Marrom',
-        'preco' => 'R$189,00',
+        'nome' => 'Calça Good Times Cargo Pants Bege',
+        'preco' => 'R$ 399,00',
         'marca' => 'bolovo',
         'descricao' => '
-            <p class="text-xs">Quer sair de casa bem arrumado, mas no conforto que você pediu pra Jah? A gente também quer. Por isso desenvolvemos nossa Good Times Pants.</p>
-            <p class="text-xs mt-1">Parece que você ta usando uma Chino, mas o nível de conforto é outro.</p>
+            <p class="text-xs">Quer sair de casa bem arrumado, mas no conforto que você pediu pra Jah? A gente também quer. Por isso desenvolvemos nossa Good Times Pants Cargo. Parece que você ta usando uma Chino, mas o nível de conforto é outro. Em tecido ripstop, elegante e versátil para todas as ocasiões. Tem ainda bolsos laterais pra largar as chaves e um lanchinho pra depois.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
         'medidas' => $medidas,
         'composicao' => $composicao,
-        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'lavagem' => 'Peça colorida, lavar separadamente. Lavagem manual com água fria. Secar no varal. Não usar alvejante. Não colocar na máquina de lavar. Não colocar na secadora. Não lavar a seco. Passar em temperatura média.',
         'tipo' => 'calcas',
         'categoria' => 'lancamento',
         'banner' => false,
         'imagens' => [
-            'frente' => 'expeditions-marrom-frente',
-            'costas' => 'expeditions-marrom-costas',
-            'zoom' => 'expeditions-marrom-zoom',
-            'adicional' => 'expeditions-marrom-frente-inteira',
-            'adicional2' => 'expeditions-marrom-costas-inteira',
+            'frente' => 'cargo-bege-frente',
+            'costas' => 'cargo-bege-costas',
+            'zoom' => 'cargo-bege-zoom',
+            'adicional' => 'cargo-bege-adicional',
         ]
     ],
     // 22
     [
         'id' => 22,
-        'nome' => 'Camiseta Smoking Team Preta',
-        'preco' => 'R$189,00',
+        'nome' => 'Calça Good Times Bege',
+        'preco' => 'R$ 329,00',
         'marca' => 'bolovo',
         'descricao' => '
             <p class="text-xs">Quer sair de casa bem arrumado, mas no conforto que você pediu pra Jah? A gente também quer. Por isso desenvolvemos nossa Good Times Pants.</p>
@@ -472,90 +472,85 @@ $produtos = [
         'fabricacao' => 'FABRICADO NO BRASIL',
         'medidas' => $medidas,
         'composicao' => $composicao,
-        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'lavagem' => 'Peça colorida, lavar separadamente. Lavagem manual com água fria. Secar no varal. Não usar alvejante. Não colocar na máquina de lavar. Não colocar na secadora. Não lavar a seco. Passar em temperatura média.',
         'tipo' => 'calcas',
         'categoria' => 'lancamento',
         'banner' => false,
         'imagens' => [
-            'frente' => 'smoking-preta-frente',
-            'costas' => 'smoking-preta-costas',
-            'zoom' => 'smoking-preta-zoom',
-            'adicional' => 'smoking-preta-frente-inteira',
-            'adicional2' => 'smoking-preta-costas-inteira',
+            'frente' => 'bege-frente',
+            'costas' => 'bege-costas',
+            'zoom' => 'bege-zoom',
+            'adicional' => 'bege-adicional',
         ]
     ],
     // 23
     [
         'id' => 23,
-        'nome' => 'Camiseta Souvenir BLV Litoral',
-        'preco' => 'R$189,00',
+        'nome' => 'Calça Velvet Caqui',
+        'preco' => 'R$ 399,00',
         'marca' => 'bolovo',
         'descricao' => '
-            <p class="text-xs">Quer sair de casa bem arrumado, mas no conforto que você pediu pra Jah? A gente também quer. Por isso desenvolvemos nossa Good Times Pants.</p>
-            <p class="text-xs mt-1">Parece que você ta usando uma Chino, mas o nível de conforto é outro.</p>
+            <p class="text-xs">Quando você veste essa calça se torna instantaneamente 3x mais elegante e fluente em francês. É o veludo. Perfeito para confraternizações ao ar livre.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
         'medidas' => $medidas,
         'composicao' => $composicao,
-        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'lavagem' => 'Peça colorida, lavar separadamente. Lavagem manual com água fria. Secar no varal. Não usar alvejante. Não colocar na máquina de lavar. Não colocar na secadora. Não lavar a seco. Passar em temperatura média.',
         'tipo' => 'calcas',
         'categoria' => 'lancamento',
         'banner' => false,
         'imagens' => [
-            'frente' => 'souvenir-azul-frente',
-            'costas' => 'souvenir-azul-costas',
-            'zoom' => 'souvenir-azul-zoom',
-            'adicional' => 'souvenir-azul-frente-inteira',
+            'frente' => 'caqui-frente',
+            'costas' => 'caqui-costas',
+            'zoom' => 'caqui-zoom',
+            'adicional' => 'caqui-adicional',
         ]
     ],
     // 24
     [
         'id' => 24,
-        'nome' => 'Camiseta Departamento Criativo Listrada',
-        'preco' => 'R$189,00',
+        'nome' => 'Calça Velvet Preta',
+        'preco' => 'R$ 399,00',
         'marca' => 'bolovo',
         'descricao' => '
-            <p class="text-xs">Quer sair de casa bem arrumado, mas no conforto que você pediu pra Jah? A gente também quer. Por isso desenvolvemos nossa Good Times Pants.</p>
-            <p class="text-xs mt-1">Parece que você ta usando uma Chino, mas o nível de conforto é outro.</p>
+            <p class="text-xs">Quando você veste essa calça se torna instantaneamente 3x mais elegante e fluente em francês. É o veludo. Perfeito para confraternizações ao ar livre.</p>
+            <p class="text-xs mt-1">Agora na versão preta pros góticos e emos de plantão. Peça chave essencial pro seu guarda-roupas, que combina com tudo e de quebra ainda esquenta suas lindas pernas nesse frio de inverno.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
         'medidas' => $medidas,
         'composicao' => $composicao,
-        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não colocar na secadora. Não lavar a seco. Passar em temperatura média.',
         'tipo' => 'calcas',
         'categoria' => 'lancamento',
         'banner' => false,
         'imagens' => [
-            'frente' => 'criativo2-listras-frente',
-            'costas' => 'criativo2-listras-costas',
-            'zoom' => 'criativo2-listras-zoom',
-            'adicional' => 'criativo2-listras-frente-inteira',
-            'adicional2' => 'criativo2-listras-costas-inteira',
+            'frente' => 'velvet-preta-frente',
+            'costas' => 'velvet-preta-costas',
+            'zoom' => 'velvet-preta-zoom',
+            'adicional' => 'velvet-preta-adicional',
         ]
     ],
     // 25
     [
         'id' => 25,
-        'nome' => 'Camiseta Atomic Research Preta',
-        'preco' => 'R$189,00',
+        'nome' => 'Calça Dins Preta',
+        'preco' => 'R$ 429,00',
         'marca' => 'bolovo',
         'descricao' => '
-            <p class="text-xs">Quer sair de casa bem arrumado, mas no conforto que você pediu pra Jah? A gente também quer. Por isso desenvolvemos nossa Good Times Pants.</p>
-            <p class="text-xs mt-1">Parece que você ta usando uma Chino, mas o nível de conforto é outro.</p>
+            <p class="text-xs">Esse Jeans é um pau pra toda obra! Só precisa lavar em caso de catinga extrema, do contrário, é uma parceira em forma de calças pra você usar todo dia até ela sair andando sozinha. Testado e aprovado em rolês de skate, cavalo e mutirões de laje.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
         'medidas' => $medidas,
         'composicao' => $composicao,
-        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'lavagem' => 'Lavagem manual com água fria. Secar no varal. Não usar alvejante. Não colocar na máquina de lavar. Não colocar na secadora. Não lavar a seco. Passar em temperatura média.',
         'tipo' => 'calcas',
         'categoria' => 'lancamento',
         'banner' => false,
         'imagens' => [
-            'frente' => 'atomic-preta-frente',
-            'costas' => 'atomic-preta-costas',
-            'zoom' => 'atomic-preta-zoom',
-            'adicional' => 'atomic-preta-frente-inteira',
-            'adicional2' => 'atomic-preta-costas-inteira',
+            'frente' => 'dins-preta-frente',
+            'costas' => 'dins-preta-costas',
+            'zoom' => 'dins-preta-zoom',
+            'adicional' => 'dins-preta-adicional',
         ]
     ],
 ];
