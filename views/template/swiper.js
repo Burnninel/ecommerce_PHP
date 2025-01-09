@@ -89,3 +89,5 @@ new Swiper(".bannerBestSellers", {
     },
   },
 });
+
+console.log('teste de commit');
