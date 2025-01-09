@@ -21,8 +21,10 @@ $produtos = [
         'nome' => 'Camiseta Always Time Off White',
         'preco' => 'R$189,00',
         'marca' => 'bolovo',
-        'descricao' => 'Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm',
-        'tags' => '#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.',
+        'descricao' => '
+                <p>Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm</p>
+                <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
+        ',
         'fabricacao' => 'FABRICADO NO BRASIL',
         'medidas' => $medidas,
         'composicao' => $composicao,
@@ -44,8 +46,10 @@ $produtos = [
         'nome' => 'Camiseta Expeditions Team Azul Marinho',
         'preco' => 'R$189,00',
         'marca' => 'bolovo',
-        'descricao' => 'Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm',
-        'tags' => '#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.',
+        'descricao' => '
+                <p>Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm</p>
+                <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
+        ',
         'fabricacao' => 'FABRICADO NO BRASIL',
         'medidas' => $medidas,
         'composicao' => $composicao,
@@ -67,8 +71,10 @@ $produtos = [
         'nome' => 'Camiseta Atomic Research Preta',
         'preco' => 'R$189,00',
         'marca' => 'bolovo',
-        'descricao' => 'Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm',
-        'tags' => '#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.',
+        'descricao' => '
+                <p>Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm</p>
+                <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
+        ',
         'fabricacao' => 'FABRICADO NO BRASIL',
         'medidas' => $medidas,
         'composicao' => $composicao,
@@ -90,8 +96,10 @@ $produtos = [
         'nome' => 'Camiseta Chefinho Casino Royale Off White',
         'preco' => 'R$189,00',
         'marca' => 'bolovo',
-        'descricao' => 'Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm',
-        'tags' => '#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.',
+        'descricao' => '
+                <p>Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm</p>
+                <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
+        ',
         'fabricacao' => 'FABRICADO NO BRASIL',
         'medidas' => $medidas,
         'composicao' => $composicao,
@@ -112,8 +120,10 @@ $produtos = [
         'nome' => 'Camiseta Departamento Criativo Marrom',
         'preco' => 'R$189,00',
         'marca' => 'bolovo',
-        'descricao' => 'Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm',
-        'tags' => '#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.',
+        'descricao' => '
+                <p>Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm</p>
+                <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
+        ',
         'fabricacao' => 'FABRICADO NO BRASIL',
         'medidas' => $medidas,
         'composicao' => $composicao,
@@ -135,8 +145,10 @@ $produtos = [
         'nome' => 'Camiseta Departamento Criativo Listrada',
         'preco' => 'R$189,00',
         'marca' => 'bolovo',
-        'descricao' => 'Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm',
-        'tags' => '#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.',
+        'descricao' => '
+                <p>Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm</p>
+                <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
+        ',
         'fabricacao' => 'FABRICADO NO BRASIL',
         'medidas' => $medidas,
         'composicao' => $composicao,
@@ -159,8 +171,10 @@ $produtos = [
         'nome' => 'Camiseta Explore Off White',
         'preco' => 'R$189,00',
         'marca' => 'bolovo',
-        'descricao' => 'Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm',
-        'tags' => '#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.',
+        'descricao' => '
+                <p>Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm</p>
+                <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
+        ',
         'fabricacao' => 'FABRICADO NO BRASIL',
         'medidas' => $medidas,
         'composicao' => $composicao,
@@ -181,8 +195,10 @@ $produtos = [
         'nome' => 'Camiseta Bolovo Day Frames',
         'preco' => 'R$189,00',
         'marca' => 'bolovo',
-        'descricao' => 'Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm',
-        'tags' => '#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.',
+        'descricao' => '
+                <p>Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm</p>
+                <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
+        ',
         'fabricacao' => 'FABRICADO NO BRASIL',
         'medidas' => $medidas,
         'composicao' => $composicao,
@@ -203,8 +219,10 @@ $produtos = [
         'nome' => 'Camiseta Loucuras de Acostamento',
         'preco' => 'R$189,00',
         'marca' => 'bolovo',
-        'descricao' => 'Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm',
-        'tags' => '#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.',
+        'descricao' => '
+                <p>Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm</p>
+                <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
+        ',
         'fabricacao' => 'FABRICADO NO BRASIL',
         'medidas' => $medidas,
         'composicao' => $composicao,
@@ -225,8 +243,10 @@ $produtos = [
         'nome' => 'Camiseta Expeditions Team Marrom',
         'preco' => 'R$189,00',
         'marca' => 'bolovo',
-        'descricao' => 'Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm',
-        'tags' => '#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.',
+        'descricao' => '
+                <p>Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm</p>
+                <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
+        ',
         'fabricacao' => 'FABRICADO NO BRASIL',
         'medidas' => $medidas,
         'composicao' => $composicao,
@@ -248,8 +268,10 @@ $produtos = [
         'nome' => 'Camiseta Smoking Team Preta',
         'preco' => 'R$189,00',
         'marca' => 'bolovo',
-        'descricao' => 'Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm',
-        'tags' => '#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.',
+        'descricao' => '
+                <p>Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm</p>
+                <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
+        ',
         'fabricacao' => 'FABRICADO NO BRASIL',
         'medidas' => $medidas,
         'composicao' => $composicao,
@@ -271,8 +293,10 @@ $produtos = [
         'nome' => 'Camiseta Souvenir BLV Litoral',
         'preco' => 'R$189,00',
         'marca' => 'bolovo',
-        'descricao' => 'Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm',
-        'tags' => '#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.',
+        'descricao' => '
+                <p>Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm</p>
+                <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
+        ',
         'fabricacao' => 'FABRICADO NO BRASIL',
         'medidas' => $medidas,
         'composicao' => $composicao,
@@ -293,8 +317,10 @@ $produtos = [
         'nome' => 'Camiseta Departamento Criativo Listrada',
         'preco' => 'R$189,00',
         'marca' => 'bolovo',
-        'descricao' => 'Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm',
-        'tags' => '#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.',
+        'descricao' => '
+                <p>Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm</p>
+                <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
+        ',
         'fabricacao' => 'FABRICADO NO BRASIL',
         'medidas' => $medidas,
         'composicao' => $composicao,
@@ -310,13 +336,16 @@ $produtos = [
             'adicional2' => 'criativo2-listras-costas-inteira',
         ]
     ],
+    // 17
     [
         'id' => 17,
         'nome' => 'Camiseta Atomic Research Preta',
         'preco' => 'R$189,00',
         'marca' => 'bolovo',
-        'descricao' => 'Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm',
-        'tags' => '#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.',
+        'descricao' => '
+                <p>Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm</p>
+                <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
+        ',
         'fabricacao' => 'FABRICADO NO BRASIL',
         'medidas' => $medidas,
         'composicao' => $composicao,
@@ -327,7 +356,7 @@ $produtos = [
         'imagens' => [
             'frente' => 'atomic-preta-frente',
             'costas' => 'atomic-preta-costas',
-            'zoom' => 'atomic-preta-zomm',
+            'zoom' => 'atomic-preta-zoom',
             'adicional' => 'atomic-preta-frente-inteira',
             'adicional2' => 'atomic-preta-costas-inteira',
         ]

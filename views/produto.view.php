@@ -23,8 +23,7 @@
         </ul>
         <button class="w-full border-2 border-gray-900 rounded-xl border-gray-900 p-1 hover:bg-gray-900 hover:text-gray-50 font-medium uppercase">comprar</button>
         <div class="flex flex-col pt-[4vh]">
-            <p class="text-sm"><?= $produto['descricao'] ?></p>
-            <p class="text-sm"><?= $produto['tags'] ?></p>
+            <div class="text-sm"><?= $produto['descricao'] ?></div>
             <p class="uppercase pt-4"><?= $produto['fabricacao'] ?></p>
         </div>
         <ul class="flex uppercase gap-4 mt-[3vh]">
