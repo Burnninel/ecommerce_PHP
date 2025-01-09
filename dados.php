@@ -361,4 +361,201 @@ $produtos = [
             'adicional2' => 'atomic-preta-costas-inteira',
         ]
     ],
+
+    // 18
+    [
+        'id' => 18,
+        'nome' => 'Calça Good Times Preta',
+        'preco' => 'R$329,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+            <p class="text-xs">Quer sair de casa bem arrumado, mas no conforto que você pediu pra Jah? A gente também quer. Por isso desenvolvemos nossa Good Times Pants.</p>
+            <p class="text-xs mt-1">Parece que você ta usando uma Chino, mas o nível de conforto é outro.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Peça colorida, lavar separadamente. Lavagem manual com água fria. Secar no varal. Não usar alvejante. Não colocar na máquina de lavar. Não colocar na secadora. Não lavar a seco. Passar em temperatura média.',
+        'tipo' => 'calcas',
+        'categoria' => 'lancamento',
+        'banner' => false,
+        'imagens' => [
+            'frente' => 'explore-branca-frente',
+            'costas' => 'explore-branca-costas',
+            'zoom' => 'explore-branca-zoom',
+            'adicional' => 'explore-branca-costas-inteira',
+        ]
+    ],
+    // 19
+    [
+        'id' => 19,
+        'nome' => 'Camiseta Bolovo Day Frames',
+        'preco' => 'R$189,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+            <p class="text-xs">Quer sair de casa bem arrumado, mas no conforto que você pediu pra Jah? A gente também quer. Por isso desenvolvemos nossa Good Times Pants.</p>
+            <p class="text-xs mt-1">Parece que você ta usando uma Chino, mas o nível de conforto é outro.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'calcas',
+        'categoria' => 'lancamento',
+        'banner' => false,
+        'imagens' => [
+            'frente' => 'frames-branca-frente',
+            'costas' => 'frames-branca-costas',
+            'zoom' => 'frames-branca-zoom',
+            'adicional' => 'frames-branca-frente-inteira',
+        ]
+    ],
+    // 20
+    [
+        'id' => 20,
+        'nome' => 'Camiseta Loucuras de Acostamento',
+        'preco' => 'R$189,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+            <p class="text-xs">Quer sair de casa bem arrumado, mas no conforto que você pediu pra Jah? A gente também quer. Por isso desenvolvemos nossa Good Times Pants.</p>
+            <p class="text-xs mt-1">Parece que você ta usando uma Chino, mas o nível de conforto é outro.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'calcas',
+        'categoria' => 'lancamento',
+        'banner' => false,
+        'imagens' => [
+            'frente' => 'locuras-branca-frente',
+            'costas' => 'locuras-branca-costas',
+            'zoom' => 'locuras-branca-zoom',
+            'adicional' => 'locuras-branca-costas-inteira',
+        ]
+    ],
+    // 21
+    [
+        'id' => 21,
+        'nome' => 'Camiseta Expeditions Team Marrom',
+        'preco' => 'R$189,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+            <p class="text-xs">Quer sair de casa bem arrumado, mas no conforto que você pediu pra Jah? A gente também quer. Por isso desenvolvemos nossa Good Times Pants.</p>
+            <p class="text-xs mt-1">Parece que você ta usando uma Chino, mas o nível de conforto é outro.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'calcas',
+        'categoria' => 'lancamento',
+        'banner' => false,
+        'imagens' => [
+            'frente' => 'expeditions-marrom-frente',
+            'costas' => 'expeditions-marrom-costas',
+            'zoom' => 'expeditions-marrom-zoom',
+            'adicional' => 'expeditions-marrom-frente-inteira',
+            'adicional2' => 'expeditions-marrom-costas-inteira',
+        ]
+    ],
+    // 22
+    [
+        'id' => 22,
+        'nome' => 'Camiseta Smoking Team Preta',
+        'preco' => 'R$189,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+            <p class="text-xs">Quer sair de casa bem arrumado, mas no conforto que você pediu pra Jah? A gente também quer. Por isso desenvolvemos nossa Good Times Pants.</p>
+            <p class="text-xs mt-1">Parece que você ta usando uma Chino, mas o nível de conforto é outro.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'calcas',
+        'categoria' => 'lancamento',
+        'banner' => false,
+        'imagens' => [
+            'frente' => 'smoking-preta-frente',
+            'costas' => 'smoking-preta-costas',
+            'zoom' => 'smoking-preta-zoom',
+            'adicional' => 'smoking-preta-frente-inteira',
+            'adicional2' => 'smoking-preta-costas-inteira',
+        ]
+    ],
+    // 23
+    [
+        'id' => 23,
+        'nome' => 'Camiseta Souvenir BLV Litoral',
+        'preco' => 'R$189,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+            <p class="text-xs">Quer sair de casa bem arrumado, mas no conforto que você pediu pra Jah? A gente também quer. Por isso desenvolvemos nossa Good Times Pants.</p>
+            <p class="text-xs mt-1">Parece que você ta usando uma Chino, mas o nível de conforto é outro.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'calcas',
+        'categoria' => 'lancamento',
+        'banner' => false,
+        'imagens' => [
+            'frente' => 'souvenir-azul-frente',
+            'costas' => 'souvenir-azul-costas',
+            'zoom' => 'souvenir-azul-zoom',
+            'adicional' => 'souvenir-azul-frente-inteira',
+        ]
+    ],
+    // 24
+    [
+        'id' => 24,
+        'nome' => 'Camiseta Departamento Criativo Listrada',
+        'preco' => 'R$189,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+            <p class="text-xs">Quer sair de casa bem arrumado, mas no conforto que você pediu pra Jah? A gente também quer. Por isso desenvolvemos nossa Good Times Pants.</p>
+            <p class="text-xs mt-1">Parece que você ta usando uma Chino, mas o nível de conforto é outro.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'calcas',
+        'categoria' => 'lancamento',
+        'banner' => false,
+        'imagens' => [
+            'frente' => 'criativo2-listras-frente',
+            'costas' => 'criativo2-listras-costas',
+            'zoom' => 'criativo2-listras-zoom',
+            'adicional' => 'criativo2-listras-frente-inteira',
+            'adicional2' => 'criativo2-listras-costas-inteira',
+        ]
+    ],
+    // 25
+    [
+        'id' => 25,
+        'nome' => 'Camiseta Atomic Research Preta',
+        'preco' => 'R$189,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+            <p class="text-xs">Quer sair de casa bem arrumado, mas no conforto que você pediu pra Jah? A gente também quer. Por isso desenvolvemos nossa Good Times Pants.</p>
+            <p class="text-xs mt-1">Parece que você ta usando uma Chino, mas o nível de conforto é outro.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'calcas',
+        'categoria' => 'lancamento',
+        'banner' => false,
+        'imagens' => [
+            'frente' => 'atomic-preta-frente',
+            'costas' => 'atomic-preta-costas',
+            'zoom' => 'atomic-preta-zoom',
+            'adicional' => 'atomic-preta-frente-inteira',
+            'adicional2' => 'atomic-preta-costas-inteira',
+        ]
+    ],
 ];
