@@ -9,7 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="/swiper.css">
+    <link rel="stylesheet" href="/views/template/swiper.css">
 </head>
 
 <body class="bg-stone-100 tracking-wide">
@@ -74,8 +74,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="/swiper.js"></script>
-    <script src="/produto.js"></script>
+    <script src="/views/template/swiper.js"></script>
+    <script src="/views/template/produto.js"></script>
 </body>
 
 </html>
