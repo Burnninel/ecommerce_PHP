@@ -9,8 +9,6 @@ $calcas = array_filter($produtos, function ($produto) use ($modelo) {
            ($modelo === 'todos' || $produto['modelo'] === $modelo);
 });
 
-// $calcasJson = json_encode($calcas, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
-
 view('calcas', [
     'calcas' => $calcas,
 ]);
