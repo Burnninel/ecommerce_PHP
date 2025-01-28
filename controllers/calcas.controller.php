@@ -2,13 +2,27 @@
 
 require 'dados.php';
 
-$modelo = $_GET['modelo'] ?? 'todos';
+$filtroModelo = $_GET['modelo'] ?? 'todos';
 
-$calcas = array_filter($produtos, function ($produto) use ($modelo) {
+$calcas = array_filter($produtos, function ($produto) use ($filtroModelo) {
     return $produto['tipo'] === 'calcas' && 
-           ($modelo === 'todos' || $produto['modelo'] === $modelo);
+           ($filtroModelo === 'todos' || $produto['idModelo'] === $filtroModelo);
 });
+
+$modeloCalcas = array_filter($produtos, fn($item) => $item['tipo'] == 'calcas');
+$modelos = [
+    'idModelo' => [],
+    'itemModelo' => [],
+];
+
+foreach ($modeloCalcas as $item) {
+    if (!in_array($item['modelo'], $modelos['itemModelo'])) {
+        $modelos['idModelo'][] = $item['idModelo'];
+        $modelos['itemModelo'][] = $item['modelo'];
+    }
+}
 
 view('calcas', [
     'calcas' => $calcas,
+    'modelos' => $modelos,
 ]);
