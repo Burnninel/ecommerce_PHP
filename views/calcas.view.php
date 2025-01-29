@@ -9,7 +9,7 @@
     <?php endforeach; ?>
 </section>
 
-<section class="flex justify-center items-center" id="calcasData">
+<section class="flex justify-center items-center">
     <ul class="flex flex-wrap w-full gap-[1vh]">
         <?php foreach ($calcas as $item): ?>
             <li class="w-[calc(25%-1vh)] cursor-pointer">
