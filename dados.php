@@ -15,6 +15,9 @@ $medidas = [
 ];
 
 $produtos = [
+
+    // manga curta
+
     // 1
     [
         'id' => 1,
@@ -177,9 +180,9 @@ $produtos = [
         ]
     ],
 
-    // 9
+    // 7
     [
-        'id' => 9,
+        'id' => 7,
         'nome' => 'Camiseta Explore Off White',
         'preco' => 'R$189,00',
         'marca' => 'bolovo',
@@ -203,9 +206,9 @@ $produtos = [
             'adicional' => 'explore-branca-costas-inteira',
         ]
     ],
-    // 11
+    // 8
     [
-        'id' => 11,
+        'id' => 8,
         'nome' => 'Camiseta Bolovo Day Frames',
         'preco' => 'R$189,00',
         'marca' => 'bolovo',
@@ -229,9 +232,9 @@ $produtos = [
             'adicional' => 'frames-branca-frente-inteira',
         ]
     ],
-    // 12
+    // 9
     [
-        'id' => 12,
+        'id' => 9,
         'nome' => 'Camiseta Loucuras de Acostamento',
         'preco' => 'R$189,00',
         'marca' => 'bolovo',
@@ -255,9 +258,9 @@ $produtos = [
             'adicional' => 'locuras-branca-costas-inteira',
         ]
     ],
-    // 13
+    // 10
     [
-        'id' => 13,
+        'id' => 10,
         'nome' => 'Camiseta Expeditions Team Marrom',
         'preco' => 'R$189,00',
         'marca' => 'bolovo',
@@ -282,9 +285,9 @@ $produtos = [
             'adicional2' => 'expeditions-marrom-costas-inteira',
         ]
     ],
-    // 14
+    // 11
     [
-        'id' => 14,
+        'id' => 11,
         'nome' => 'Camiseta Smoking Team Preta',
         'preco' => 'R$189,00',
         'marca' => 'bolovo',
@@ -309,9 +312,9 @@ $produtos = [
             'adicional2' => 'smoking-preta-costas-inteira',
         ]
     ],
-    // 15
+    // 12
     [
-        'id' => 15,
+        'id' => 12,
         'nome' => 'Camiseta Souvenir BLV Litoral',
         'preco' => 'R$189,00',
         'marca' => 'bolovo',
@@ -335,9 +338,9 @@ $produtos = [
             'adicional' => 'souvenir-azul-frente-inteira',
         ]
     ],
-    // 16
+    // 13
     [
-        'id' => 16,
+        'id' => 13,
         'nome' => 'Camiseta Departamento Criativo Listrada',
         'preco' => 'R$189,00',
         'marca' => 'bolovo',
@@ -364,9 +367,9 @@ $produtos = [
             'adicional2' => 'criativo2-listras-costas-inteira',
         ]
     ],
-    // 17
+    // 14
     [
-        'id' => 17,
+        'id' => 14,
         'nome' => 'Camiseta Atomic Research Preta',
         'preco' => 'R$189,00',
         'marca' => 'bolovo',
@@ -392,9 +395,169 @@ $produtos = [
         ]
     ],
 
+    // manga longa
+    
+    // 15
+    [
+        'id' => 15,
+        'nome' => 'Camiseta Manga Longa Expedition Views',
+        'preco' => 'R$ 209,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+                <p>Brincadeira. Bem o tipo de brincadeira que alguém faria depois de algumas dezenas de quilômetros naquela viagem aparentemente interminável.</p>
+                <p>Já passou do terceiro pit stop no Graal pra um xixi e uma coxinha de 30 conto que arranca o carisma de qualquer um.</p>
+                <p>Alguém no carro começa um "Fulano roubou pão na casa do João" e alguém rosna em resposta. (Você considera entoar um "a cobra não tem pé, a cobra não tem mão, então como é que ela sobe no pezinho de limão?", mas corre o risco de tomar uma mordida)</p>
+                <p>O que resta é observar com olhos apertados, quase dormindo, a estrada e a paisagem pela janela do carro em alta velocidade.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'camisetas',
+        'idModelo' => 'manga-longa',
+        'modelo' => 'Manga Longa',
+        'categoria' => 'bestSellers',
+        'banner' => true,
+        'imagens' => [
+            'frente' => 'expedition-branca-frente',
+            'costas' => 'expedition-branca-costas',
+            'zoom' => 'expedition-branca-zoom',
+            'adicional' => 'expedition-branca-adicional',
+        ]
+    ],
+    // 16
+    [
+        'id' => 16,
+        'nome' => 'Camiseta BLV Data Manga Longa Preta',
+        'preco' => 'R$209,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+                <p>Pode por essa camiseta nos arquivos que já é um clássico.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'camisetas',
+        'idModelo' => 'manga-longa',
+        'modelo' => 'Manga Longa',
+        'categoria' => 'bestSellers',
+        'banner' => true,
+        'imagens' => [
+            'frente' => 'blv-preta-frente',
+            'costas' => 'blv-preta-costas',
+            'zomm' => 'blv-preta-zoom',
+            'adicional' => 'blv-preta-adicional',
+        ]
+    ],
+    // 17
+    [
+        'id' => 17,
+        'nome' => 'Camiseta Manga Longa Perigo em Ação',
+        'preco' => 'R$209,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+                <p>NARRADOR: É um dia ensolarado para contar boas histórias. Seja em VHS, mini DV, super 8, celular ou digital, um Pulta Take pode ser captado em qualquer mídia. Nada como juntar bons amigos para criar belas imagens e uma boa ficção. Alguém segura a câmera na mão, outro com a ideia na cabeça, alguém com braços fortes segura o microfone. Aquele parceiro com os dentes mais brancos e a dicção menos pior pode atuar, e a namorada dele até fez aula de teatro. O catering é um bolovo do boteco e uma coca-cola.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'camisetas',
+        'idModelo' => 'manga-longa',
+        'modelo' => 'Manga Longa',
+        'categoria' => 'bestSellers',
+        'banner' => true,
+        'imagens' => [
+            'frente' => 'perigoemação-preta-frente',
+            'costas' => 'perigoemação-preta-costas',
+            'zoom' => 'perigoemação-preta-zoom',
+            'adicional' => 'perigoemação-preta-adicional',
+        ]
+    ],
     // 18
     [
         'id' => 18,
+        'nome' => 'Camiseta Manga Longa Sol & Flores',
+        'preco' => 'R$209,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+                <p>Só luz natural, aí solta a máquina de fumaça, câmera vai fazendo uma panzinha da direita pra esquerda no dolly até a cara dele, enquanto fecha no olho. Muda pra câmera na mão e vai fechando ainda mais no olho, até preencher o quadro.</p>
+                <p class="mt-1">Acha que rola? Num plano sequência?</p>
+                <p class="mt-1">Bolovo® Video Crew. Pulta takes por profissionais amadores.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'camisetas',
+        'idModelo' => 'manga-longa',
+        'modelo' => 'Manga Longa',
+        'categoria' => 'bestSellers',
+        'banner' => true,
+        'imagens' => [
+            'frente' => 'sol-branca-frente',
+            'costas' => 'sol-branca-costas',
+            'zoom' => 'sol-branca-zoom',
+            'adicional' => 'sol-branca-adicional',
+        ]
+    ],
+    // 19
+    [
+        'id' => 19,
+        'nome' => 'Camiseta Blossom Shirt Manga Longa',
+        'preco' => 'R$209,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+                <p>A tensão dos opostos. Forças que atuam em direções diferentes. Me faz pensar sobre o meu tempo que devagar vai se extinguindo, mas que aprecio a oportunidade que ele me dá de ganhar experiência e fazer acertos. Como é maneiro observar uma bela vista. Que você tenha um bom dia :)</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Peça colorida, lavar separadamente. Lavagem manual com água fria e sabão neutro. Secar no varal. Não usar alvejante. Não deixar de molho. Não lavar na máquina. Não colocar na secadora. Não lavar a seco. Não passar.',
+        'tipo' => 'camisetas',
+        'idModelo' => 'manga-longa',
+        'modelo' => 'Manga Longa',
+        'categoria' => 'bestSellers',
+        'banner' => true,
+        'imagens' => [
+            'frente' => 'blossom-branca-frente',
+            'costas' => 'blossom-branca-costas',
+            'zoom' => 'blossom-branca-zoom',
+            'adicional' => 'blossom-branca-adicional',
+        ]
+    ],
+    // 20
+    [
+        'id' => 20,
+        'nome' => 'Camiseta Manga Longa Temple Of Memories Royal',
+        'preco' => 'R$209,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+                <p>Oh, céus! Uma avalanche de novo. Um dos eventos mais lindos e avassaladores da natureza… mas espere! DAFT PUNK PLAYS SOFTLY IN THE BACKGROUND O que é aquilo que vem, montado numa prancha em alta velocidade em meio à nevasca? E que peita insana é aquela?! Nova peita 100% algodão com estampa exclusiva da Bolovo. Para férias em Bariloche, festas e encontros invernais, radicalidades e experimentos em geral.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Peça colorida, lavar separadamente. Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'camisetas',
+        'idModelo' => 'manga-longa',
+        'modelo' => 'Manga Longa',
+        'categoria' => 'bestSellers',
+        'banner' => true,
+        'imagens' => [
+            'frente' => 'temple-royal-frente',
+            'costas' => 'temple-royal-costas',
+            'zoom' => 'temple-royal-zoom',
+            'adicional' => 'temple-royal-adicional',
+        ]
+    ],
+    
+    // calças 
+
+    // 21
+    [
+        'id' => 21,
         'nome' => 'Calça Good Times Preta',
         'preco' => 'R$329,00',
         'marca' => 'bolovo',
@@ -418,9 +581,9 @@ $produtos = [
             'adicional' => 'preta-adicional',
         ]
     ],
-    // 19
+    // 22
     [
-        'id' => 19,
+        'id' => 22,
         'nome' => 'Calça Que Vira Shorts Em Alta Velocidade',
         'preco' => 'R$ 389,00',
         'marca' => 'bolovo',
@@ -446,9 +609,9 @@ $produtos = [
             'adicional' => 'vira-shorts-adicional',
         ]
     ],
-    // 20
+    // 23
     [
-        'id' => 20,
+        'id' => 23,
         'nome' => 'Calça Good Times Chumbo',
         'preco' => 'R$ 329,00',
         'marca' => 'bolovo',
@@ -472,9 +635,9 @@ $produtos = [
             'adicional' => 'chumbo-adicional',
         ]
     ],
-    // 21
+    // 24
     [
-        'id' => 21,
+        'id' => 24,
         'nome' => 'Calça Good Times Cargo Pants Bege',
         'preco' => 'R$ 399,00',
         'marca' => 'bolovo',
@@ -497,9 +660,9 @@ $produtos = [
             'adicional' => 'cargo-bege-adicional',
         ]
     ],
-    // 22
+    // 25
     [
-        'id' => 22,
+        'id' => 25,
         'nome' => 'Calça Good Times Bege',
         'preco' => 'R$ 329,00',
         'marca' => 'bolovo',
@@ -523,9 +686,9 @@ $produtos = [
             'adicional' => 'bege-adicional',
         ]
     ],
-    // 23
+    // 26
     [
-        'id' => 23,
+        'id' => 26,
         'nome' => 'Calça Velvet Caqui',
         'preco' => 'R$ 399,00',
         'marca' => 'bolovo',
@@ -548,9 +711,9 @@ $produtos = [
             'adicional' => 'caqui-adicional',
         ]
     ],
-    // 24
+    // 27
     [
-        'id' => 24,
+        'id' => 27,
         'nome' => 'Calça Velvet Preta',
         'preco' => 'R$ 399,00',
         'marca' => 'bolovo',
@@ -574,9 +737,9 @@ $produtos = [
             'adicional' => 'velvet-preta-adicional',
         ]
     ],
-    // 25
+    // 28
     [
-        'id' => 25,
+        'id' => 28,
         'nome' => 'Calça Dins Preta',
         'preco' => 'R$ 429,00',
         'marca' => 'bolovo',
