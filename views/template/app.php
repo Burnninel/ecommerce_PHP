@@ -27,7 +27,7 @@
                 </li>
                 <li class="cursor-pointer py-2 w-1/4
                            hover:duration-500 hover:bg-zinc-800 hover:text-gray-200">
-                    <a href="/moletons">Moletons</a>
+                    <a href="/casacos">Casacos</a>
                 </li>
                 <li class="cursor-pointer py-2 w-1/4
                            hover:duration-500 hover:bg-zinc-800 hover:text-gray-200">
