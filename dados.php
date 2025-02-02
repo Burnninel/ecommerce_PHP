@@ -60,8 +60,8 @@ $produtos = [
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'tipo' => 'camisetas',
-        'idModelo' => 'manga-curta',
-        'modelo' => 'Manga Curta',
+        'idModelo' => 'classicas',
+        'modelo' => 'Classicas',
         'categoria' => 'bestSellers',
         'banner' => true,
         'imagens' => [
@@ -87,8 +87,8 @@ $produtos = [
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'tipo' => 'camisetas',
-        'idModelo' => 'manga-curta',
-        'modelo' => 'Manga Curta',
+        'idModelo' => 'classicas',
+        'modelo' => 'Classicas',
         'categoria' => 'bestSellers',
         'banner' => true,
         'imagens' => [
@@ -273,8 +273,8 @@ $produtos = [
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'tipo' => 'camisetas',
-        'idModelo' => 'manga-curta',
-        'modelo' => 'Manga Curta',
+        'idModelo' => 'classicas',
+        'modelo' => 'Classicas',
         'categoria' => 'lancamento',
         'banner' => true,
         'imagens' => [
@@ -382,8 +382,8 @@ $produtos = [
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'tipo' => 'camisetas',
-        'idModelo' => 'manga-curta',
-        'modelo' => 'Manga Curta',
+        'idModelo' => 'classicas',
+        'modelo' => 'Classicas',
         'categoria' => 'lancamento',
         'banner' => true,
         'imagens' => [
@@ -550,6 +550,212 @@ $produtos = [
             'costas' => 'temple-royal-costas',
             'zoom' => 'temple-royal-zoom',
             'adicional' => 'temple-royal-adicional',
+        ]
+    ],
+
+    // Basicas
+    
+    // 21
+    [
+        'id' => 21,
+        'nome' => 'Camiseta Doggy Style',
+        'preco' => 'R$189,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+                <p>Assim que são feitos os vira-latas. We Love Pets. Não compre, adote.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'camisetas',
+        'idModelo' => 'basicas',
+        'modelo' => 'Básicas',
+        'categoria' => 'bestSellers',
+        'banner' => true,
+        'imagens' => [
+            'frente' => 'doggy-branca-frente',
+            'costas' => 'doggy-branca-costas',
+            'zoom' => 'doggy-branca-zoom',
+            'adicional' => 'doggy-branca-adicional',
+        ]
+    ],
+    // 22
+    [
+        'id' => 22,
+        'nome' => 'Camiseta The Good Times Are Killing Me Off White',
+        'preco' => 'R$189,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+                <p>São 6h da tarde, olha pro relógio. Já já cai a caneta. Melhor ir pra casa descansar. Alguém comenta que vai tomar uma pra refrescar. Faz calor, aquele ar-condicionado véio nem dá conta mais. Só uma para passar o calor. Outra porque parece que esquentou depois de perder no truco. Ih, eu conheço aquela galera. Estamos no carro de quem? Acho que é a Liberdade. Tá tocando "Creed", depois de "Evidências". Deve ser um karaokê. Daqui a pouco preciso trabalhar de novo. Minha cabeça. Ramela ou bafo? Não vejo a hora do dia acabar. São 6h da tarde. Já já cai a caneta.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'camisetas',
+        'idModelo' => 'basicas',
+        'modelo' => 'Básicas',
+        'categoria' => 'bestSellers',
+        'banner' => true,
+        'imagens' => [
+            'frente' => 'killing-branca-frente',
+            'costas' => 'killing-branca-costas',
+            'zomm' => 'killing-branca-zoom',
+            'adicional' => 'killing-branca-adicional',
+        ]
+    ],
+    // 23
+    [
+        'id' => 23,
+        'nome' => 'Camiseta O Ciclo da Vida Preta',
+        'preco' => 'R$189,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+                <p>Você vê um diagrama, uma organização do ciclo da vida. Ali todas as decisões, oportunidades, emoções vão definindo que rumo estamos tomando nesse grande mapa, nesse espetáculo cósmico em que viajamos por essas escolhas e vivenciamos bons e maus momentos. É preciso lembrar de rir um pouco para lidar com todas as curvas e reviravoltas.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'camisetas',
+        'idModelo' => 'basicas',
+        'modelo' => 'Básicas',
+        'categoria' => 'bestSellers',
+        'banner' => true,
+        'imagens' => [
+            'frente' => 'ciclo-preta-frente',
+            'costas' => 'ciclo-preta-costas',
+            'zoom' => 'ciclo-preta-zoom',
+            'adicional' => 'ciclo-preta-adicional',
+        ]
+    ],
+    // 24
+    [
+        'id' => 24,
+        'nome' => 'Camiseta Dias Memoráveis Verde',
+        'preco' => 'R$189,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+                <p>Camiseta para vestir nos dias memoráveis! Com alguma boa vontade e um punhado de sabão em pó, você pode vesti-la todos os dias :) E bons momentos pra você, sempre!</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'camisetas',
+        'idModelo' => 'basicas',
+        'modelo' => 'Básicas',
+        'categoria' => 'bestSellers',
+        'banner' => true,
+        'imagens' => [
+            'frente' => 'memoraveis-verde-frente',
+            'costas' => 'memoraveis-verde-costas',
+            'zoom' => 'memoraveis-verde-zoom',
+            'adicional' => 'memoraveis-verde-adicional',
+        ]
+    ],
+    // 25
+    [
+        'id' => 25,
+        'nome' => 'Camiseta Básica Bolovo Preta',
+        'preco' => 'R$189,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+                <p>Nos pediram tanto camisetas básicas com nosso tecido e caimento, que resolvemos atender. Você nunca erra com essas.</p>
+                <p>Bolovo Classics com logo mokadinho do jeito que a gente gosta, mais básico que isso não tem. 100% algodão fio .40, mais leve pra você suar sem abrir uma pizzaria em cada axila :)</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'camisetas',
+        'idModelo' => 'basicas',
+        'modelo' => 'Básicas',
+        'categoria' => 'bestSellers',
+        'banner' => true,
+        'imagens' => [
+            'frente' => 'basica-preta-frente',
+            'costas' => 'basica-preta-costas',
+            'zoom' => 'basica-preta-zoom',
+            'adicional' => 'basica-preta-adicional',
+        ]
+    ],
+    // 26
+    [
+        'id' => 26,
+        'nome' => 'Camiseta Manga Longa Temple Of Memories Royal',
+        'preco' => 'R$189,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+                <p>Você vê um diagrama, uma organização do ciclo da vida. Ali todas as decisões, oportunidades, emoções vão definindo que rumo estamos tomando nesse grande mapa, nesse espetáculo cósmico em que viajamos por essas escolhas e vivenciamos bons e maus momentos. É preciso lembrar de rir um pouco para lidar com todas as curvas e reviravoltas.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'camisetas',
+        'idModelo' => 'basicas',
+        'modelo' => 'Básicas',
+        'categoria' => 'bestSellers',
+        'banner' => true,
+        'imagens' => [
+            'frente' => 'ciclo-branca-frente',
+            'costas' => 'ciclo-branca-costas',
+            'zoom' => 'ciclo-branca-zoom',
+            'adicional' => 'ciclo-branca-adicional',
+        ]
+    ],
+    // 27
+    [
+        'id' => 27,
+        'nome' => 'Camiseta Dias Memoráveis Off White',
+        'preco' => 'R$189,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+                <p>Camiseta para vestir nos dias memoráveis! Com alguma boa vontade e um punhado de sabão em pó, você pode vesti-la todos os dias :) E bons momentos pra você, sempre!</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'camisetas',
+        'idModelo' => 'basicas',
+        'modelo' => 'Básicas',
+        'categoria' => 'bestSellers',
+        'banner' => true,
+        'imagens' => [
+            'frente' => 'memoraveis-branca-frente',
+            'costas' => 'memoraveis-branca-costas',
+            'zoom' => 'memoraveis-branca-zoom',
+            'adicional' => 'memoraveis-branca-adicional',
+        ]
+    ],
+    // 28
+    [
+        'id' => 28,
+        'nome' => 'Camiseta Expeditions Team Basics Off White',
+        'preco' => 'R$189,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+                <p>O Departamento de Expedições da Bolovo®, em conjunto com o Time de Expedições, fez um requerimento de camisetas básicas para nossos exploradores contemporâneos.</p>
+                <p class="mt-1">O pedido foi atendido.</p>
+                <p class="mt-1">Att. Sabato Pomerigio Diretor Geral de Expedições</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'camisetas',
+        'idModelo' => 'basicas',
+        'modelo' => 'Básicas',
+        'categoria' => 'bestSellers',
+        'banner' => true,
+        'imagens' => [
+            'frente' => 'expeditions-off-frente',
+            'costas' => 'expeditions-off-costas',
+            'zoom' => 'expeditions-off-zoom',
+            'adicional' => 'expeditions-off-adicional',
         ]
     ],
     
@@ -760,6 +966,403 @@ $produtos = [
             'costas' => 'dins-preta-costas',
             'zoom' => 'dins-preta-zoom',
             'adicional' => 'dins-preta-adicional',
+        ]
+    ],
+
+    // bermudas
+
+        // - fds
+    // 29
+    [
+        'id' => 29,
+        'nome' => 'FDS Shorts Preto com Contraste',
+        'preco' => 'R$269,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+            <p class="text-xs">Vista esse shorts na 6ª e você só vai querer tirar ele no domingo.</p>
+            <p class="text-xs">Os Shorts da Bolovo® foram modelados para ficar levemente acima do joelho. Não somos europeus aqui.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'bermudas',
+        'idModelo' => 'fds',
+        'modelo' => 'fds',
+        'categoria' => 'lancamento',
+        'banner' => false,
+        'imagens' => [
+            'frente' => 'fds-preto-frente',
+            'costas' => 'fds-preto-costas',
+            'zoom' => 'fds-preto-zoom',
+            'adicional' => 'fds-preto-adicional',
+        ]
+    ],
+    // 30
+    [
+        'id' => 30,
+        'nome' => 'FDS Shorts Caqui',
+        'preco' => 'R$269,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+            <p class="text-xs">Vista esse shorts na 6ª e você só vai querer tirar ele no domingo.</p>
+            <p class="text-xs">Os Shorts da Bolovo® foram modelados para ficar levemente acima do joelho. Não somos europeus aqui.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'bermudas',
+        'idModelo' => 'fds',
+        'modelo' => 'fds',
+        'categoria' => 'lancamento',
+        'banner' => false,
+        'imagens' => [
+            'frente' => 'fds-preto-frente',
+            'costas' => 'fds-preto-costas',
+            'zoom' => 'fds-preto-zoom',
+            'adicional' => 'fds-preto-adicional',
+        ]
+    ],
+    // 31
+    [
+        'id' => 31,
+        'nome' => 'FDS Jeans Shorts',
+        'preco' => 'R$289,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+            <p class="text-xs">Vista esse shorts na 6ª e você só vai querer tirar ele no domingo.</p>
+            <p class="text-xs">Feito em Jeans leve e lavado = extremamente confortável. High Quality Goods</p>
+            <p class="text-xs">Os Shorts da Bolovo® foram modelados para ficar levemente acima do joelho. Não somos europeus aqui.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'bermudas',
+        'idModelo' => 'fds',
+        'modelo' => 'fds',
+        'categoria' => 'lancamento',
+        'banner' => false,
+        'imagens' => [
+            'frente' => 'fds-jeans-frente',
+            'costas' => 'fds-jeans-costas',
+            'zoom' => 'fds-jeans-zoom',
+            'adicional' => 'fds-jeans-adicional',
+        ]
+    ],
+    // 32
+    [
+        'id' => 32,
+        'nome' => 'FDS Shorts Verde',
+        'preco' => 'R$269,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+            <p class="text-xs">Vista esse shorts na 6ª e você só vai querer tirar ele no domingo.</p>
+            <p class="text-xs">Os Shorts da Bolovo® foram modelados para ficar levemente acima do joelho. Não somos europeus aqui.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'bermudas',
+        'idModelo' => 'fds',
+        'modelo' => 'fds',
+        'categoria' => 'lancamento',
+        'banner' => false,
+        'imagens' => [
+            'frente' => 'fds-verde-frente',
+            'costas' => 'fds-verde-costas',
+            'zoom' => 'fds-verde-zoom',
+            'adicional' => 'fds-verde-adicional',
+        ]
+    ],
+    // 33
+    [
+        'id' => 33,
+        'nome' => 'FDS Shorts Caramelo',
+        'preco' => 'R$269,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+            <p class="text-xs">Vista esse shorts na 6ª e você só vai querer tirar ele no domingo.</p>
+            <p class="text-xs">Os Shorts da Bolovo® foram modelados para ficar levemente acima do joelho. Não somos europeus aqui.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'bermudas',
+        'idModelo' => 'fds',
+        'modelo' => 'fds',
+        'categoria' => 'lancamento',
+        'banner' => false,
+        'imagens' => [
+            'frente' => 'fds-caramelo-frente',
+            'costas' => 'fds-caramelo-costas',
+            'zoom' => 'fds-caramelo-zoom',
+            'adicional' => 'fds-caramelo-adicional',
+        ]
+    ],
+    // 34
+    [
+        'id' => 34,
+        'nome' => 'FDS Shorts Dins Preto',
+        'preco' => 'R$269,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+            <p class="text-xs">Vista esse shorts na 6ª e você só vai querer tirar ele no domingo. Os Shorts da Bolovo® foram modelados para ficar levemente acima do joelho. Não somos europeus aqui.</p>
+            <p class="text-xs">O clássico FDS Shorts de sarja da Bolovo® agora na versão jeans preto. Pra cavalgar com mais elasticidade e dar um ollie, mas também para ocasiões formais e rolês comuns.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Peça colorida, lavar separadamente. Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'bermudas',
+        'idModelo' => 'fds',
+        'modelo' => 'fds',
+        'categoria' => 'lancamento',
+        'banner' => false,
+        'imagens' => [
+            'frente' => 'fds-dins-frente',
+            'costas' => 'fds-dins-costas',
+            'zoom' => 'fds-dins-zoom',
+            'adicional' => 'fds-dins-adicional',
+        ]
+    ],
+
+        // - dads
+     // 35
+     [
+        'id' => 35,
+        'nome' => 'Dads Shorts Preto Tactel',
+        'preco' => 'R$249,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+            <p class="text-xs">Esse é aquele Shorts pra sair em fotos com a galera agora e depois mostrar para seus filhos quem era o mestre do estilo! Uma bigodera fera combina muito com essa berma.</p>
+            <p class="text-xs">Shorts básico de tactel, não tem como errar. É simplesmente impossível.</p>
+            <p class="text-xs">Os Shorts da Bolovo® foram modelados para ficar levemente acima do joelho. Não somos europeus aqui.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Peça colorida, lavar separadamente. Lavagem manual com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não lavar na máquina. Não colocar na secadora. Não lavar a seco.',
+        'tipo' => 'bermudas',
+        'idModelo' => 'dads',
+        'modelo' => 'dads',
+        'categoria' => 'lancamento',
+        'banner' => false,
+        'imagens' => [
+            'frente' => 'dads-preto-frente',
+            'costas' => 'dads-preto-costas',
+            'zoom' => 'dads-preto-zoom',
+            'adicional' => 'dads-preto-adicional',
+        ]
+    ],
+    // 36
+    [
+        'id' => 36,
+        'nome' => 'Dads Shorts Always Time Azul',
+        'preco' => 'R$249,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+            <p class="text-xs">É sempre tempo para viver os Bons Momentos. Não precisa esperar a hora perfeita ou o alinhamento dos astros. Não tem segredo e nem receita, e essa é a maior preciosidade deles. Qualquer um pode vivenciar, seja numa tarde qualquer com os amigos de longa data, seja numa ida ao parque no feriado ou no caos das viagens em família, os Bons Momentos estão aí pra lembrar a gente que a vida é dahora!</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'bermudas',
+        'idModelo' => 'dads',
+        'modelo' => 'dads',
+        'categoria' => 'lancamento',
+        'banner' => false,
+        'imagens' => [
+            'frente' => 'dads-azul-frente',
+            'costas' => 'dads-azul-costas',
+            'zoom' => 'dads-azul-zoom',
+            'adicional' => 'dads-azul-adicional',
+        ]
+    ],
+    // 37
+    [
+        'id' => 37,
+        'nome' => 'Dads Shorts Good Times',
+        'preco' => 'R$269,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+            <p class="text-xs">Básico, mas um pouquinho não básico.</p>
+            <p class="text-xs">_Já faz um tempinho que a gente fala de "Good Times Co." e temos evoluído nossa percepção sobre o seu significado. Não pensamos mais em Bons Momentos só como aquelas explosões máximas de euforia! Às vezes buscar o ápice pode fazer a gente não estar tão presente na jornada até ele. Queremos desfrutar de forma plena e consciente cada momento, enquanto eles acontecem e deixá-los virarem memórias quando chega a hora de desapegar. Foram bons momentos, mas bora seguir e abrir espaço para os novos que vem pela frente :)_</p>
+            <p class="text-xs">_Nessa caminhada ficaríamos com um sorriso no rosto se a Bolovo® puder, de alguma forma, ser uma companheira dos bons momentos para você e sua jornada._</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Peça colorida, lavar separadamente. Lavagem manual com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não lavar na máquina. Não colocar na secadora. Não lavar a seco. Não passar.',
+        'tipo' => 'bermudas',
+        'idModelo' => 'dads',
+        'modelo' => 'dads',
+        'categoria' => 'lancamento',
+        'banner' => false,
+        'imagens' => [
+            'frente' => 'dads-times-frente',
+            'costas' => 'dads-times-costas',
+            'zoom' => 'dads-times-zoom',
+            'adicional' => 'dads-times-adicional',
+        ]
+    ],
+    // 38
+    [
+        'id' => 38,
+        'nome' => 'Dads Shorts Open Title Verde',
+        'preco' => 'R$249,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+            <p>Bolovo Prod Classics Since 2006</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora.',
+        'tipo' => 'bermudas',
+        'idModelo' => 'dads',
+        'modelo' => 'dads',
+        'categoria' => 'lancamento',
+        'banner' => false,
+        'imagens' => [
+            'frente' => 'dads-verde-frente',
+            'costas' => 'dads-verde-costas',
+            'zoom' => 'dads-verde-zoom',
+            'adicional' => 'dads-verde-adicional',
+        ]
+    ],
+    // 39
+    [
+        'id' => 39,
+        'nome' => 'Dads Shorts Tec Trip',
+        'preco' => 'R$249,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+            <p class="text-xs">Agora você mora em Cayo Largo. Entre um Mojito ou uma Michelada, mas pra beber pelo resto da sua estadia, qual você escolhe?</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora.',
+        'tipo' => 'bermudas',
+        'idModelo' => 'dads',
+        'modelo' => 'dads',
+        'categoria' => 'lancamento',
+        'banner' => false,
+        'imagens' => [
+            'frente' => 'dads-trip-frente',
+            'costas' => 'dads-trip-costas',
+            'zoom' => 'dads-trip-zoom',
+            'adicional' => 'dads-trip-adicional',
+        ]
+    ],
+    // 40
+    [
+        'id' => 40,
+        'nome' => 'Dads Shorts Born To Travel Rosa',
+        'preco' => 'R$269,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+            <p class="text-xs">Os pais também nasceram pra viajar. Esse é aquele Shorts pra sair sem rumo com a sua família por aí por aí. Ele combina com um motor home, acampamento, atividades aquáticas e demais aventuras.</p>
+            <p class="text-xs">O álbum de fotos da viagem vai ter outro sabor, os seus filhos, em algum momento vão reconhecer que o pai tinha uma estilera foda e vào lamentar por você não ter guardado esse short.</p>
+            <p class="text-xs">Os Shorts de Tactel da Bolovo® foram modelados para ficar levemente acima do joelho. Não somos europeus aqui.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Peça colorida, lavar separadamente. Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'bermudas',
+        'idModelo' => 'dads',
+        'modelo' => 'dads',
+        'categoria' => 'lancamento',
+        'banner' => false,
+        'imagens' => [
+            'frente' => 'dads-rosa-frente',
+            'costas' => 'dads-rosa-costas',
+            'zoom' => 'dads-rosa-zoom',
+            'adicional' => 'dads-rosa-adicional',
+        ]
+    ],
+
+        // - velvet
+    // 41
+    [
+        'id' => 41,
+        'nome' => 'Dads Shorts Open Title Verde',
+        'preco' => 'R$299,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+            <p class="text-xs">Quando você veste esse shorts se torna instantaneamente 3x mais elegante e fluente em francês. É o veludo. Perfeito para confraternizações ao ar livre.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Peça colorida, lavar separadamente. Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar em temperatura média.',
+        'tipo' => 'bermudas',
+        'idModelo' => 'velvet',
+        'modelo' => 'Velvet',
+        'categoria' => 'lancamento',
+        'banner' => false,
+        'imagens' => [
+            'frente' => 'velvet-preto-frente',
+            'costas' => 'velvet-preto-costas',
+            'zoom' => 'velvet-preto-zoom',
+            'adicional' => 'velvet-preto-adicional',
+        ]
+    ],
+    // 42
+    [
+        'id' => 42,
+        'nome' => 'Velvet Shorts Verde Musgo',
+        'preco' => 'R$299,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+            <p class="text-xs">Quando você veste esse shorts se torna instantaneamente 3x mais elegante e fluente em francês. É o veludo. Perfeito para confraternizações ao ar livre.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora.',
+        'tipo' => 'bermudas',
+        'idModelo' => 'velvet',
+        'modelo' => 'Velvet',
+        'categoria' => 'lancamento',
+        'banner' => false,
+        'imagens' => [
+            'frente' => 'velvet-verde-frente',
+            'costas' => 'velvet-verde-costas',
+            'zoom' => 'velvet-verde-zoom',
+            'adicional' => 'velvet-verde-adicional',
+        ]
+    ],
+    // 43
+    [
+        'id' => 43,
+        'nome' => 'Velvet Shorts Smoke',
+        'preco' => 'R$299,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+            <p class="text-xs">O clássico Velvet Shorts da Bolovo agora em um formoso tom cinza claro, como a fumaça que paira na sua sala quando você dá um rolê em casa.</p>
+            <p class="text-xs mt-1">Quando você veste esse shorts se torna instantaneamente 3x mais elegante e fluente em francês. É o veludo. Perfeito para confraternizações ao ar livre.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Peça colorida, lavar separadamente. Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'bermudas',
+        'idModelo' => 'velvet',
+        'modelo' => 'Velvet',
+        'categoria' => 'lancamento',
+        'banner' => false,
+        'imagens' => [
+            'frente' => 'velvet-smoke-frente',
+            'costas' => 'velvet-smoke-costas',
+            'zoom' => 'velvet-smoke-zoom',
+            'adicional' => 'velvet-smoke-adicional',
         ]
     ],
 ];
