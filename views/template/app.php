@@ -23,7 +23,7 @@
             <ul class="sm:text-sm text-[0.6rem] text-gray-950 bg-zinc-50 uppercase font-bold flex">
                 <li class="cursor-pointer py-2 w-1/4
                            hover:duration-500 hover:bg-zinc-800 hover:text-gray-200">
-                    <a href="/camiseta">Camisetas</a>
+                    <a href="/camisetas">Camisetas</a>
                 </li>
                 <li class="cursor-pointer py-2 w-1/4
                            hover:duration-500 hover:bg-zinc-800 hover:text-gray-200">
