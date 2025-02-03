@@ -39,8 +39,8 @@
                 <article class="swiper-slide flex w-[calc(25%)] justify-around cursor-pointer">
                     <a href="produto?id=<?= $bestSellers['id'] ?>" class="w-full">
                         <div class="relative h-[45vw] sm:h-[35vw] md:h-[30vw] lg:h-[25vw]">
-                            <img src="/img/camisetas/<?= $bestSellers['imagens']['frente'] ?>.png" alt="Imagem da frente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 hover:opacity-0">
-                            <img src="/img/camisetas/<?= isset($bestSellers['imagens']['adicional2']) ? $bestSellers['imagens']['adicional2'] : $bestSellers['imagens']['adicional'] ?>.png" alt="Imagem de costas" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 hover:opacity-100">
+                            <img src="/img/<?= $bestSellers['tipo'] ?>/<?= $bestSellers['imagens']['frente'] ?>.png" alt="Imagem da frente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 hover:opacity-0">
+                            <img src="/img/<?= $bestSellers['tipo'] ?>/<?= isset($bestSellers['imagens']['adicional2']) ? $bestSellers['imagens']['adicional2'] : $bestSellers['imagens']['adicional'] ?>.png" alt="Imagem de costas" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 hover:opacity-100">
                         </div>
                         <div class="flex flex-col sm:flex-row justify-between uppercase sm:text-[1.4vh] text-[1vh] text-zinc-800 py-[0.5vh]">
                             <h2 class="font-bold"><?= $bestSellers['nome'] ?></h2>
@@ -72,11 +72,11 @@
     foreach ($produtosComBanner as $index => $produto): ?>
         <div class="relative h-[50vw] w-1/2 cursor-pointer">
             <a href="produto?id=<?= $produto['id'] ?>">
-                <img src="/img/camisetas/<?= ($index % 2 === 0) ? $produto['imagens']['adicional'] : $produto['imagens']['costas'] ?>.png"
+                <img src="/img/<?= $produto['tipo'] ?>/<?= ($index % 2 === 0) ? $produto['imagens']['frente'] : $produto['imagens']['adicional'] ?>.png"
                     alt="Imagem da frente"
                     class="absolute inset-0 w-full h-full object-cover 
                             transition-opacity duration-500 hover:opacity-0">
-                <img src="/img/camisetas/<?= ($index % 2 === 0) ? $produto['imagens']['costas'] : $produto['imagens']['adicional'] ?>.png"
+                <img src="/img/<?= $produto['tipo'] ?>/<?= ($index % 2 === 0) ? $produto['imagens']['adicional'] : $produto['imagens']['costas'] ?>.png"
                     alt="Imagem de costas"
                     class="absolute inset-0 w-full h-full object-cover 
                             transition-opacity duration-500 opacity-0 hover:opacity-100">
