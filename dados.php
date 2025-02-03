@@ -16,6 +16,7 @@ $medidas = [
 
 $produtos = [
 
+    // camisetas
     // manga curta
 
     // 1
@@ -759,6 +760,299 @@ $produtos = [
         ]
     ],
     
+    // Casacos
+    // Jaquetas
+
+    // 29
+    [
+        'id' => 29,
+        'nome' => 'Jaqueta BLVideo Broadcast',
+        'preco' => 'R$ 1.299,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+                <p>Esta é a pérola que todo aspirante a film maker sempre sonhou. Jaqueta pesadassa pra nunca passar frio no ar condicionado do estúdio ou nas externas noturnas. Em resistente sarja marrom com marca registrada BLVision bordada e aplicação de cetim nas costas. O verdadeiro Amazing Technicolor Dreamcoat. Bolsos em todo canto, dois fora, um dentro. Gancho pra chaves e forro em nylon macio. Para o conforto e elegância do profissional audiovisual.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavagem manual com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não lavar na máquina. Não colocar na secadora. Não lavar a seco. Não passar.',
+        'tipo' => 'casacos',
+        'idModelo' => 'jaquetas',
+        'modelo' => 'Jaquetas',
+        'categoria' => 'bestSellers',
+        'banner' => true,
+        'imagens' => [
+            'frente' => 'jaqueta-marrom-frente',
+            'costas' => 'jaqueta-marrom-costas',
+            'zoom' => 'jaqueta-marrom-zoom',
+            'adicional' => 'jaqueta-marrom-adicional',
+        ]
+    ],
+    // 30
+    [
+        'id' => 30,
+        'nome' => 'Jaqueta Classic RR Azul',
+        'preco' => 'R$ 899,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+                <p class="text-xs">Nossa jaqueta clássica está de volta em novas cores</p>
+                <p class="text-xs mt-1">Mágica pra noites de cerveja em copo alto em Berlim ou em viagens de trem onde você pensa que vai viajar desse jeito pelo resto da vida, ahhh se tivesse mais trem no Brasil.</p>
+                <p class="text-xs mt-1">Com um cachecol e o pulôver certo, você pode até ir pra Antártica, com o bigode certo, comandar um time de ice hockey ou simplesmente estar sempre bem vestido.</p>
+                <p class="text-xs mt-1">As possibilidades são infinitas.</p>
+                <p class="text-xs mt-1">Aqui em tom azul marinho, pra rolar uma colorimetria linda diante de paisagens secas. Mas as úmidas também. Viu só, vai bem com tudo.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Passar em temperatura baixa Não lavar a seco.',
+        'tipo' => 'casacos',
+        'idModelo' => 'jaquetas',
+        'modelo' => 'Jaquetas',
+        'categoria' => 'bestSellers',
+        'banner' => true,
+        'imagens' => [
+            'frente' => 'jaqueta-azul-frente',
+            'costas' => 'jaqueta-azul-costas',
+            'zoom' => 'jaqueta-azul-zoom',
+            'adicional' => 'jaqueta-azul-adicional',
+        ]
+    ],
+    // 31
+    [
+        'id' => 31,
+        'nome' => 'Jaqueta Mountain Dins',
+        'preco' => 'R$ 899,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+                <p class="text-xs">Uma Jaqueta Mountain Dins combina a estilera do jeans com o conforto e elegância da gola de lã, e um leve tempero de seis bolsos e etiqueta de couro. Isso mesmo, cowboy. Deliciosa para você enfrentar o frio tradicional das festas juninas e de quaisquer outras várias festas que que possam surgir em seguida, torcemos que assim seja.</p>
+                <p class="text-xs mt-1">Para passeios, viagens, expedições e jornadas. Assista à lua em frente a uma fogueira, durma na grama ou cavalgue por aí com a nova Jaqueta Mountain Dins.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavagem manual com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não lavar na máquina. Não colocar na secadora. Não lavar a seco. Não passar.',
+        'tipo' => 'casacos',
+        'idModelo' => 'jaquetas',
+        'modelo' => 'Jaquetas',
+        'categoria' => 'bestSellers',
+        'banner' => true,
+        'imagens' => [
+            'frente' => 'jaqueta-dins-frente',
+            'costas' => 'jaqueta-dins-costas',
+            'zoom' => 'jaqueta-dins-zoom',
+            'adicional' => 'jaqueta-dins-adicional',
+        ]
+    ],
+    // 32
+    [
+        'id' => 32,
+        'nome' => 'Jaqueta Stay Classy De Niro',
+        'preco' => 'R$ 599,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+                <p class="text-xs">Coloque esse Jaco e espere para se encarar no espelho e dizer: You talkin’ to me? Then who the hell else are you talkin’ to? You talkin’ to me? Well I’m the only one here. Who the fk do you think you’re talking to?</p>
+                <p class="text-xs mt-1">O maior atalho para se parecer com o De Niro e garantir sua vaga dentro da famiglia!</p>
+                <p class="text-xs mt-1">Bucketzin dupla face em tactel e em tecido atoalhado macio pra humanizar esse coração de pedra. Não é porque você é da máfia que não pode fazer carinho em um gato.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavagem manual com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não lavar na máquina. Não colocar na secadora. Não lavar a seco. Não passar.',
+        'tipo' => 'casacos',
+        'idModelo' => 'jaquetas',
+        'modelo' => 'Jaquetas',
+        'categoria' => 'bestSellers',
+        'banner' => true,
+        'imagens' => [
+            'frente' => 'jaqueta-stay-frente',
+            'costas' => 'jaqueta-stay-costas',
+            'zoom' => 'jaqueta-stay-zoom',
+            'adicional' => 'jaqueta-stay-adicional',
+        ]
+    ],
+
+    // fleeces
+    // 33
+    [
+        'id' => 33,
+        'nome' => 'Camp Fleece Expedição Túnel do Tempo',
+        'preco' => 'R$ 499,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+                <p>Encare as trilhas com seus Mullets e óculos pendurados no pescoço. Deixe seus véios orgulhosos.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'casacos',
+        'idModelo' => 'fleeces',
+        'modelo' => 'Fleeces',
+        'categoria' => 'bestSellers',
+        'banner' => true,
+        'imagens' => [
+            'frente' => 'fleece-expedicao-frente',
+            'costas' => 'fleece-expedicao-costas',
+            'zoom' => 'fleece-expedicao-zoom',
+            'adicional' => 'fleece-expedicao-adicional',
+        ]
+    ],
+    // 34
+    [
+        'id' => 34,
+        'nome' => 'Camp Fleece Dark Nights',
+        'preco' => 'R$ 529,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+                <p class="text-xs">O casaco clássico das expedições. Nossa peça mais quentinha. Parece que você está de volta no útero da sua mãe.</p>
+                <p class="text-xs mt-1">Fleece médio, finalização em Tactel para cortar um pouco do vento. Com bolsos laterais - as mãos não congelam!</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavagem manual com água fria e sabão neutro. Secar no varal. Não usar alvejante. Não deixar de molho. Não lavar na máquina. Não colocar na secadora. Não lavar a seco. Não passar.',
+        'tipo' => 'casacos',
+        'idModelo' => 'fleeces',
+        'modelo' => 'Fleeces',
+        'categoria' => 'bestSellers',
+        'banner' => true,
+        'imagens' => [
+            'frente' => 'fleece-dark-frente',
+            'costas' => 'fleece-dark-costas',
+            'zoom' => 'fleece-dark-zoom',
+            'adicional' => 'fleece-dark-adicional',
+        ]
+    ],
+    // 35
+    [
+        'id' => 35,
+        'nome' => 'Soft Fleece Grafite',
+        'preco' => 'R$ 429,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+                <p class="text-xs">O Fleece, vocês sabem, é um casaco que mais parece um abraço. Um clássico das expedições, tecido leve e quentin.</p>
+                <p class="text-xs mt-1">Nossos Fleeces fazem o “Kit Master Expedição Congelante”, é só usar fleece por baixo e adicionar uma Parka por cima. Um segura a bronca do vento e chuva o outro te faz sentir no sofá assistindo um filme numa tarde inverno depois da escola. Dá até pra ir pra neve, Luiza Xaparral agarantche.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavagem manual com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não lavar na máquina. Não colocar na secadora. Não lavar a seco. Não passar.',
+        'tipo' => 'casacos',
+        'idModelo' => 'fleeces',
+        'modelo' => 'Fleeces',
+        'categoria' => 'bestSellers',
+        'banner' => true,
+        'imagens' => [
+            'frente' => 'fleece-grafite-frente',
+            'costas' => 'fleece-grafite-costas',
+            'zoom' => 'fleece-grafite-zoom',
+            'adicional' => 'fleece-grafite-adicional',
+        ]
+    ],
+    // 36
+    [
+        'id' => 36,
+        'nome' => 'Camp Fleece Mountain Trip Azul',
+        'preco' => 'R$ 529,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+                <p class="text-xs">Novo fleece Mountain Trip! Talvez não ideal para subir o Everest, mas mais do que suficiente pro Pico do Jaraguá.</p>
+                <p class="text-xs mt-1">Seja para tomar chocolate quente em Campos ou quentão na Festa Junina do bairro, o Camp Fleece é feito com tecido de edredom, macio ao toque e quentinho como se enrolar num cobertor. Quantas vezes você já não quis poder fazer isso no Inverno? Chegou a oportunidade de sair aquecido e sofisticado, sem ser julgado pela sociedade.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Peça colorida, lavar separadamente. Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'casacos',
+        'idModelo' => 'fleeces',
+        'modelo' => 'Fleeces',
+        'categoria' => 'bestSellers',
+        'banner' => true,
+        'imagens' => [
+            'frente' => 'fleece-trip-frente',
+            'costas' => 'fleece-trip-costas',
+            'zoom' => 'fleece-trip-zoom',
+            'adicional' => 'fleece-trip-adicional',
+        ]
+    ],
+
+    // 37
+    [
+        'id' => 37,
+        'nome' => 'Moletom Hoodie Bolovo Clássico',
+        'preco' => 'R$ 399,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+                <p>Friozin, né? Pega um casaco, fiote! As mãos não congelam.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco.',
+        'tipo' => 'casacos',
+        'idModelo' => 'moletom',
+        'modelo' => 'Moletom',
+        'categoria' => 'bestSellers',
+        'banner' => true,
+        'imagens' => [
+            'frente' => 'moletom-hoodie-frente',
+            'costas' => 'moletom-hoodie-costas',
+            'zoom' => 'moletom-hoodie-zoom',
+            'adicional' => 'moletom-hoodie-adicional',
+        ]
+    ],
+    // 38
+    [
+        'id' => 38,
+        'nome' => 'Moletom Basics Cinza',
+        'preco' => 'R$ 329,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+                <p class="text-xs">Friozin né? Pega um casaco fiote! Na dúvida vai qual? Aquele que você nunca erra! Esse é o nosso moletom Basic. Good Times Bro :) Vai que vai</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco.',
+        'tipo' => 'casacos',
+        'idModelo' => 'moletom',
+        'modelo' => 'Moletom',
+        'categoria' => 'bestSellers',
+        'banner' => true,
+        'imagens' => [
+            'frente' => 'moletom-cinza-frente',
+            'costas' => 'moletom-cinza-costas',
+            'zoom' => 'moletom-cinza-zoom',
+            'adicional' => 'moletom-cinza-adicional',
+        ]
+    ],
+    // 39
+    [
+        'id' => 39,
+        'nome' => 'Moletom Since 2006 Crewneck',
+        'preco' => 'R$ 329,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+                <p class="text-xs">Preto no Preto.</p>
+                <p class="text-xs mt-1">Bolovo Productions Good Times Co. Since 2006</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco.',
+        'tipo' => 'casacos',
+        'idModelo' => 'moletom',
+        'modelo' => 'Moletom',
+        'categoria' => 'bestSellers',
+        'banner' => true,
+        'imagens' => [
+            'frente' => 'moletom-crewneck-frente',
+            'costas' => 'moletom-crewneck-costas',
+            'zoom' => 'moletom-crewneck-zoom',
+            'adicional' => 'moletom-crewneck-adicional',
+        ]
+    ],
+
     // calças 
 
     // 21
@@ -970,8 +1264,8 @@ $produtos = [
     ],
 
     // bermudas
+    // fds
 
-        // - fds
     // 29
     [
         'id' => 29,
@@ -1130,7 +1424,7 @@ $produtos = [
         ]
     ],
 
-        // - dads
+    // dads
      // 35
      [
         'id' => 35,
@@ -1288,7 +1582,7 @@ $produtos = [
         ]
     ],
 
-        // - velvet
+    // velvet
     // 41
     [
         'id' => 41,
