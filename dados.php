@@ -8,7 +8,7 @@ $composicao = [
 ];
 
 $medidas = [
-    'tamanhos' => ['p', 'm','g', 'gg', 'xgg'],
+    'tamanhos' => ['p', 'm', 'g', 'gg', 'xgg'],
     'peito' => ['p' => '53 cm', 'm' => '56 cm', 'g' => '59 cm', 'gg' => '62 cm', 'xgg' => '65 cm'],
     'comprimento' => ['p' => '72 cm', 'm' => '74 cm', 'g' => '76 cm', 'gg' => '80 cm', 'xgg' => '84 cm'],
     'manga' => ['p' => '22 cm', 'm' => '23 cm', 'g' => '24 cm', 'gg' => '25 cm', 'xgg' => '26 cm'],
@@ -17,8 +17,8 @@ $medidas = [
 $produtos = [
 
     // camisetas
-    // manga curta
 
+    // manga curta
     // 1
     [
         'id' => 1,
@@ -49,60 +49,6 @@ $produtos = [
     // 2
     [
         'id' => 2,
-        'nome' => 'Camiseta Expeditions Team Azul Marinho',
-        'preco' => 'R$189,00',
-        'marca' => 'bolovo',
-        'descricao' => '
-                <p>Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm</p>
-                <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
-        ',
-        'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
-        'composicao' => $composicao,
-        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
-        'tipo' => 'camisetas',
-        'idModelo' => 'classicas',
-        'modelo' => 'Classicas',
-        'categoria' => 'bestSellers',
-        'banner' => true,
-        'imagens' => [
-            'frente' => 'expeditions-azul-frente',
-            'costas' => 'expeditions-azul-costas',
-            'zomm' => 'expeditions-azul-zoom',
-            'adicional' => 'expeditions-azul-frente-inteira',
-            'adicional2' => 'expeditions-azul-costas-inteira',
-        ]
-    ],
-    // 3
-    [
-        'id' => 3,
-        'nome' => 'Camiseta Atomic Research Preta',
-        'preco' => 'R$189,00',
-        'marca' => 'bolovo',
-        'descricao' => '
-                <p>Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm</p>
-                <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
-        ',
-        'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
-        'composicao' => $composicao,
-        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
-        'tipo' => 'camisetas',
-        'idModelo' => 'classicas',
-        'modelo' => 'Classicas',
-        'categoria' => 'bestSellers',
-        'banner' => true,
-        'imagens' => [
-            'frente' => 'atomic-preta-frente',
-            'costas' => 'atomic-preta-costas',
-            'zoom' => 'atomic-preta-zoom',
-            'adicional' => 'atomic-preta-frente-inteira',
-            'adicional2' => 'atomic-preta-costas-inteira',
-        ]
-    ],
-    // 4
-    [
-        'id' => 4,
         'nome' => 'Camiseta Chefinho Casino Royale Off White',
         'preco' => 'R$189,00',
         'marca' => 'bolovo',
@@ -126,9 +72,9 @@ $produtos = [
             'adicional' => 'chefinho-branca-frente-inteira',
         ]
     ],
-    // 5
+    // 3
     [
-        'id' => 5,
+        'id' => 3,
         'nome' => 'Camiseta Departamento Criativo Marrom',
         'preco' => 'R$189,00',
         'marca' => 'bolovo',
@@ -153,9 +99,9 @@ $produtos = [
             'adicional2' => 'criativo-marrom-costas-inteira',
         ]
     ],
-    // 6
+    // 4
     [
-        'id' => 6,
+        'id' => 4,
         'nome' => 'Camiseta Departamento Criativo Listrada',
         'preco' => 'R$189,00',
         'marca' => 'bolovo',
@@ -180,10 +126,9 @@ $produtos = [
             'adicional2' => 'criativo2-listras-costas-inteira',
         ]
     ],
-
-    // 7
+    // 5
     [
-        'id' => 7,
+        'id' => 5,
         'nome' => 'Camiseta Explore Off White',
         'preco' => 'R$189,00',
         'marca' => 'bolovo',
@@ -207,9 +152,9 @@ $produtos = [
             'adicional' => 'explore-branca-costas-inteira',
         ]
     ],
-    // 8
+    // 6
     [
-        'id' => 8,
+        'id' => 6,
         'nome' => 'Camiseta Bolovo Day Frames',
         'preco' => 'R$189,00',
         'marca' => 'bolovo',
@@ -233,9 +178,9 @@ $produtos = [
             'adicional' => 'frames-branca-frente-inteira',
         ]
     ],
-    // 9
+    // 7
     [
-        'id' => 9,
+        'id' => 7,
         'nome' => 'Camiseta Loucuras de Acostamento',
         'preco' => 'R$189,00',
         'marca' => 'bolovo',
@@ -259,36 +204,9 @@ $produtos = [
             'adicional' => 'locuras-branca-costas-inteira',
         ]
     ],
-    // 10
+    // 8
     [
-        'id' => 10,
-        'nome' => 'Camiseta Expeditions Team Marrom',
-        'preco' => 'R$189,00',
-        'marca' => 'bolovo',
-        'descricao' => '
-                <p>Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm</p>
-                <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
-        ',
-        'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
-        'composicao' => $composicao,
-        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
-        'tipo' => 'camisetas',
-        'idModelo' => 'classicas',
-        'modelo' => 'Classicas',
-        'categoria' => 'lancamento',
-        'banner' => true,
-        'imagens' => [
-            'frente' => 'expeditions-marrom-frente',
-            'costas' => 'expeditions-marrom-costas',
-            'zoom' => 'expeditions-marrom-zoom',
-            'adicional' => 'expeditions-marrom-frente-inteira',
-            'adicional2' => 'expeditions-marrom-costas-inteira',
-        ]
-    ],
-    // 11
-    [
-        'id' => 11,
+        'id' => 8,
         'nome' => 'Camiseta Smoking Team Preta',
         'preco' => 'R$189,00',
         'marca' => 'bolovo',
@@ -313,9 +231,9 @@ $produtos = [
             'adicional2' => 'smoking-preta-costas-inteira',
         ]
     ],
-    // 12
+    // 9
     [
-        'id' => 12,
+        'id' => 9,
         'nome' => 'Camiseta Souvenir BLV Litoral',
         'preco' => 'R$189,00',
         'marca' => 'bolovo',
@@ -339,9 +257,9 @@ $produtos = [
             'adicional' => 'souvenir-azul-frente-inteira',
         ]
     ],
-    // 13
+    // 10
     [
-        'id' => 13,
+        'id' => 10,
         'nome' => 'Camiseta Departamento Criativo Listrada',
         'preco' => 'R$189,00',
         'marca' => 'bolovo',
@@ -368,9 +286,11 @@ $produtos = [
             'adicional2' => 'criativo2-listras-costas-inteira',
         ]
     ],
-    // 14
+
+    // Classicas
+    // 11
     [
-        'id' => 14,
+        'id' => 11,
         'nome' => 'Camiseta Atomic Research Preta',
         'preco' => 'R$189,00',
         'marca' => 'bolovo',
@@ -395,9 +315,89 @@ $produtos = [
             'adicional2' => 'atomic-preta-costas-inteira',
         ]
     ],
+    // 12
+    [
+        'id' => 12,
+        'nome' => 'Camiseta Expeditions Team Marrom',
+        'preco' => 'R$189,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+                <p>Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm</p>
+                <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'camisetas',
+        'idModelo' => 'classicas',
+        'modelo' => 'Classicas',
+        'categoria' => 'lancamento',
+        'banner' => true,
+        'imagens' => [
+            'frente' => 'expeditions-marrom-frente',
+            'costas' => 'expeditions-marrom-costas',
+            'zoom' => 'expeditions-marrom-zoom',
+            'adicional' => 'expeditions-marrom-frente-inteira',
+            'adicional2' => 'expeditions-marrom-costas-inteira',
+        ]
+    ],
+    // 13
+    [
+        'id' => 13,
+        'nome' => 'Camiseta Expeditions Team Azul Marinho',
+        'preco' => 'R$189,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+                <p>Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm</p>
+                <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'camisetas',
+        'idModelo' => 'classicas',
+        'modelo' => 'Classicas',
+        'categoria' => 'bestSellers',
+        'banner' => true,
+        'imagens' => [
+            'frente' => 'expeditions-azul-frente',
+            'costas' => 'expeditions-azul-costas',
+            'zomm' => 'expeditions-azul-zoom',
+            'adicional' => 'expeditions-azul-frente-inteira',
+            'adicional2' => 'expeditions-azul-costas-inteira',
+        ]
+    ],
+    // 14
+    [
+        'id' => 14,
+        'nome' => 'Camiseta Atomic Research Preta',
+        'preco' => 'R$189,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+                <p>Você curte F1? ou F1? Ou curte F1 F1? Vrummmmmm</p>
+                <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
+        'tipo' => 'camisetas',
+        'idModelo' => 'classicas',
+        'modelo' => 'Classicas',
+        'categoria' => 'bestSellers',
+        'banner' => true,
+        'imagens' => [
+            'frente' => 'atomic-preta-frente',
+            'costas' => 'atomic-preta-costas',
+            'zoom' => 'atomic-preta-zoom',
+            'adicional' => 'atomic-preta-frente-inteira',
+            'adicional2' => 'atomic-preta-costas-inteira',
+        ]
+    ],
 
     // manga longa
-    
     // 15
     [
         'id' => 15,
@@ -555,7 +555,6 @@ $produtos = [
     ],
 
     // Basicas
-    
     // 21
     [
         'id' => 21,
@@ -759,10 +758,10 @@ $produtos = [
             'adicional' => 'expeditions-off-adicional',
         ]
     ],
-    
-    // Casacos
-    // Jaquetas
 
+    // Casacos
+
+    // Jaquetas
     // 29
     [
         'id' => 29,
@@ -976,6 +975,7 @@ $produtos = [
         ]
     ],
 
+    // moletons
     // 37
     [
         'id' => 37,
@@ -1055,9 +1055,10 @@ $produtos = [
 
     // calças 
 
-    // 21
+    // Good times
+    // 40
     [
-        'id' => 21,
+        'id' => 40,
         'nome' => 'Calça Good Times Preta',
         'preco' => 'R$329,00',
         'marca' => 'bolovo',
@@ -1081,9 +1082,88 @@ $produtos = [
             'adicional' => 'preta-adicional',
         ]
     ],
-    // 22
+    // 41
     [
-        'id' => 22,
+        'id' => 42,
+        'nome' => 'Calça Good Times Chumbo',
+        'preco' => 'R$ 329,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+            <p class="text-xs">Quer sair de casa bem arrumado, mas no conforto que você pediu pra Jah? A gente também quer. Por isso desenvolvemos nossa Good Times Pants.</p>
+            <p class="text-xs mt-1">Parece que você ta usando uma Chino, mas o nível de conforto é outro. Em sarja 100% algodão cinza chumbo, elegante e versátil para férias de inverno e rolês com amigos em geral.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Peça colorida, lavar separadamente. Lavagem manual com água fria. Secar no varal. Não usar alvejante. Não colocar na máquina de lavar. Não colocar na secadora. Não lavar a seco. Passar em temperatura média.',
+        'tipo' => 'calcas',
+        'idModelo' => 'good-times',
+        'modelo' => 'Good Times',
+        'categoria' => 'lancamento',
+        'banner' => false,
+        'imagens' => [
+            'frente' => 'chumbo-frente',
+            'costas' => 'chumbo-costas',
+            'zoom' => 'chumbo-zoom',
+            'adicional' => 'chumbo-adicional',
+        ]
+    ],
+    // 42
+    [
+        'id' => 42,
+        'nome' => 'Calça Good Times Cargo Pants Bege',
+        'preco' => 'R$ 399,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+            <p class="text-xs">Quer sair de casa bem arrumado, mas no conforto que você pediu pra Jah? A gente também quer. Por isso desenvolvemos nossa Good Times Pants Cargo. Parece que você ta usando uma Chino, mas o nível de conforto é outro. Em tecido ripstop, elegante e versátil para todas as ocasiões. Tem ainda bolsos laterais pra largar as chaves e um lanchinho pra depois.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Peça colorida, lavar separadamente. Lavagem manual com água fria. Secar no varal. Não usar alvejante. Não colocar na máquina de lavar. Não colocar na secadora. Não lavar a seco. Passar em temperatura média.',
+        'tipo' => 'calcas',
+        'idModelo' => 'good-times',
+        'modelo' => 'Good Times',
+        'categoria' => 'lancamento',
+        'banner' => false,
+        'imagens' => [
+            'frente' => 'cargo-bege-frente',
+            'costas' => 'cargo-bege-costas',
+            'zoom' => 'cargo-bege-zoom',
+            'adicional' => 'cargo-bege-adicional',
+        ]
+    ],
+    // 43
+    [
+        'id' => 43,
+        'nome' => 'Calça Good Times Bege',
+        'preco' => 'R$ 329,00',
+        'marca' => 'bolovo',
+        'descricao' => '
+            <p class="text-xs">Quer sair de casa bem arrumado, mas no conforto que você pediu pra Jah? A gente também quer. Por isso desenvolvemos nossa Good Times Pants.</p>
+            <p class="text-xs mt-1">Parece que você ta usando uma Chino, mas o nível de conforto é outro.</p>
+        ',
+        'fabricacao' => 'FABRICADO NO BRASIL',
+        'medidas' => $medidas,
+        'composicao' => $composicao,
+        'lavagem' => 'Peça colorida, lavar separadamente. Lavagem manual com água fria. Secar no varal. Não usar alvejante. Não colocar na máquina de lavar. Não colocar na secadora. Não lavar a seco. Passar em temperatura média.',
+        'tipo' => 'calcas',
+        'idModelo' => 'good-times',
+        'modelo' => 'Good Times',
+        'categoria' => 'lancamento',
+        'banner' => false,
+        'imagens' => [
+            'frente' => 'bege-frente',
+            'costas' => 'bege-costas',
+            'zoom' => 'bege-zoom',
+            'adicional' => 'bege-adicional',
+        ]
+    ],
+
+    // Vira shorts
+    // 44
+    [
+        'id' => 44,
         'nome' => 'Calça Que Vira Shorts Em Alta Velocidade',
         'preco' => 'R$ 389,00',
         'marca' => 'bolovo',
@@ -1109,86 +1189,11 @@ $produtos = [
             'adicional' => 'vira-shorts-adicional',
         ]
     ],
-    // 23
+
+    // velvet
+    // 45
     [
-        'id' => 23,
-        'nome' => 'Calça Good Times Chumbo',
-        'preco' => 'R$ 329,00',
-        'marca' => 'bolovo',
-        'descricao' => '
-            <p class="text-xs">Quer sair de casa bem arrumado, mas no conforto que você pediu pra Jah? A gente também quer. Por isso desenvolvemos nossa Good Times Pants.</p>
-            <p class="text-xs mt-1">Parece que você ta usando uma Chino, mas o nível de conforto é outro. Em sarja 100% algodão cinza chumbo, elegante e versátil para férias de inverno e rolês com amigos em geral.</p>
-        ',
-        'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
-        'composicao' => $composicao,
-        'lavagem' => 'Peça colorida, lavar separadamente. Lavagem manual com água fria. Secar no varal. Não usar alvejante. Não colocar na máquina de lavar. Não colocar na secadora. Não lavar a seco. Passar em temperatura média.',
-        'tipo' => 'calcas',
-        'idModelo' => 'good-times',
-        'modelo' => 'Good Times',
-        'categoria' => 'lancamento',
-        'banner' => false,
-        'imagens' => [
-            'frente' => 'chumbo-frente',
-            'costas' => 'chumbo-costas',
-            'zoom' => 'chumbo-zoom',
-            'adicional' => 'chumbo-adicional',
-        ]
-    ],
-    // 24
-    [
-        'id' => 24,
-        'nome' => 'Calça Good Times Cargo Pants Bege',
-        'preco' => 'R$ 399,00',
-        'marca' => 'bolovo',
-        'descricao' => '
-            <p class="text-xs">Quer sair de casa bem arrumado, mas no conforto que você pediu pra Jah? A gente também quer. Por isso desenvolvemos nossa Good Times Pants Cargo. Parece que você ta usando uma Chino, mas o nível de conforto é outro. Em tecido ripstop, elegante e versátil para todas as ocasiões. Tem ainda bolsos laterais pra largar as chaves e um lanchinho pra depois.</p>
-        ',
-        'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
-        'composicao' => $composicao,
-        'lavagem' => 'Peça colorida, lavar separadamente. Lavagem manual com água fria. Secar no varal. Não usar alvejante. Não colocar na máquina de lavar. Não colocar na secadora. Não lavar a seco. Passar em temperatura média.',
-        'tipo' => 'calcas',
-        'idModelo' => 'good-times',
-        'modelo' => 'Good Times',
-        'categoria' => 'lancamento',
-        'banner' => false,
-        'imagens' => [
-            'frente' => 'cargo-bege-frente',
-            'costas' => 'cargo-bege-costas',
-            'zoom' => 'cargo-bege-zoom',
-            'adicional' => 'cargo-bege-adicional',
-        ]
-    ],
-    // 25
-    [
-        'id' => 25,
-        'nome' => 'Calça Good Times Bege',
-        'preco' => 'R$ 329,00',
-        'marca' => 'bolovo',
-        'descricao' => '
-            <p class="text-xs">Quer sair de casa bem arrumado, mas no conforto que você pediu pra Jah? A gente também quer. Por isso desenvolvemos nossa Good Times Pants.</p>
-            <p class="text-xs mt-1">Parece que você ta usando uma Chino, mas o nível de conforto é outro.</p>
-        ',
-        'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
-        'composicao' => $composicao,
-        'lavagem' => 'Peça colorida, lavar separadamente. Lavagem manual com água fria. Secar no varal. Não usar alvejante. Não colocar na máquina de lavar. Não colocar na secadora. Não lavar a seco. Passar em temperatura média.',
-        'tipo' => 'calcas',
-        'idModelo' => 'good-times',
-        'modelo' => 'Good Times',
-        'categoria' => 'lancamento',
-        'banner' => false,
-        'imagens' => [
-            'frente' => 'bege-frente',
-            'costas' => 'bege-costas',
-            'zoom' => 'bege-zoom',
-            'adicional' => 'bege-adicional',
-        ]
-    ],
-    // 26
-    [
-        'id' => 26,
+        'id' => 45,
         'nome' => 'Calça Velvet Caqui',
         'preco' => 'R$ 399,00',
         'marca' => 'bolovo',
@@ -1211,9 +1216,9 @@ $produtos = [
             'adicional' => 'caqui-adicional',
         ]
     ],
-    // 27
+    // 46
     [
-        'id' => 27,
+        'id' => 46,
         'nome' => 'Calça Velvet Preta',
         'preco' => 'R$ 399,00',
         'marca' => 'bolovo',
@@ -1237,9 +1242,11 @@ $produtos = [
             'adicional' => 'velvet-preta-adicional',
         ]
     ],
-    // 28
+
+    // dins
+    // 47
     [
-        'id' => 28,
+        'id' => 47,
         'nome' => 'Calça Dins Preta',
         'preco' => 'R$ 429,00',
         'marca' => 'bolovo',
@@ -1264,11 +1271,11 @@ $produtos = [
     ],
 
     // bermudas
-    // fds
 
-    // 29
+    // fds
+    // 48
     [
-        'id' => 29,
+        'id' => 48,
         'nome' => 'FDS Shorts Preto com Contraste',
         'preco' => 'R$269,00',
         'marca' => 'bolovo',
@@ -1292,9 +1299,9 @@ $produtos = [
             'adicional' => 'fds-preto-adicional',
         ]
     ],
-    // 30
+    // 49
     [
-        'id' => 30,
+        'id' => 49,
         'nome' => 'FDS Shorts Caqui',
         'preco' => 'R$269,00',
         'marca' => 'bolovo',
@@ -1318,9 +1325,9 @@ $produtos = [
             'adicional' => 'fds-preto-adicional',
         ]
     ],
-    // 31
+    // 50
     [
-        'id' => 31,
+        'id' => 50,
         'nome' => 'FDS Jeans Shorts',
         'preco' => 'R$289,00',
         'marca' => 'bolovo',
@@ -1345,9 +1352,9 @@ $produtos = [
             'adicional' => 'fds-jeans-adicional',
         ]
     ],
-    // 32
+    // 51
     [
-        'id' => 32,
+        'id' => 51,
         'nome' => 'FDS Shorts Verde',
         'preco' => 'R$269,00',
         'marca' => 'bolovo',
@@ -1371,9 +1378,9 @@ $produtos = [
             'adicional' => 'fds-verde-adicional',
         ]
     ],
-    // 33
+    // 52
     [
-        'id' => 33,
+        'id' => 52,
         'nome' => 'FDS Shorts Caramelo',
         'preco' => 'R$269,00',
         'marca' => 'bolovo',
@@ -1397,9 +1404,9 @@ $produtos = [
             'adicional' => 'fds-caramelo-adicional',
         ]
     ],
-    // 34
+    // 53
     [
-        'id' => 34,
+        'id' => 53,
         'nome' => 'FDS Shorts Dins Preto',
         'preco' => 'R$269,00',
         'marca' => 'bolovo',
@@ -1425,9 +1432,9 @@ $produtos = [
     ],
 
     // dads
-     // 35
-     [
-        'id' => 35,
+    // 54
+    [
+        'id' => 54,
         'nome' => 'Dads Shorts Preto Tactel',
         'preco' => 'R$249,00',
         'marca' => 'bolovo',
@@ -1452,9 +1459,9 @@ $produtos = [
             'adicional' => 'dads-preto-adicional',
         ]
     ],
-    // 36
+    // 55
     [
-        'id' => 36,
+        'id' => 55,
         'nome' => 'Dads Shorts Always Time Azul',
         'preco' => 'R$249,00',
         'marca' => 'bolovo',
@@ -1477,9 +1484,9 @@ $produtos = [
             'adicional' => 'dads-azul-adicional',
         ]
     ],
-    // 37
+    // 56
     [
-        'id' => 37,
+        'id' => 56,
         'nome' => 'Dads Shorts Good Times',
         'preco' => 'R$269,00',
         'marca' => 'bolovo',
@@ -1504,9 +1511,9 @@ $produtos = [
             'adicional' => 'dads-times-adicional',
         ]
     ],
-    // 38
+    // 57
     [
-        'id' => 38,
+        'id' => 57,
         'nome' => 'Dads Shorts Open Title Verde',
         'preco' => 'R$249,00',
         'marca' => 'bolovo',
@@ -1529,9 +1536,9 @@ $produtos = [
             'adicional' => 'dads-verde-adicional',
         ]
     ],
-    // 39
+    // 58
     [
-        'id' => 39,
+        'id' => 58,
         'nome' => 'Dads Shorts Tec Trip',
         'preco' => 'R$249,00',
         'marca' => 'bolovo',
@@ -1554,9 +1561,9 @@ $produtos = [
             'adicional' => 'dads-trip-adicional',
         ]
     ],
-    // 40
+    // 59
     [
-        'id' => 40,
+        'id' => 59,
         'nome' => 'Dads Shorts Born To Travel Rosa',
         'preco' => 'R$269,00',
         'marca' => 'bolovo',
@@ -1583,9 +1590,9 @@ $produtos = [
     ],
 
     // velvet
-    // 41
+    // 60
     [
-        'id' => 41,
+        'id' => 60,
         'nome' => 'Dads Shorts Open Title Verde',
         'preco' => 'R$299,00',
         'marca' => 'bolovo',
@@ -1608,9 +1615,9 @@ $produtos = [
             'adicional' => 'velvet-preto-adicional',
         ]
     ],
-    // 42
+    // 61
     [
-        'id' => 42,
+        'id' => 61,
         'nome' => 'Velvet Shorts Verde Musgo',
         'preco' => 'R$299,00',
         'marca' => 'bolovo',
@@ -1633,9 +1640,9 @@ $produtos = [
             'adicional' => 'velvet-verde-adicional',
         ]
     ],
-    // 43
+    // 62
     [
-        'id' => 43,
+        'id' => 62,
         'nome' => 'Velvet Shorts Smoke',
         'preco' => 'R$299,00',
         'marca' => 'bolovo',
