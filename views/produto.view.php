@@ -4,7 +4,7 @@
             <div class="swiper-wrapper lg:ml-[4vh]">
                 <?php foreach ($produto['imagens'] as $imagens): ?>
                     <div class="swiper-slide">
-                        <img src="/img/camisetas/<?= $imagens ?>.png" class="h-full">
+                        <img src="/img/<?= $produto['categoria'] ?>/<?= $imagens ?>.png" class="h-full">
                     </div>
                 <?php endforeach; ?>
             </div>
