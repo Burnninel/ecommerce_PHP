@@ -1,10 +1,19 @@
 <?php
 
+$routes = [
+    '' => 'index',
+    'produto' => 'produto',
+    'camisetas' => 'tipo',
+    'casacos' => 'tipo',
+    'calcas' => 'tipo',
+    'bermudas' => 'tipo',
+];
+
 $controller = str_replace('/', '', parse_url($_SERVER['REQUEST_URI'])['path']);
-if (!$controller) $controller = 'index';
 
-if (!file_exists("controllers/{$controller}.controller.php")) {
-    abort(404);
-}
+if (isset($routes[$controller])) {
+    require "controllers/{$routes[$controller]}.controller.php"; 
+    exit();
+};
 
-require "controllers/{$controller}.controller.php";
+abort(404);
