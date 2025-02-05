@@ -3,10 +3,10 @@
 $routes = [
     '' => 'index',
     'produto' => 'produto',
-    'camisetas' => 'tipo',
-    'casacos' => 'tipo',
-    'calcas' => 'tipo',
-    'bermudas' => 'tipo',
+    'camisetas' => 'categoria',
+    'casacos' => 'categoria',
+    'calcas' => 'categoria',
+    'bermudas' => 'categoria',
 ];
 
 $controller = str_replace('/', '', parse_url($_SERVER['REQUEST_URI'])['path']);
