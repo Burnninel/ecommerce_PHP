@@ -23,19 +23,19 @@
             <ul class="sm:text-sm text-[0.6rem] text-gray-950 bg-zinc-50 uppercase font-bold flex">
                 <li class="cursor-pointer py-2 w-1/4
                            hover:duration-500 hover:bg-zinc-800 hover:text-gray-200">
-                    <a href="/camisetas">Camisetas</a>
+                    <a href="/camisetas" class="w-full h-full flex items-center justify-center">Camisetas</a>
                 </li>
                 <li class="cursor-pointer py-2 w-1/4
                            hover:duration-500 hover:bg-zinc-800 hover:text-gray-200">
-                    <a href="/casacos">Casacos</a>
+                    <a href="/casacos" class="w-full h-full flex items-center justify-center">Casacos</a>
                 </li>
                 <li class="cursor-pointer py-2 w-1/4
                            hover:duration-500 hover:bg-zinc-800 hover:text-gray-200">
-                    <a href="/calcas">Calças</a>
+                    <a href="/calcas" class="w-full h-full flex items-center justify-center">Calças</a>
                 </li>
                 <li class="cursor-pointer py-2 w-1/4
                            hover:duration-500 hover:bg-zinc-800 hover:text-gray-200">
-                    <a href="/bermudas">Bermudas</a>
+                    <a href="/bermudas" class="w-full h-full flex items-center justify-center">Bermudas</a>
                 </li>
             </ul>
         </nav>
