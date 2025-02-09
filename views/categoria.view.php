@@ -1,4 +1,4 @@
-<section class="flex py-6 text-xs gap-6">
+<section class="flex py-1 text-[5px] gap-1 sm:py-6 sm:text-xs sm:gap-6 lg:text-lg">
     <div class="font-medium uppercase cursor-pointer focus:bg-gray-900 focus:text-gray-50 rounded-xl p-2">
         <span class="mr-1"> Calças </span>
         <span> > </span>
