@@ -34,19 +34,10 @@
 <section class="swiper bannerBestSellers mb-[4vh]">
     <h1 class="text-[2.5vh] font-bold text-gray-900 uppercase text-center mb-[2vh]">mais vendidos</h1>
     <div class="swiper-wrapper flex items-center h-full w-full">
-        <?php foreach ($bestSeller as $item): ?>
+        <?php foreach ($bestSellers as $item): ?>
             <?php if ($item["bestSeller"] === true): ?>
                 <article class="swiper-slide flex w-[calc(25%)] justify-around cursor-pointer">
-                    <a href="produto?id=<?= $item['id'] ?>" class="w-full">
-                        <div class="relative h-[45vw] sm:h-[35vw] md:h-[30vw] lg:h-[25vw]">
-                            <img src="/img/<?= $item['categoria'] ?>/<?= $item['imagens']['frente'] ?>.png" alt="Imagem da frente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 hover:opacity-0">
-                            <img src="/img/<?= $item['categoria'] ?>/<?= isset($item['imagens']['adicional2']) ? $item['imagens']['adicional2'] : $item['imagens']['adicional'] ?>.png" alt="Imagem de costas" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 hover:opacity-100">
-                        </div>
-                        <div class="flex flex-col sm:flex-row justify-between uppercase sm:text-[1.4vh] text-[1vh] text-zinc-800 py-[0.5vh]">
-                            <h2 class="font-bold"><?= $item['nome'] ?></h2>
-                            <p><?= $item['preco'] ?></p>
-                        </div>
-                    </a>
+                    <?php require "views/template/cardProduto.php"; ?>
                 </article>
             <?php endif; ?>
         <?php endforeach; ?>
@@ -89,25 +80,9 @@
     <div class="w-full">
         <h1 class="text-[2.5vh] font-bold text-gray-900 uppercase my-[4vh] text-center">Lançamentos</h1>
         <ul class="flex flex-wrap gap-[1vh]">
-            <?php
-            $produtosLancamento = array_filter($produtos, function ($produto) {
-                return $produto['lancamento'] == true;
-            });
-
-            $produtosLancamento = array_slice($produtosLancamento, 0, 8);
-
-            foreach ($produtosLancamento as $lancamento): ?>
+            <?php foreach ($lancamentos as $item): ?>
                 <li class="w-[calc(50%-1vh)] md:w-[calc(33.33%-1vh)] lg:w-[calc(25%-1vh)] cursor-pointer">
-                    <a href="produto?id=<?= $lancamento['id'] ?>">
-                        <div class="relative h-[45vw] sm:h-[45vw] md:h-[30vw] lg:h-[25vw]">
-                            <img src="/img/<?= $lancamento['categoria'] ?>/<?= $lancamento['imagens']['frente'] ?>.png" alt="Imagem da frente" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 hover:opacity-0">
-                            <img src="/img/<?= $lancamento['categoria'] ?>/<?= isset($lancamento['imagens']['adicional2']) ? $lancamento['imagens']['adicional2'] : $lancamento['imagens']['adicional'] ?>.png" alt="Imagem de costas" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 hover:opacity-100">
-                        </div>
-                        <div class="flex flex-col sm:flex-row justify-between uppercase sm:text-[1.4vh] text-[1vh] text-zinc-800 py-[0.5vh]">
-                            <h2 class="font-bold"><?= $lancamento['nome'] ?></h2>
-                            <p><?= $lancamento['preco'] ?></p>
-                        </div>
-                    </a>
+                    <?php require "views/template/cardProduto.php"; ?>
                 </li>
             <?php endforeach; ?>
         </ul>

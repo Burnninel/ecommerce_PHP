@@ -11,7 +11,9 @@ if(!isset($produto)) {
     return abort(404); 
 };
 
+$bestSellers = filtrarprodutos($produtos, 'bestSeller', 8, $id);
+
 view('produto', [
     'produto' => $produto,
-    'produtos' => $produtos
+    'bestSellers' => $bestSellers,
 ]);

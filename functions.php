@@ -9,6 +9,18 @@ function view($view, $data = [])
     require "views/template/app.php";
 }
 
+function filtrarprodutos($produtos, $chave, $quantidade, $id = null)
+{
+    $filtroProdutos = array_filter($produtos, function ($item) use ($chave, $id) {
+        return isset($item[$chave]) && $item[$chave] === true && $item['id'] != $id;
+    });
+
+    $contadorProdutos  = min(count($filtroProdutos), $quantidade);
+
+    $indicesProdutos = array_rand($filtroProdutos, $contadorProdutos);
+    return is_array($indicesProdutos) ? array_intersect_key($filtroProdutos, array_flip($indicesProdutos)) : [$filtroProdutos[$indicesProdutos]];
+}
+
 function dd(...$dump)
 {
     echo '<pre>';
