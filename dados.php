@@ -7,12 +7,59 @@ $composicao = [
     'obs' => '_Obs: A coloração dos produtos em fotos externas ou de campanha podem apresentar alterações. Na dúvida sobre a cor real do produto, veja a foto com fundo branco._'
 ];
 
-$medidas = [
-    'tamanhos' => ['p', 'm', 'g', 'gg', 'xgg'],
-    'peito' => ['p' => '53 cm', 'm' => '56 cm', 'g' => '59 cm', 'gg' => '62 cm', 'xgg' => '65 cm'],
-    'comprimento' => ['p' => '72 cm', 'm' => '74 cm', 'g' => '76 cm', 'gg' => '80 cm', 'xgg' => '84 cm'],
-    'manga' => ['p' => '22 cm', 'm' => '23 cm', 'g' => '24 cm', 'gg' => '25 cm', 'xgg' => '26 cm'],
-];
+function gerarMedidas(array $params)
+{
+    $medidas = [
+        'tamanhos' => $params['tamanhos'] ?? [],
+        'comprimento' => $params['comprimento'] ?? [],
+        'peito' => $params['peito'] ?? null,
+        'manga' => $params['manga'] ?? null,
+        'cintura' => $params['cintura'] ?? null
+    ];
+
+    return $medidas;
+}
+
+$medidasCamisetas = gerarMedidas(
+    [
+        'tamanhos' => ['p', 'm', 'g', 'gg', 'xgg'],
+        'peito' => ['72 cm', '74 cm', '76 cm', '80 cm', '84 cm'],
+        'comprimento' => ['53 cm', '56 cm', '59 cm', '62 cm', '65 cm'],
+        'manga' => ['22 cm', '23 cm', '24 cm', '25 cm', '26 cm'],
+    ]
+);
+
+$medidasCasacos = gerarMedidas(
+    [
+        'tamanhos' => ['p', 'm', 'g', 'gg', 'xgg'],
+        'comprimento' => ['69 cm', '70 cm', '72 cm', '74 cm', '75 cm'],
+        'peito' => ['56 cm', '58 cm	', '60 cm', '62 cm', '64 cm'],
+        'manga' => ['63 cm', '64 cm', '65 cm', '66 cm', '67 cm'],
+    ]
+);
+
+$medidasCalcas = gerarMedidas(
+    [
+        'tamanhos' => ['p', 'm', 'g', 'gg', 'xgg'],
+        'comprimento' => ['103 cm', '104 cm', '105 cm', '106 cm', '107 cm'],
+        'cintura' => ['76 cm', '80 cm', '84 cm', '88 cm', '92 cm'],
+    ]
+);
+
+$medidasBermudas = gerarMedidas(
+    [
+        'tamanhos' => ['p', 'm', 'g', 'gg', 'xgg'],
+        'comprimento' => ['53 cm', '56 cm', '59 cm', '62 cm', '65 cm'],
+        'cintura' => ['75 cm', '79 cm', '83 cm', '87 cm', '91 cm'],
+    ]
+);
+
+// $medidas = [
+//     'tamanhos' => ['p', 'm', 'g', 'gg', 'xgg'],
+//     'peito' => ['p' => '53 cm', 'm' => '56 cm', 'g' => '59 cm', 'gg' => '62 cm', 'xgg' => '65 cm'],
+//     'comprimento' => ['p' => '72 cm', 'm' => '74 cm', 'g' => '76 cm', 'gg' => '80 cm', 'xgg' => '84 cm'],
+//     'manga' => ['p' => '22 cm', 'm' => '23 cm', 'g' => '24 cm', 'gg' => '25 cm', 'xgg' => '26 cm'],
+// ];
 
 $produtos = [
 
@@ -30,7 +77,7 @@ $produtos = [
                 <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCamisetas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'camisetas',
@@ -58,7 +105,7 @@ $produtos = [
                 <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCamisetas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'camisetas',
@@ -85,7 +132,7 @@ $produtos = [
                 <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCamisetas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'camisetas',
@@ -113,7 +160,7 @@ $produtos = [
                 <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCamisetas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'camisetas',
@@ -141,7 +188,7 @@ $produtos = [
                 <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCamisetas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'camisetas',
@@ -168,7 +215,7 @@ $produtos = [
                 <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCamisetas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'camisetas',
@@ -195,7 +242,7 @@ $produtos = [
                 <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCamisetas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'camisetas',
@@ -222,7 +269,7 @@ $produtos = [
                 <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCamisetas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'camisetas',
@@ -250,7 +297,7 @@ $produtos = [
                 <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCamisetas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'camisetas',
@@ -277,7 +324,7 @@ $produtos = [
                 <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCamisetas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'camisetas',
@@ -309,7 +356,7 @@ $produtos = [
                 <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCamisetas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'camisetas',
@@ -337,7 +384,7 @@ $produtos = [
                 <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCamisetas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'camisetas',
@@ -365,7 +412,7 @@ $produtos = [
                 <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCamisetas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'camisetas',
@@ -393,7 +440,7 @@ $produtos = [
                 <p>#tchasco #pirraci #agitonanight Bolovo Since 2006©️ TMJ & Mist.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCamisetas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'camisetas',
@@ -425,7 +472,7 @@ $produtos = [
                 <p>O que resta é observar com olhos apertados, quase dormindo, a estrada e a paisagem pela janela do carro em alta velocidade.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCamisetas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'camisetas',
@@ -451,7 +498,7 @@ $produtos = [
                 <p>Pode por essa camiseta nos arquivos que já é um clássico.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCamisetas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'camisetas',
@@ -477,7 +524,7 @@ $produtos = [
                 <p>NARRADOR: É um dia ensolarado para contar boas histórias. Seja em VHS, mini DV, super 8, celular ou digital, um Pulta Take pode ser captado em qualquer mídia. Nada como juntar bons amigos para criar belas imagens e uma boa ficção. Alguém segura a câmera na mão, outro com a ideia na cabeça, alguém com braços fortes segura o microfone. Aquele parceiro com os dentes mais brancos e a dicção menos pior pode atuar, e a namorada dele até fez aula de teatro. O catering é um bolovo do boteco e uma coca-cola.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCamisetas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'camisetas',
@@ -505,7 +552,7 @@ $produtos = [
                 <p class="mt-1">Bolovo® Video Crew. Pulta takes por profissionais amadores.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCamisetas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'camisetas',
@@ -531,7 +578,7 @@ $produtos = [
                 <p>A tensão dos opostos. Forças que atuam em direções diferentes. Me faz pensar sobre o meu tempo que devagar vai se extinguindo, mas que aprecio a oportunidade que ele me dá de ganhar experiência e fazer acertos. Como é maneiro observar uma bela vista. Que você tenha um bom dia :)</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCamisetas,
         'composicao' => $composicao,
         'lavagem' => 'Peça colorida, lavar separadamente. Lavagem manual com água fria e sabão neutro. Secar no varal. Não usar alvejante. Não deixar de molho. Não lavar na máquina. Não colocar na secadora. Não lavar a seco. Não passar.',
         'categoria' => 'camisetas',
@@ -557,7 +604,7 @@ $produtos = [
                 <p class="text-xs">Oh, céus! Uma avalanche de novo. Um dos eventos mais lindos e avassaladores da natureza… mas espere! DAFT PUNK PLAYS SOFTLY IN THE BACKGROUND O que é aquilo que vem, montado numa prancha em alta velocidade em meio à nevasca? E que peita insana é aquela?! Nova peita 100% algodão com estampa exclusiva da Bolovo. Para férias em Bariloche, festas e encontros invernais, radicalidades e experimentos em geral.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCamisetas,
         'composicao' => $composicao,
         'lavagem' => 'Peça colorida, lavar separadamente. Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'camisetas',
@@ -585,7 +632,7 @@ $produtos = [
                 <p>Assim que são feitos os vira-latas. We Love Pets. Não compre, adote.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCamisetas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'camisetas',
@@ -611,7 +658,7 @@ $produtos = [
                 <p>São 6h da tarde, olha pro relógio. Já já cai a caneta. Melhor ir pra casa descansar. Alguém comenta que vai tomar uma pra refrescar. Faz calor, aquele ar-condicionado véio nem dá conta mais. Só uma para passar o calor. Outra porque parece que esquentou depois de perder no truco. Ih, eu conheço aquela galera. Estamos no carro de quem? Acho que é a Liberdade. Tá tocando "Creed", depois de "Evidências". Deve ser um karaokê. Daqui a pouco preciso trabalhar de novo. Minha cabeça. Ramela ou bafo? Não vejo a hora do dia acabar. São 6h da tarde. Já já cai a caneta.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCamisetas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'camisetas',
@@ -637,7 +684,7 @@ $produtos = [
                 <p>Você vê um diagrama, uma organização do ciclo da vida. Ali todas as decisões, oportunidades, emoções vão definindo que rumo estamos tomando nesse grande mapa, nesse espetáculo cósmico em que viajamos por essas escolhas e vivenciamos bons e maus momentos. É preciso lembrar de rir um pouco para lidar com todas as curvas e reviravoltas.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCamisetas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'camisetas',
@@ -663,7 +710,7 @@ $produtos = [
                 <p>Camiseta para vestir nos dias memoráveis! Com alguma boa vontade e um punhado de sabão em pó, você pode vesti-la todos os dias :) E bons momentos pra você, sempre!</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCamisetas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'camisetas',
@@ -690,7 +737,7 @@ $produtos = [
                 <p>Bolovo Classics com logo mokadinho do jeito que a gente gosta, mais básico que isso não tem. 100% algodão fio .40, mais leve pra você suar sem abrir uma pizzaria em cada axila :)</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCamisetas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'camisetas',
@@ -716,7 +763,7 @@ $produtos = [
                 <p>Você vê um diagrama, uma organização do ciclo da vida. Ali todas as decisões, oportunidades, emoções vão definindo que rumo estamos tomando nesse grande mapa, nesse espetáculo cósmico em que viajamos por essas escolhas e vivenciamos bons e maus momentos. É preciso lembrar de rir um pouco para lidar com todas as curvas e reviravoltas.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCamisetas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'camisetas',
@@ -742,7 +789,7 @@ $produtos = [
                 <p>Camiseta para vestir nos dias memoráveis! Com alguma boa vontade e um punhado de sabão em pó, você pode vesti-la todos os dias :) E bons momentos pra você, sempre!</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCamisetas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'camisetas',
@@ -770,7 +817,7 @@ $produtos = [
                 <p class="mt-1">Att. Sabato Pomerigio Diretor Geral de Expedições</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCamisetas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'camisetas',
@@ -800,7 +847,7 @@ $produtos = [
                 <p>Esta é a pérola que todo aspirante a film maker sempre sonhou. Jaqueta pesadassa pra nunca passar frio no ar condicionado do estúdio ou nas externas noturnas. Em resistente sarja marrom com marca registrada BLVision bordada e aplicação de cetim nas costas. O verdadeiro Amazing Technicolor Dreamcoat. Bolsos em todo canto, dois fora, um dentro. Gancho pra chaves e forro em nylon macio. Para o conforto e elegância do profissional audiovisual.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCasacos,
         'composicao' => $composicao,
         'lavagem' => 'Lavagem manual com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não lavar na máquina. Não colocar na secadora. Não lavar a seco. Não passar.',
         'categoria' => 'casacos',
@@ -830,7 +877,7 @@ $produtos = [
                 <p class="text-xs mt-1">Aqui em tom azul marinho, pra rolar uma colorimetria linda diante de paisagens secas. Mas as úmidas também. Viu só, vai bem com tudo.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCasacos,
         'composicao' => $composicao,
         'lavagem' => 'Lavar com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Passar em temperatura baixa Não lavar a seco.',
         'categoria' => 'casacos',
@@ -857,7 +904,7 @@ $produtos = [
                 <p class="text-xs mt-1">Para passeios, viagens, expedições e jornadas. Assista à lua em frente a uma fogueira, durma na grama ou cavalgue por aí com a nova Jaqueta Mountain Dins.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCasacos,
         'composicao' => $composicao,
         'lavagem' => 'Lavagem manual com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não lavar na máquina. Não colocar na secadora. Não lavar a seco. Não passar.',
         'categoria' => 'casacos',
@@ -885,7 +932,7 @@ $produtos = [
                 <p class="text-xs mt-1">Bucketzin dupla face em tactel e em tecido atoalhado macio pra humanizar esse coração de pedra. Não é porque você é da máfia que não pode fazer carinho em um gato.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCasacos,
         'composicao' => $composicao,
         'lavagem' => 'Lavagem manual com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não lavar na máquina. Não colocar na secadora. Não lavar a seco. Não passar.',
         'categoria' => 'casacos',
@@ -913,7 +960,7 @@ $produtos = [
                 <p>Encare as trilhas com seus Mullets e óculos pendurados no pescoço. Deixe seus véios orgulhosos.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCasacos,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'casacos',
@@ -940,7 +987,7 @@ $produtos = [
                 <p class="text-xs mt-1">Fleece médio, finalização em Tactel para cortar um pouco do vento. Com bolsos laterais - as mãos não congelam!</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCasacos,
         'composicao' => $composicao,
         'lavagem' => 'Lavagem manual com água fria e sabão neutro. Secar no varal. Não usar alvejante. Não deixar de molho. Não lavar na máquina. Não colocar na secadora. Não lavar a seco. Não passar.',
         'categoria' => 'casacos',
@@ -967,7 +1014,7 @@ $produtos = [
                 <p class="text-xs mt-1">Nossos Fleeces fazem o “Kit Master Expedição Congelante”, é só usar fleece por baixo e adicionar uma Parka por cima. Um segura a bronca do vento e chuva o outro te faz sentir no sofá assistindo um filme numa tarde inverno depois da escola. Dá até pra ir pra neve, Luiza Xaparral agarantche.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCasacos,
         'composicao' => $composicao,
         'lavagem' => 'Lavagem manual com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não lavar na máquina. Não colocar na secadora. Não lavar a seco. Não passar.',
         'categoria' => 'casacos',
@@ -994,7 +1041,7 @@ $produtos = [
                 <p class="text-xs mt-1">Seja para tomar chocolate quente em Campos ou quentão na Festa Junina do bairro, o Camp Fleece é feito com tecido de edredom, macio ao toque e quentinho como se enrolar num cobertor. Quantas vezes você já não quis poder fazer isso no Inverno? Chegou a oportunidade de sair aquecido e sofisticado, sem ser julgado pela sociedade.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCasacos,
         'composicao' => $composicao,
         'lavagem' => 'Peça colorida, lavar separadamente. Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'casacos',
@@ -1022,7 +1069,7 @@ $produtos = [
                 <p>Friozin, né? Pega um casaco, fiote! As mãos não congelam.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCasacos,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco.',
         'categoria' => 'casacos',
@@ -1048,7 +1095,7 @@ $produtos = [
                 <p class="text-xs">Friozin né? Pega um casaco fiote! Na dúvida vai qual? Aquele que você nunca erra! Esse é o nosso moletom Basic. Good Times Bro :) Vai que vai</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCasacos,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco.',
         'categoria' => 'casacos',
@@ -1075,7 +1122,7 @@ $produtos = [
                 <p class="text-xs mt-1">Bolovo Productions Good Times Co. Since 2006</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCasacos,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco.',
         'categoria' => 'casacos',
@@ -1106,7 +1153,7 @@ $produtos = [
             <p class="text-xs mt-1">Parece que você ta usando uma Chino, mas o nível de conforto é outro.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCalcas,
         'composicao' => $composicao,
         'lavagem' => 'Peça colorida, lavar separadamente. Lavagem manual com água fria. Secar no varal. Não usar alvejante. Não colocar na máquina de lavar. Não colocar na secadora. Não lavar a seco. Passar em temperatura média.',
         'categoria' => 'calcas',
@@ -1133,7 +1180,7 @@ $produtos = [
             <p class="text-xs mt-1">Parece que você ta usando uma Chino, mas o nível de conforto é outro. Em sarja 100% algodão cinza chumbo, elegante e versátil para férias de inverno e rolês com amigos em geral.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCalcas,
         'composicao' => $composicao,
         'lavagem' => 'Peça colorida, lavar separadamente. Lavagem manual com água fria. Secar no varal. Não usar alvejante. Não colocar na máquina de lavar. Não colocar na secadora. Não lavar a seco. Passar em temperatura média.',
         'categoria' => 'calcas',
@@ -1159,7 +1206,7 @@ $produtos = [
             <p class="text-xs">Quer sair de casa bem arrumado, mas no conforto que você pediu pra Jah? A gente também quer. Por isso desenvolvemos nossa Good Times Pants Cargo. Parece que você ta usando uma Chino, mas o nível de conforto é outro. Em tecido ripstop, elegante e versátil para todas as ocasiões. Tem ainda bolsos laterais pra largar as chaves e um lanchinho pra depois.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCalcas,
         'composicao' => $composicao,
         'lavagem' => 'Peça colorida, lavar separadamente. Lavagem manual com água fria. Secar no varal. Não usar alvejante. Não colocar na máquina de lavar. Não colocar na secadora. Não lavar a seco. Passar em temperatura média.',
         'categoria' => 'calcas',
@@ -1186,7 +1233,7 @@ $produtos = [
             <p class="text-xs mt-1">Parece que você ta usando uma Chino, mas o nível de conforto é outro.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCalcas,
         'composicao' => $composicao,
         'lavagem' => 'Peça colorida, lavar separadamente. Lavagem manual com água fria. Secar no varal. Não usar alvejante. Não colocar na máquina de lavar. Não colocar na secadora. Não lavar a seco. Passar em temperatura média.',
         'categoria' => 'calcas',
@@ -1217,7 +1264,7 @@ $produtos = [
             <p class="text-xs mt-1">Faça do seu jeito!</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCalcas,
         'composicao' => $composicao,
         'lavagem' => 'Peça colorida, lavar separadamente. Lavagem manual com água fria. Secar no varal. Não usar alvejante. Não colocar na máquina de lavar. Não colocar na secadora. Não lavar a seco. Passar em temperatura média.',
         'categoria' => 'calcas',
@@ -1245,7 +1292,7 @@ $produtos = [
             <p class="text-xs">Quando você veste essa calça se torna instantaneamente 3x mais elegante e fluente em francês. É o veludo. Perfeito para confraternizações ao ar livre.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCalcas,
         'composicao' => $composicao,
         'lavagem' => 'Peça colorida, lavar separadamente. Lavagem manual com água fria. Secar no varal. Não usar alvejante. Não colocar na máquina de lavar. Não colocar na secadora. Não lavar a seco. Passar em temperatura média.',
         'categoria' => 'calcas',
@@ -1272,7 +1319,7 @@ $produtos = [
             <p class="text-xs mt-1">Agora na versão preta pros góticos e emos de plantão. Peça chave essencial pro seu guarda-roupas, que combina com tudo e de quebra ainda esquenta suas lindas pernas nesse frio de inverno.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCalcas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não colocar na secadora. Não lavar a seco. Passar em temperatura média.',
         'categoria' => 'calcas',
@@ -1300,7 +1347,7 @@ $produtos = [
             <p class="text-xs">Esse Jeans é um pau pra toda obra! Só precisa lavar em caso de catinga extrema, do contrário, é uma parceira em forma de calças pra você usar todo dia até ela sair andando sozinha. Testado e aprovado em rolês de skate, cavalo e mutirões de laje.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasCalcas,
         'composicao' => $composicao,
         'lavagem' => 'Lavagem manual com água fria. Secar no varal. Não usar alvejante. Não colocar na máquina de lavar. Não colocar na secadora. Não lavar a seco. Passar em temperatura média.',
         'categoria' => 'calcas',
@@ -1331,7 +1378,7 @@ $produtos = [
             <p class="text-xs">Os Shorts da Bolovo® foram modelados para ficar levemente acima do joelho. Não somos europeus aqui.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasBermudas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'bermudas',
@@ -1358,7 +1405,7 @@ $produtos = [
             <p class="text-xs">Os Shorts da Bolovo® foram modelados para ficar levemente acima do joelho. Não somos europeus aqui.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasBermudas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'bermudas',
@@ -1386,7 +1433,7 @@ $produtos = [
             <p class="text-xs">Os Shorts da Bolovo® foram modelados para ficar levemente acima do joelho. Não somos europeus aqui.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasBermudas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'bermudas',
@@ -1413,7 +1460,7 @@ $produtos = [
             <p class="text-xs">Os Shorts da Bolovo® foram modelados para ficar levemente acima do joelho. Não somos europeus aqui.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasBermudas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'bermudas',
@@ -1440,7 +1487,7 @@ $produtos = [
             <p class="text-xs">Os Shorts da Bolovo® foram modelados para ficar levemente acima do joelho. Não somos europeus aqui.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasBermudas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'bermudas',
@@ -1467,7 +1514,7 @@ $produtos = [
             <p class="text-xs">O clássico FDS Shorts de sarja da Bolovo® agora na versão jeans preto. Pra cavalgar com mais elasticidade e dar um ollie, mas também para ocasiões formais e rolês comuns.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasBermudas,
         'composicao' => $composicao,
         'lavagem' => 'Peça colorida, lavar separadamente. Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'bermudas',
@@ -1497,7 +1544,7 @@ $produtos = [
             <p class="text-xs">Os Shorts da Bolovo® foram modelados para ficar levemente acima do joelho. Não somos europeus aqui.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasBermudas,
         'composicao' => $composicao,
         'lavagem' => 'Peça colorida, lavar separadamente. Lavagem manual com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não lavar na máquina. Não colocar na secadora. Não lavar a seco.',
         'categoria' => 'bermudas',
@@ -1523,7 +1570,7 @@ $produtos = [
             <p class="text-xs">É sempre tempo para viver os Bons Momentos. Não precisa esperar a hora perfeita ou o alinhamento dos astros. Não tem segredo e nem receita, e essa é a maior preciosidade deles. Qualquer um pode vivenciar, seja numa tarde qualquer com os amigos de longa data, seja numa ida ao parque no feriado ou no caos das viagens em família, os Bons Momentos estão aí pra lembrar a gente que a vida é dahora!</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasBermudas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'bermudas',
@@ -1551,7 +1598,7 @@ $produtos = [
             <p class="text-xs">_Nessa caminhada ficaríamos com um sorriso no rosto se a Bolovo® puder, de alguma forma, ser uma companheira dos bons momentos para você e sua jornada._</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasBermudas,
         'composicao' => $composicao,
         'lavagem' => 'Peça colorida, lavar separadamente. Lavagem manual com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não lavar na máquina. Não colocar na secadora. Não lavar a seco. Não passar.',
         'categoria' => 'bermudas',
@@ -1577,7 +1624,7 @@ $produtos = [
             <p>Bolovo Prod Classics Since 2006</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasBermudas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora.',
         'categoria' => 'bermudas',
@@ -1603,7 +1650,7 @@ $produtos = [
             <p class="text-xs">Agora você mora em Cayo Largo. Entre um Mojito ou uma Michelada, mas pra beber pelo resto da sua estadia, qual você escolhe?</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasBermudas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora.',
         'categoria' => 'bermudas',
@@ -1631,7 +1678,7 @@ $produtos = [
             <p class="text-xs">Os Shorts de Tactel da Bolovo® foram modelados para ficar levemente acima do joelho. Não somos europeus aqui.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasBermudas,
         'composicao' => $composicao,
         'lavagem' => 'Peça colorida, lavar separadamente. Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'bermudas',
@@ -1659,7 +1706,7 @@ $produtos = [
             <p class="text-xs">Quando você veste esse shorts se torna instantaneamente 3x mais elegante e fluente em francês. É o veludo. Perfeito para confraternizações ao ar livre.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasBermudas,
         'composicao' => $composicao,
         'lavagem' => 'Peça colorida, lavar separadamente. Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar em temperatura média.',
         'categoria' => 'bermudas',
@@ -1685,7 +1732,7 @@ $produtos = [
             <p class="text-xs">Quando você veste esse shorts se torna instantaneamente 3x mais elegante e fluente em francês. É o veludo. Perfeito para confraternizações ao ar livre.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasBermudas,
         'composicao' => $composicao,
         'lavagem' => 'Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora.',
         'categoria' => 'bermudas',
@@ -1712,7 +1759,7 @@ $produtos = [
             <p class="text-xs mt-1">Quando você veste esse shorts se torna instantaneamente 3x mais elegante e fluente em francês. É o veludo. Perfeito para confraternizações ao ar livre.</p>
         ',
         'fabricacao' => 'FABRICADO NO BRASIL',
-        'medidas' => $medidas,
+        'medidas' => $medidasBermudas,
         'composicao' => $composicao,
         'lavagem' => 'Peça colorida, lavar separadamente. Lavar na máquina com água fria. Secar no varal. Não usar alvejante. Não deixar de molho. Não colocar na secadora. Não lavar a seco. Passar do lado avesso em temperatura média.',
         'categoria' => 'bermudas',

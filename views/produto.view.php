@@ -37,30 +37,20 @@
                 <thead>
                     <tr class="text-sm">
                         <th class="p-1 text-left"></th>
-                        <?php foreach ($produto['medidas']['tamanhos'] as $tamanhos): ?>
+                        <?php foreach ($tabelaDeMedidas['tamanhos'] as $tamanhos): ?>
                             <th class="p-1 text-center"><?= $tamanhos ?></th>
                         <?php endforeach; ?>
                     </tr>
                 </thead>
                 <tbody>
+                <?php foreach (array_slice($tabelaDeMedidas, 1) as $key => $value): ?>
                     <tr>
-                        <td class="border border-black p-1 text-left">Peito</td>
-                        <?php foreach ($produto['medidas']['peito'] as $peito): ?>
-                            <td class="border border-black p-1 text-center"><?= $peito ?></td>
+                        <td class="border border-black p-1 text-left"><?= $key ?></td>
+                        <?php foreach ($value as $item): ?>
+                            <td class="border border-black p-1 text-center"><?= $item ?></td>
                         <?php endforeach; ?>
                     </tr>
-                    <tr>
-                        <td class="border border-black p-1 text-left">Comprimento</td>
-                        <?php foreach ($produto['medidas']['comprimento'] as $comprimento): ?>
-                            <td class="border border-black p-1 text-center"><?= $comprimento ?></td>
-                        <?php endforeach; ?>
-                    </tr>
-                    <tr>
-                        <td class="border border-black p-1 text-left">Manga</td>
-                        <?php foreach ($produto['medidas']['manga'] as $manga): ?>
-                            <td class="border border-black p-1 text-center"><?= $manga ?></td>
-                        <?php endforeach; ?>
-                    </tr>
+                <?php endforeach; ?>
                 </tbody>
             </table>
 
