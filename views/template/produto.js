@@ -1,3 +1,19 @@
+function selecionarElemento() {
+  const idsValidos = ["p", "m", "g", "gg", "xgg"];
+  const botoes = document.querySelectorAll("li");
+  
+  botoes.forEach((botao) => {
+    botao.addEventListener("click", function () {
+      if (idsValidos.includes(this.id)) {
+        document.querySelectorAll(".selecionado").forEach((el) => el.classList.remove("selecionado"));
+        return this.classList.toggle("selecionado");
+      } 
+    });
+  });
+}
+
+selecionarElemento();
+
 function exibirElemento($b, $e, elementos) {
   const btn = document.getElementById($b);
   const element = document.getElementById($e);

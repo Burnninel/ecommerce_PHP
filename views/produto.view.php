@@ -18,7 +18,7 @@
         <span class="text-md"><?= $produto['preco'] ?></span>
         <ul class="flex justify-between py-[4vh] uppercase text-sm">
             <?php foreach ($produto['medidas']['tamanhos'] as $tamanhos): ?>
-                <li tabindex="0" class="border hover:border-gray-200 rounded-lg px-2 cursor-pointer focus:bg-gray-900 focus:text-gray-50"><?= $tamanhos ?></li>
+                <li tabindex="0" class="border rounded-lg px-2 cursor-pointer" id="<?= $tamanhos ?>"><?= $tamanhos ?></li>
             <?php endforeach; ?>
         </ul>
         <button class="w-full border-2 border-gray-900 rounded-xl border-gray-900 p-1 hover:bg-gray-900 hover:text-gray-50 font-medium uppercase">comprar</button>
