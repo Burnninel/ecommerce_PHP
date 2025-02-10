@@ -54,13 +54,6 @@ $medidasBermudas = gerarMedidas(
     ]
 );
 
-// $medidas = [
-//     'tamanhos' => ['p', 'm', 'g', 'gg', 'xgg'],
-//     'peito' => ['p' => '53 cm', 'm' => '56 cm', 'g' => '59 cm', 'gg' => '62 cm', 'xgg' => '65 cm'],
-//     'comprimento' => ['p' => '72 cm', 'm' => '74 cm', 'g' => '76 cm', 'gg' => '80 cm', 'xgg' => '84 cm'],
-//     'manga' => ['p' => '22 cm', 'm' => '23 cm', 'g' => '24 cm', 'gg' => '25 cm', 'xgg' => '26 cm'],
-// ];
-
 $produtos = [
 
     // camisetas
