@@ -36,21 +36,22 @@
             <table id="medidasProduto" class="hidden w-full uppercase text-[0.6rem]">
                 <thead>
                     <tr class="text-sm">
-                        <th class="p-1 text-left"></th>
-                        <?php foreach ($tabelaDeMedidas['tamanhos'] as $tamanhos): ?>
-                            <th class="p-1 text-center"><?= $tamanhos ?></th>
+                        <th class="p-1 text-left"></th> <!-- Cabeçalho vazio para o primeiro valor (medida) -->
+                        <?php foreach ($tabelaDeMedidas as $tamanhos): ?>
+                            <th class="p-1 text-center"><?= $tamanhos->tamanho ?></th>
                         <?php endforeach; ?>
                     </tr>
                 </thead>
                 <tbody>
-                <?php foreach (array_slice($tabelaDeMedidas, 1) as $key => $value): ?>
-                    <tr>
-                        <td class="border border-black p-1 text-left"><?= $key ?></td>
-                        <?php foreach ($value as $item): ?>
-                            <td class="border border-black p-1 text-center"><?= $item ?></td>
-                        <?php endforeach; ?>
-                    </tr>
-                <?php endforeach; ?>
+                    <?php
+                     foreach (array_slice($colunas, 3) as $coluna): ?>
+                        <tr>
+                            <td class="border border-black p-1 text-left"><?= ucfirst($coluna) ?></td>
+                            <?php foreach ($tabelaDeMedidas as $item): ?>
+                                <td class="border border-black p-1 text-left"><?= $item->{$coluna} ?></td>
+                            <?php endforeach; ?>
+                        </tr>
+                    <?php endforeach; ?>
                 </tbody>
             </table>
 
@@ -87,3 +88,13 @@
         </svg>
     </button>
 </section>
+
+<?php
+                      foreach (array_slice($colunas, 3) as $coluna): ?>
+                        <tr>
+                            <td class="border border-black p-1 text-left"><?= ($coluna) ?></td>
+                            <?php foreach ($tabelaDeMedidas as $item): ?>
+                                <td class="border border-black p-1 text-left"><?= $item->$medida ?></td>
+                            <?php endforeach; ?>
+                        </tr>
+                    <?php endforeach; ?>

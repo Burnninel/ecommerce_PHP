@@ -11,7 +11,8 @@ if (!isset($produto)) {
     return abort(404);
 };
 
-$tabelaDeMedidas = array_filter($produto['medidas'], fn($item) => $item !== null);
+$tabelaDeMedidas = (new DB())->medidas($id);
+$colunas = (new DB())->colunas();
 
 $bestSellers = filtrarprodutos($produtos, 'bestSeller', 8, $id);
 
@@ -19,4 +20,5 @@ view('produto', [
     'produto' => $produto,
     'bestSellers' => $bestSellers,
     'tabelaDeMedidas' => $tabelaDeMedidas,
+    'colunas' => $colunas,
 ]);
