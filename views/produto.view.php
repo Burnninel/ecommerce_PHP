@@ -2,9 +2,9 @@
     <div class="flex w-full lg:w-1/2 justify-center lg:py-[6vh]">
         <div class="swiper bannerProductImg h-full lg:h-[80vh]">
             <div class="swiper-wrapper lg:ml-[4vh]">
-                <?php foreach ($produto['imagens'] as $imagens): ?>
+                <?php foreach ($imagens as $img): ?>
                     <div class="swiper-slide">
-                        <img src="/img/<?= $produto['categoria'] ?>/<?= $imagens ?>.png" class="h-full">
+                        <img src="/img/<?= $produto->categoria ?>/<?= $imagens->caminho ?>.<?= $imagens->tipo ?>" class="h-full">
                     </div>
                 <?php endforeach; ?>
             </div>
@@ -14,17 +14,17 @@
         </div>
     </div>
     <div class="flex flex-col lg:w-1/3 mt-[8vh] px-[4vh]">
-        <h2 class="text-md font-semibold"><?= $produto['nome'] ?></h2>
-        <span class="text-md"><?= $produto['preco'] ?></span>
+        <h2 class="text-md font-semibold"><?= $produto->nome ?></h2>
+        <span class="text-md">R$ <?= $produto->preco ?></span>
         <ul class="flex justify-between py-[4vh] uppercase text-sm">
-            <?php foreach ($produto['medidas']['tamanhos'] as $tamanhos): ?>
-                <li tabindex="0" class="border rounded-lg px-2 cursor-pointer" id="<?= $tamanhos ?>"><?= $tamanhos ?></li>
+            <?php foreach ($tabelaDeMedidas as $tamanhos): ?>
+                <li tabindex="0" class="border rounded-lg px-2 cursor-pointer" id="<?= $tamanhos->tamanho ?>"><?= $tamanhos->tamanho ?></li>
             <?php endforeach; ?>
         </ul>
         <button class="w-full border-2 border-gray-900 rounded-xl border-gray-900 p-1 hover:bg-gray-900 hover:text-gray-50 font-medium uppercase">comprar</button>
         <div class="flex flex-col pt-[4vh]">
-            <div class="text-sm"><?= $produto['descricao'] ?></div>
-            <p class="uppercase pt-4"><?= $produto['fabricacao'] ?></p>
+            <div class="text-sm"><?= $produto->descricao ?></div>
+            <p class="uppercase pt-4"><?= $produto->fabricacao ?></p>
         </div>
         <ul class="flex uppercase gap-4 mt-[3vh]">
             <li id="medidas" class="cursor-pointer">medidas</li>
@@ -36,9 +36,9 @@
             <table id="medidasProduto" class="hidden w-full uppercase text-[0.6rem]">
                 <thead>
                     <tr class="text-sm">
-                        <th class="p-1 text-left"></th> <!-- Cabeçalho vazio para o primeiro valor (medida) -->
-                        <?php foreach ($tabelaDeMedidas as $tamanhos): ?>
-                            <th class="p-1 text-center"><?= $tamanhos->tamanho ?></th>
+                        <th class="p-1 text-left"></th> 
+                        <?php foreach ($tabelaDeMedidas as $tamanho): ?>
+                            <th class="p-1 text-center"><?= $tamanho->tamanho ?></th>
                         <?php endforeach; ?>
                     </tr>
                 </thead>
@@ -56,13 +56,11 @@
             </table>
 
             <div id="composicaoPorduto" class="hidden space-y-1 text-sm">
-                <?php foreach ($produto['composicao'] as $composicao): ?>
-                    <p><?= $composicao ?></p>
-                <?php endforeach; ?>
+                <p><?= $produto->composicao ?></p>
             </div>
 
             <div id="lavagemProduto" class="hidden text-sm">
-                <p><?= $produto['lavagem'] ?></p>
+                <p><?= $produto->lavagem ?></p>
             </div>
         </div>
     </div>
@@ -88,13 +86,3 @@
         </svg>
     </button>
 </section>
-
-<?php
-                      foreach (array_slice($colunas, 3) as $coluna): ?>
-                        <tr>
-                            <td class="border border-black p-1 text-left"><?= ($coluna) ?></td>
-                            <?php foreach ($tabelaDeMedidas as $item): ?>
-                                <td class="border border-black p-1 text-left"><?= $item->$medida ?></td>
-                            <?php endforeach; ?>
-                        </tr>
-                    <?php endforeach; ?>

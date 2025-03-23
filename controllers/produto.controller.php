@@ -4,21 +4,22 @@ require 'dados.php';
 
 $id = $_REQUEST['id'];
 
-$filtrado = array_filter($produtos, fn($item) => $item['id'] == $id);
-$produto = array_pop($filtrado);
-
-if (!isset($produto)) {
-    return abort(404);
-};
+$produto = (new DB())->produto($id);
 
 $tabelaDeMedidas = (new DB())->medidas($id);
+
+$medidas = array_filter($tabelaDeMedidas, fn($item) => $item !== null);
+
 $colunas = (new DB())->colunas();
+
+$imagens = (new DB())->imagens($id);
 
 $bestSellers = filtrarprodutos($produtos, 'bestSeller', 8, $id);
 
 view('produto', [
     'produto' => $produto,
+    'imagens' => $imagens,
     'bestSellers' => $bestSellers,
-    'tabelaDeMedidas' => $tabelaDeMedidas,
+    'tabelaDeMedidas' => $medidas,
     'colunas' => $colunas,
 ]);

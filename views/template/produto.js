@@ -5,11 +5,14 @@ function selecionarElemento() {
   botoes.forEach((botao) => {
     botao.addEventListener("click", function () {
       if (idsValidos.includes(this.id)) {
+        console.log('09')
         document.querySelectorAll(".selecionado").forEach((el) => el.classList.remove("selecionado"));
         return this.classList.toggle("selecionado");
       } 
     });
   });
+  
+  
 }
 
 selecionarElemento();
@@ -17,6 +20,7 @@ selecionarElemento();
 function exibirElemento($b, $e, elementos) {
   const btn = document.getElementById($b);
   const element = document.getElementById($e);
+
 
   btn.addEventListener("click", function () {
     if (element.classList.contains("none")) {
