@@ -2,9 +2,15 @@
 
 class DB
 {
+    private $db;
+
+    public function __construct() {
+        $this->db = new PDO('sqlite:database.sqlite');
+    }
+
     public function produto($id = null)
     {
-        $db = new PDO('sqlite:database.sqlite');
+        // $db = new PDO('sqlite:database.sqlite');
 
         $query = "
             WITH ImagensClassificadas AS (
@@ -37,7 +43,7 @@ class DB
         if ($id) $query .= " WHERE p.id = :id";
         $query .= " GROUP BY p.id";
 
-        $prepare = $db->prepare($query);
+        $prepare = $this->db->prepare($query);
         if ($id) $prepare->bindParam(':id', $id);
 
         $prepare->execute();
@@ -84,11 +90,9 @@ class DB
 
     public function medidas($id = null)
     {
-        $db = new PDO('sqlite:database.sqlite');
-
         $query = "SELECT * FROM tabela_medidas";
         if ($id) $query .= " WHERE produto_id = :id";
-        $prepare = $db->prepare($query);
+        $prepare = $this->db->prepare($query);
         if ($id) $prepare->bindParam(':id', $id);
         $prepare->execute();
         $tabelaMedidas = $prepare->fetchAll();
@@ -111,11 +115,10 @@ class DB
 
     public function colunas()
     {
-        $db = new PDO('sqlite:database.sqlite');
-        $colunas = $db->query("SELECT name FROM pragma_table_info('tabela_medidas');")->fetchAll(PDO::FETCH_COLUMN);
+        $colunas = $this->db->query("SELECT name FROM pragma_table_info('tabela_medidas');")->fetchAll(PDO::FETCH_COLUMN);
 
-        return array_filter($colunas, function ($coluna) use ($db) {
-            return $db->query("SELECT COUNT(*) FROM tabela_medidas WHERE $coluna IS NULL")->fetchColumn() == 0;
+        return array_filter($colunas, function ($coluna) {
+            return $this->db->query("SELECT COUNT(*) FROM tabela_medidas WHERE $coluna IS NULL")->fetchColumn() == 0;
         });
     }
 }
