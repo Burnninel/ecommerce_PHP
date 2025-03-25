@@ -52,6 +52,24 @@
     </button>
 </section>
 
+<section class="flex justify-center items-center gap-[1vh]">
+    <?php
+    foreach ($banner as $index => $item): ?>
+        <div class="relative h-[50vw] w-1/2 cursor-pointer">
+            <a href="produto?id=<?= $item->id ?>">
+                <img src="/img/<?= $item->categoria ?>/<?= ($index % 2 === 0) ? $item->imagens[0] : $item->imagens[3] ?>"
+                    alt="Imagem da frente"
+                    class="absolute inset-0 w-full h-full object-cover 
+                            transition-opacity duration-500 hover:opacity-0">
+                <img src="/img/<?= $item->categoria ?>/<?= ($index % 2 === 0) ? $item->imagens[3] : $item->imagens[1] ?>"
+                    alt="Imagem de costas"
+                    class="absolute inset-0 w-full h-full object-cover 
+                            transition-opacity duration-500 opacity-0 hover:opacity-100">
+            </a>
+        </div>
+    <?php endforeach; ?>
+</section>
+
 <section class="flex justify-center items-center" id="lancamentos">
     <div class="w-full">
         <h1 class="text-[2.5vh] font-bold text-gray-900 uppercase my-[4vh] text-center">Lançamentos</h1>
