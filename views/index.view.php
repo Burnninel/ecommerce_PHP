@@ -35,9 +35,9 @@
     <h1 class="text-[2.5vh] font-bold text-gray-900 uppercase text-center mb-[2vh]">mais vendidos</h1>
     <div class="swiper-wrapper flex items-center h-full w-full">
         <?php foreach ($bestSellers as $produto): ?>
-                <article class="swiper-slide flex w-[calc(25%)] justify-around cursor-pointer">
-                    <?php require "views/template/cardProduto.php"; ?>
-                </article>
+            <article class="swiper-slide flex w-[calc(25%)] justify-around cursor-pointer">
+                <?php require "views/template/cardProduto.php"; ?>
+            </article>
         <?php endforeach; ?>
     </div>
     <button class="swiper-button-next nextBannerBestSellers">
@@ -53,8 +53,7 @@
 </section>
 
 <section class="flex justify-center items-center gap-[1vh]">
-    <?php
-    foreach ($banner as $index => $item): ?>
+    <?php foreach ($banner as $index => $item): ?>
         <div class="relative h-[50vw] w-1/2 cursor-pointer">
             <a href="produto?id=<?= $item->id ?>">
                 <img src="/img/<?= $item->categoria ?>/<?= ($index % 2 === 0) ? $item->imagens[0] : $item->imagens[3] ?>"
