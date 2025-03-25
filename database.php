@@ -17,9 +17,9 @@ class DB
             )
             SELECT 
                 p.*, 
-                c.nome AS categoria, 
+                e.categoria AS categoria, 
+                e.modelo AS modelo, 
                 m.nome AS marca,
-                mo.nome AS modelo,
                 l.instrucoes AS lavagem,
                 MAX(CASE WHEN posicao_imagem = 1 THEN i.caminho || '.' || i.tipo END) AS imagem1,
                 MAX(CASE WHEN posicao_imagem = 2 THEN i.caminho || '.' || i.tipo END) AS imagem2,
@@ -27,9 +27,8 @@ class DB
                 MAX(CASE WHEN posicao_imagem = 4 THEN i.caminho || '.' || i.tipo END) AS imagem4,
                 MAX(CASE WHEN posicao_imagem = 5 THEN i.caminho || '.' || i.tipo END) AS imagem5
             FROM produtos AS p
-            JOIN categorias AS c ON c.id = p.categoria_id
+            JOIN especificacao AS e ON e.id = p.especificacao_id
             JOIN marcas AS m ON m.id = p.marca_id
-            JOIN modelos AS mo ON mo.id = p.modelo_id
             JOIN lavagem AS l ON l.id = p.lavagem_id
             LEFT JOIN ImagensClassificadas AS i ON i.produto_id = p.id
 
