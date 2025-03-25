@@ -34,12 +34,10 @@
 <section class="swiper bannerBestSellers mb-[4vh]">
     <h1 class="text-[2.5vh] font-bold text-gray-900 uppercase text-center mb-[2vh]">mais vendidos</h1>
     <div class="swiper-wrapper flex items-center h-full w-full">
-        <?php foreach ($bestSellers as $item): ?>
-            <?php if ($item["bestSeller"] === true): ?>
+        <?php foreach ($bestSellers as $produto): ?>
                 <article class="swiper-slide flex w-[calc(25%)] justify-around cursor-pointer">
                     <?php require "views/template/cardProduto.php"; ?>
                 </article>
-            <?php endif; ?>
         <?php endforeach; ?>
     </div>
     <button class="swiper-button-next nextBannerBestSellers">
@@ -54,33 +52,11 @@
     </button>
 </section>
 
-<section class="flex justify-center items-center gap-[1vh]">
-    <?php
-    $produtosComBanner = array_filter($produtos, function ($produto) {
-        return $produto['banner'] === true;
-    });
-    $produtosComBanner = array_slice($produtosComBanner, 0, 2);
-    foreach ($produtosComBanner as $index => $produto): ?>
-        <div class="relative h-[50vw] w-1/2 cursor-pointer">
-            <a href="produto?id=<?= $produto['id'] ?>">
-                <img src="/img/<?= $produto['categoria'] ?>/<?= ($index % 2 === 0) ? $produto['imagens']['frente'] : $produto['imagens']['adicional'] ?>.png"
-                    alt="Imagem da frente"
-                    class="absolute inset-0 w-full h-full object-cover 
-                            transition-opacity duration-500 hover:opacity-0">
-                <img src="/img/<?= $produto['categoria'] ?>/<?= ($index % 2 === 0) ? $produto['imagens']['adicional'] : $produto['imagens']['costas'] ?>.png"
-                    alt="Imagem de costas"
-                    class="absolute inset-0 w-full h-full object-cover 
-                            transition-opacity duration-500 opacity-0 hover:opacity-100">
-            </a>
-        </div>
-    <?php endforeach; ?>
-</section>
-
 <section class="flex justify-center items-center" id="lancamentos">
     <div class="w-full">
         <h1 class="text-[2.5vh] font-bold text-gray-900 uppercase my-[4vh] text-center">Lançamentos</h1>
         <ul class="flex flex-wrap gap-[1vh]">
-            <?php foreach ($lancamentos as $item): ?>
+            <?php foreach ($lancamentos as $produto): ?>
                 <li class="w-[calc(50%-1vh)] md:w-[calc(33.33%-1vh)] lg:w-[calc(25%-1vh)] cursor-pointer">
                     <?php require "views/template/cardProduto.php"; ?>
                 </li>

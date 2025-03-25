@@ -7,20 +7,36 @@ class DB
         $db = new PDO('sqlite:database.sqlite');
 
         $query = "
+            WITH ImagensClassificadas AS (
+                SELECT 
+                    produto_id, 
+                    caminho,
+                    tipo,
+                    ROW_NUMBER() OVER (PARTITION BY produto_id ORDER BY id) AS posicao_imagem
+            FROM imagens
+            )
             SELECT 
                 p.*, 
                 c.nome AS categoria, 
                 m.nome AS marca,
                 mo.nome AS modelo,
-                l.instrucoes AS lavagem
-            FROM 
-                produtos AS p
+                l.instrucoes AS lavagem,
+                MAX(CASE WHEN posicao_imagem = 1 THEN i.caminho || '.' || i.tipo END) AS imagem1,
+                MAX(CASE WHEN posicao_imagem = 2 THEN i.caminho || '.' || i.tipo END) AS imagem2,
+                MAX(CASE WHEN posicao_imagem = 3 THEN i.caminho || '.' || i.tipo END) AS imagem3,
+                MAX(CASE WHEN posicao_imagem = 4 THEN i.caminho || '.' || i.tipo END) AS imagem4,
+                MAX(CASE WHEN posicao_imagem = 5 THEN i.caminho || '.' || i.tipo END) AS imagem5
+            FROM produtos AS p
             JOIN categorias AS c ON c.id = p.categoria_id
             JOIN marcas AS m ON m.id = p.marca_id
-            JOIN modelos AS mo ON c.id = p.modelo_id
+            JOIN modelos AS mo ON mo.id = p.modelo_id
             JOIN lavagem AS l ON l.id = p.lavagem_id
+            LEFT JOIN ImagensClassificadas AS i ON i.produto_id = p.id
+
         ";
+
         if ($id) $query .= " WHERE p.id = :id";
+        $query .= " GROUP BY p.id";
 
         $prepare = $db->prepare($query);
         if ($id) $prepare->bindParam(':id', $id);
@@ -29,9 +45,12 @@ class DB
 
         $produtos = $prepare->fetchAll();
 
+        $retorno = [];
+
         foreach ($produtos as $item) {
             $produto = new Produto;
 
+            $produto->id = $item['id'];
             $produto->nome = $item['nome'];
             $produto->preco = $item['preco'];
             $produto->marca = $item['marca'];
@@ -45,33 +64,23 @@ class DB
             $produto->bestSeller = $item['best_seller'];
             $produto->lancamento = $item['lancamento'];
 
-            return $produto;
+            $produto->setImagens(
+                $item['imagem1'], 
+                $item['imagem2'], 
+                $item['imagem3'], 
+                $item['imagem4'], 
+                $item['imagem5']
+            );
+
+            $retorno[] = $produto;
         }
 
-        return null;
-    }
-
-    public function imagens($id = null)
-    {
-        $db = new PDO('sqlite:database.sqlite');
-
-        $query = "SELECT * FROM imagens";
-        if ($id) $query .= " WHERE produto_id = :id";
-        $prepare = $db->prepare($query);
-        if ($id) $prepare->bindParam(':id', $id);
-        $prepare->execute();
-        $imagens = $prepare->fetchAll();
-
-        foreach ($imagens as $item) {
-            $imagens = new Imagens;
-
-            $imagens->tipo = $item['tipo'];
-            $imagens->caminho = $item['caminho'];
-
-            return $imagens;
+        if ($id) {
+            return $retorno[0];
+            exit();
         }
 
-        return null;
+        return $retorno;
     }
 
     public function medidas($id = null)

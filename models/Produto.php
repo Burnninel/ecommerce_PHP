@@ -2,6 +2,7 @@
 
 class Produto 
 {
+    public $id;
     public $nome;
     public $preco;
     public $marca;
@@ -14,11 +15,17 @@ class Produto
     public $banner;
     public $bestSeller;
     public $lancamento;
+    public $imagens = []; 
+
+    public function setImagens($imagem1, $imagem2, $imagem3, $imagem4, $imagem5) {
+        $this->imagens = [$imagem1, $imagem2, $imagem3, $imagem4, $imagem5];
+    }
+
 }
 
 class Imagens 
 {
-    public $produto;
+    public $produtoId;
     public $tipo;
     public $caminho;
 }

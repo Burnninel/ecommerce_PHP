@@ -1,12 +1,11 @@
 <?php
 
-require 'dados.php';
+$produto = (new DB())->produto();
 
-$bestSellers = filtrarprodutos($produtos, 'bestSeller', 8);
-$lancamentos = filtrarprodutos($produtos, 'lancamento', 8);
+$bestSellers = array_filter($produto, fn($item) => $item->bestSeller === 1);
+$lancamentos = array_filter($produto, fn($item) => $item->lancamento === 1);
 
 view('index', [
-    'produtos' => $produtos,
     'bestSellers' => $bestSellers,
     'lancamentos' => $lancamentos,
 ]);

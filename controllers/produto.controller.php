@@ -1,25 +1,21 @@
 <?php
 
-require 'dados.php';
-
 $id = $_REQUEST['id'];
 
-$produto = (new DB())->produto($id);
+$listaProdutos = (new DB())->produto();
+$produto = array_values(array_filter($listaProdutos, fn($item) => $item->id == $id));
+
+$produto = !empty($produto) ? $produto[0] : null;
 
 $tabelaDeMedidas = (new DB())->medidas($id);
+$dimensoes = array_filter($tabelaDeMedidas, fn($item) => $item !== null);
+$medidas = (new DB())->colunas();
 
-$medidas = array_filter($tabelaDeMedidas, fn($item) => $item !== null);
-
-$colunas = (new DB())->colunas();
-
-$imagens = (new DB())->imagens($id);
-
-$bestSellers = filtrarprodutos($produtos, 'bestSeller', 8, $id);
+$bestSellers = array_filter($listaProdutos, fn($item) => $item->bestSeller !== 0);
 
 view('produto', [
     'produto' => $produto,
-    'imagens' => $imagens,
     'bestSellers' => $bestSellers,
-    'tabelaDeMedidas' => $medidas,
-    'colunas' => $colunas,
+    'dimensoes' => $dimensoes,
+    'medidas' => $medidas,
 ]);

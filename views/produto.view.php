@@ -2,9 +2,9 @@
     <div class="flex w-full lg:w-1/2 justify-center lg:py-[6vh]">
         <div class="swiper bannerProductImg h-full lg:h-[80vh]">
             <div class="swiper-wrapper lg:ml-[4vh]">
-                <?php foreach ($imagens as $img): ?>
+                <?php foreach ($produto->imagens as $img): ?>
                     <div class="swiper-slide">
-                        <img src="/img/<?= $produto->categoria ?>/<?= $imagens->caminho ?>.<?= $imagens->tipo ?>" class="h-full">
+                        <img src="/img/<?= $produto->categoria ?>/<?= $img ?>" class="h-full">
                     </div>
                 <?php endforeach; ?>
             </div>
@@ -17,7 +17,7 @@
         <h2 class="text-md font-semibold"><?= $produto->nome ?></h2>
         <span class="text-md">R$ <?= $produto->preco ?></span>
         <ul class="flex justify-between py-[4vh] uppercase text-sm">
-            <?php foreach ($tabelaDeMedidas as $tamanhos): ?>
+            <?php foreach ($dimensoes as $tamanhos): ?>
                 <li tabindex="0" class="border rounded-lg px-2 cursor-pointer" id="<?= $tamanhos->tamanho ?>"><?= $tamanhos->tamanho ?></li>
             <?php endforeach; ?>
         </ul>
@@ -37,18 +37,18 @@
                 <thead>
                     <tr class="text-sm">
                         <th class="p-1 text-left"></th> 
-                        <?php foreach ($tabelaDeMedidas as $tamanho): ?>
+                        <?php foreach ($dimensoes as $tamanho): ?>
                             <th class="p-1 text-center"><?= $tamanho->tamanho ?></th>
                         <?php endforeach; ?>
                     </tr>
                 </thead>
                 <tbody>
                     <?php
-                     foreach (array_slice($colunas, 3) as $coluna): ?>
+                     foreach (array_slice($medidas, 3) as $linha): ?>
                         <tr>
-                            <td class="border border-black p-1 text-left"><?= ucfirst($coluna) ?></td>
-                            <?php foreach ($tabelaDeMedidas as $item): ?>
-                                <td class="border border-black p-1 text-left"><?= $item->{$coluna} ?></td>
+                            <td class="border border-black p-1 text-left"><?= ucfirst($linha) ?></td>
+                            <?php foreach ($dimensoes as $coluna): ?>
+                                <td class="border border-black p-1 text-left"><?= $coluna->{$linha} ?></td>
                             <?php endforeach; ?>
                         </tr>
                     <?php endforeach; ?>
