@@ -11,7 +11,7 @@
 
 <section class="flex justify-center items-center">
     <ul class="flex flex-wrap w-full gap-[1vh]">
-        <?php foreach ($produtoCategoria as $item): ?>
+        <?php foreach ($produtoCategoria as $produto): ?>
             <li class="w-[calc(50%-1vh)] md:w-[calc(33.33%-1vh)] lg:w-[calc(25%-1vh)] cursor-pointer">
                 <?php require "views/template/cardProduto.php"; ?>
             </li>
