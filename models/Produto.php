@@ -15,12 +15,13 @@ class Produto
     public $banner;
     public $bestSeller;
     public $lancamento;
-    public $imagens = []; 
+    public $imagens = [];
 
-    public function setImagens($imagem1, $imagem2, $imagem3, $imagem4, $imagem5) {
-        $this->imagens = [$imagem1, $imagem2, $imagem3, $imagem4, $imagem5];
+    public function setImagens($imagens)
+    {
+        $this->imagens = explode(',', $imagens);
+        return $this->imagens;
     }
-
 }
 
 class Imagens 
@@ -32,8 +33,15 @@ class Imagens
 
 class Medidas 
 {
+    public $produto_id;
     public $tamanho;
     public $comprimento;
     public $peito;
     public $manga;
+    public $cintura;
+}
+
+class Colunas 
+{
+    public $name;
 }
