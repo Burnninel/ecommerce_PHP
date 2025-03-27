@@ -21,7 +21,7 @@ $listaProdutos = (new DB())->query(
         WHERE p.id = :id
         GROUP BY p.id
     ",
-    class: $class = Produto::class, 
+    class: $class = Produto::class,
     params: $params = ['id' => "$id"]
 )->fetchAll();
 
@@ -33,19 +33,19 @@ foreach ($listaProdutos as $item) {
 
 $tabelaDeMedidas = (new DB())->query(
     query: "SELECT produto_id, tamanho, comprimento, peito, manga, cintura  FROM tabela_medidas WHERE produto_id = :id",
-    class: $class = Medidas::class, 
+    class: $class = Medidas::class,
     params: $params = ['id' => "$id"]
 )->fetchAll();
 
-$tabelaProduto = array_filter($tabelaDeMedidas, fn($item) => $item->produto_id === $produto->id);
-
 $medidas = array_unique(
     array_reduce($tabelaDeMedidas, function ($carry, $item) {
-        foreach (get_object_vars($item) as $key => $value) {
-            if ($value !== null) $carry[] = $key;
+        foreach ($item as $key => $value) {
+            if ($value !== null) {
+                $carry[] = $key;
+            }
         }
         return $carry;
-    }, [])
+    })
 );
 
 $bestSellers = (new DB())->query(
@@ -59,14 +59,13 @@ $bestSellers = (new DB())->query(
         JOIN especificacao AS e ON e.id = p.especificacao_id
         WHERE p.best_seller = 1
         GROUP BY p.id, p.nome, p.preco
-    ", 
-    class: $class = Produto::class, 
+    ",
+    class: $class = Produto::class,
 )->fetchAll();
 
 foreach ($bestSellers as $item) {
     $item->setImagens($item->imagens);
 }
-
 
 $dimensoes = array_filter($tabelaDeMedidas, fn($item) => $item !== null);
 
