@@ -44,7 +44,7 @@
                 </thead>
                 <tbody>
                     <?php
-                     foreach (array_slice($medidas, 3) as $linha): ?>
+                     foreach (array_slice($medidas, 2) as $linha): ?>
                         <tr>
                             <td class="border border-black p-1 text-left"><?= ucfirst($linha) ?></td>
                             <?php foreach ($dimensoes as $coluna): ?>
@@ -69,7 +69,7 @@
 <section class="swiper bannerBestSellers my-[6vh]">
     <h1 class="text-[1.5vh] font-bold text-gray-900 uppercase mb-[2vh]">mais vendidos</h1>
     <div class="swiper-wrapper flex items-center h-full w-full">
-        <?php foreach ($bestSellers as $item): ?>
+        <?php foreach ($bestSellers as $produto): ?>
             <article class="swiper-slide flex w-[calc(25%)] justify-around cursor-pointer">
                 <?php require "views/template/cardProduto.php"; ?>
             </article>
