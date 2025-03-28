@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-class ProdutoServices 
+class ProdutoServices
 {
 
     private $db;
@@ -10,16 +10,17 @@ class ProdutoServices
         $this->db = new DB();
     }
 
-    public function getProdutos($id = null, $definicao = null) {
-        
+    public function getProdutos($id = null, $definicao = null)
+    {
+
         $aplicarFiltro = [];
 
-        if($id !== null) {  
-            $aplicarFiltro[] = "p.id = :id"; 
+        if ($id !== null) {
+            $aplicarFiltro[] = "p.id = :id";
         }
 
-        if($definicao !== null) {
-            $aplicarFiltro[] = "p.$definicao = 1"; 
+        if ($definicao !== null) {
+            $aplicarFiltro[] = "p.$definicao = 1";
         }
 
         $filtro = $aplicarFiltro ? "WHERE " . implode(' OR ', $aplicarFiltro) : "";
@@ -40,16 +41,17 @@ class ProdutoServices
             JOIN marcas AS m ON m.id = p.marca_id
             JOIN lavagem AS l ON l.id = p.lavagem_id
             $filtro
-            GROUP BY p.id, p.nome, p.preco, p.best_seller
+            GROUP BY p.id
         ";
 
-        if($id !== null) {
-            $produtos = $this->db->query($query, Produto::class, ['id' => "$id"])->fetchAll();
-        } 
+        $params = [];
 
-        if($definicao !== null) {
-            $produtos = $this->db->query($query, Produto::class)->fetchAll();
+        if ($id) {
+            $param[] = ['id' => $id];
         }
+
+ 
+        $produtos = $this->db->query($query, Produto::class, $params)->fetchAll();
 
 
         foreach ($produtos as $item) {
@@ -58,48 +60,4 @@ class ProdutoServices
 
         return $produtos;
     }
-
 }
-
-
-
-
-
-
-
-
-
-
-// class ProdutoServices 
-// {
-
-//     private $db;
-
-//     public function __construct()
-//     {
-//         $this->db = new DB();
-//     }
-
-//     public function getProdutos($definicao) {
-//         $query = "
-//             SELECT p.id, p.nome, p.preco, e.categoria AS categoria, 
-//                 (SELECT GROUP_CONCAT(caminho || '.' || tipo, ',')  
-//                 FROM imagens 
-//                 WHERE produto_id = p.id 
-//                 ORDER BY id) AS imagens
-//             FROM produtos AS p
-//             JOIN especificacao AS e ON e.id = p.especificacao_id
-//             WHERE p.$definicao = 1
-//             GROUP BY p.id, p.nome, p.preco
-//         ";
-
-//         $produtos = $this->db->query($query, Produto::class)->fetchAll();
-
-//         foreach ($produtos as $item) {
-//             $item->setImagens($item->imagens);
-//         }
-
-//         return $produtos;
-//     }
-
-// }
