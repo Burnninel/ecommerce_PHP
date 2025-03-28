@@ -24,13 +24,6 @@ class Produto
     }
 }
 
-class Imagens 
-{
-    public $produtoId;
-    public $tipo;
-    public $caminho;
-}
-
 class Medidas 
 {
     public $produto_id;
@@ -39,9 +32,4 @@ class Medidas
     public $peito;
     public $manga;
     public $cintura;
-}
-
-class Colunas 
-{
-    public $name;
 }

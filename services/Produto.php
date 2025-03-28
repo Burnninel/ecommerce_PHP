@@ -47,12 +47,10 @@ class ProdutoServices
         $params = [];
 
         if ($id) {
-            $param[] = ['id' => $id];
+            $params['id'] = $id;
         }
 
- 
         $produtos = $this->db->query($query, Produto::class, $params)->fetchAll();
-
 
         foreach ($produtos as $item) {
             $item->setImagens($item->imagens);
