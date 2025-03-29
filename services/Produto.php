@@ -10,7 +10,7 @@ class ProdutoServices
         $this->db = $database;
     }
 
-    public function getProdutos($id = null, $definicao = null)
+    public function getProdutos($id = null, $definicao = null, $pesquisa = null)
     {
 
         $aplicarFiltro = [];
@@ -21,6 +21,13 @@ class ProdutoServices
 
         if ($definicao !== null) {
             $aplicarFiltro[] = "p.$definicao = 1";
+        }
+
+        if ($pesquisa !== null) {
+            $aplicarFiltro[] = "p.nome like :pesquisa";
+            $aplicarFiltro[] = "m.nome like :pesquisa";
+            $aplicarFiltro[] = "e.categoria like :pesquisa";
+            $aplicarFiltro[] = "e.modelo like :pesquisa";
         }
 
         $filtro = $aplicarFiltro ? "WHERE " . implode(' OR ', $aplicarFiltro) : "";
@@ -48,6 +55,10 @@ class ProdutoServices
 
         if ($id) {
             $params['id'] = $id;
+        }
+
+        if ($pesquisa) {
+            $params['pesquisa'] = "%$pesquisa%";
         }
 
         $produtos = $this->db->query($query, Produto::class, $params)->fetchAll();
