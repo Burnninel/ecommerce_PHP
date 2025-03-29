@@ -1,8 +1,10 @@
 <?php
 
+$pesquisar = $_REQUEST['p'];
+
 $produtoService = new ProdutoServices($database);
-$bestSellers = $produtoService->getProdutos(null, 'best_seller');
+$produtos = $produtoService->getProdutos(null, null, $pesquisar);
 
 view('pesquisar', [
-    'bestSellers' => $bestSellers,
+    'produtos' => $produtos,
 ]);
