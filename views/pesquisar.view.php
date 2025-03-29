@@ -1,15 +1,15 @@
-<section class="mb-[4vh]">
-    <div class="text-xs my-8 font-medium flex justify-center uppercase gap-3">
-         <h3 class="py-1 h-full">Você buscou por</h3>
-         <span class="py-1 px-2 bg-zinc-900 font-semibold h-full rounded-2xl text-gray-200">camisa muito louca do carai</span>
-    </div>
+<section >
+    <form class="text-xs my-8 font-medium flex justify-center uppercase gap-3">
+        <h3 class="py-1 h-full">Você buscou por</h3>
+        <span class="py-1 px-2 bg-zinc-900 font-semibold h-full rounded-2xl text-gray-200"><?= $pesquisa ?></span>
+    </form>
 
-    <div class="flex items-center h-full w-full">
-        <?php foreach ($bestSellers as $produto): ?>
-            <article class="swiper-slide flex w-[calc(25%)] justify-around cursor-pointer">
+    <ul class="flex flex-wrap gap-[1vh]">
+        <?php foreach ($produtos as $produto): ?>
+            <li class="w-[calc(50%-1vh)] md:w-[calc(33.33%-1vh)] lg:w-[calc(25%-1vh)] cursor-pointer">
                 <?php require "views/template/cardProduto.php"; ?>
-            </article>
+            </li>
         <?php endforeach; ?>
-    </div>
-   
+    </ul>
+
 </section>

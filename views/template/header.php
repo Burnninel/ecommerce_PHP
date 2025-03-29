@@ -4,18 +4,21 @@
                 <a href="/" id="logo"
                     class="text-5xl cursor-pointer uppercase text-emerald-900 col-span-4 col-start-3 hover:animate-pulse
                 ">shopninel</a>
-                <div class="bg-transparent border-b-2 flex px-2">
+                <form class="border-b-2 flex px-2" action="/pesquisar" method="GET">
                     <input type="text"
                         class="h-xl bg-zinc-900 outline-none text-gray-200 text-lg 
                             placeholder:text-gray-400 placeholder:italic w-full"
-                        placeholder="Pesquisar...">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                        class="size-6 text-gray-200"
-                        fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                    </svg>
-                </div>
+                        placeholder="Pesquisar..."
+                        name="produto">
+                    <button type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="size-6 text-gray-200"
+                            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                    </button>
+                </form>
             </div>
             <ul class="sm:text-sm text-[0.6rem] text-gray-950 bg-zinc-50 uppercase font-bold flex">
                 <li class="cursor-pointer py-2 w-1/4
