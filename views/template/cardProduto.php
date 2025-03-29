@@ -5,6 +5,6 @@
     </div>
     <div class="flex flex-col sm:flex-row justify-between uppercase sm:text-[1.4vh] text-[1vh] text-zinc-800 py-[0.5vh]">
         <h2 class="font-bold"><?= $produto->nome ?></h2>
-        <p><?= $produto->preco ?></p>
+        <p>R$ <?= $produto->preco ?></p>
     </div>
 </a>
