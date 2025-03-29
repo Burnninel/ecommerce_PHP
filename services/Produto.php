@@ -5,9 +5,9 @@ class ProdutoServices
 
     private $db;
 
-    public function __construct()
+    public function __construct(DB $database)
     {
-        $this->db = new DB();
+        $this->db = $database;
     }
 
     public function getProdutos($id = null, $definicao = null)

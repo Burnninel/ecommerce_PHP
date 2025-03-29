@@ -1,6 +1,6 @@
 <?php
 
-$produtoService = new ProdutoServices();
+$produtoService = new ProdutoServices($database);
 
 $bestSellers = $produtoService->getProdutos(null, 'best_seller');
 $lancamentos = $produtoService->getProdutos(null, 'lancamento');

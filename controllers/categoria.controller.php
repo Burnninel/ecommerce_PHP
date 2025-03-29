@@ -3,7 +3,7 @@
 $categoria = str_replace('/', '', parse_url($_SERVER['REQUEST_URI'])['path']);
 $filtroModelo = $_GET['modelo'] ?? 'todos';
 
-$produtoService = new ProdutoServices();
+$produtoService = new ProdutoServices($database);
 $produtos = $produtoService->getProdutos();
 
 $produtoCategoria = array_filter($produtos, function ($produto) use ($filtroModelo, $categoria) {

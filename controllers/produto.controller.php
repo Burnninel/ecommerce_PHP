@@ -2,11 +2,11 @@
 
 $id = $_REQUEST['id'];
 
-$produtoService = new ProdutoServices();
+$produtoService = new ProdutoServices($database);
 $produto = $produtoService->getProdutos($id)[0];
 $bestSellers = $produtoService->getProdutos(null, 'best_seller');
 
-$tabelaDeMedidas = (new DB())->query(
+$tabelaDeMedidas = $database->query(
     query: "SELECT produto_id, tamanho, comprimento, peito, manga, cintura  FROM tabela_medidas WHERE produto_id = :id",
     class: $class = Medidas::class,
     params: $params = ['id' => "$id"]
