@@ -31,7 +31,7 @@
     </div>
 </section>
 
-<section class="swiper bannerBestSellers my-[4vh] text-center">
+<section class="swiper bannerBestSellers mb-[4vh] text-center">
     <h1 class="text-[2.5vh] font-bold text-gray-900 uppercase mb-[4vh]">mais vendidos</h1>
     <?php require "views/template/bestSellers.php"; ?>
 </section>
