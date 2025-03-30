@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="/views/template/swiper.css">
 </head>
 
-<body class="bg-stone-100 tracking-wide">
+<body class="min-h-screen flex flex-col bg-stone-100 tracking-wide">
     <?php require "views/template/header.php"; ?>
     
-    <main class="px-[4vh]">
+    <main class="flex-grow px-[4vh]">
         <?php require "views/{$view}.view.php"; ?>
     </main>
 
