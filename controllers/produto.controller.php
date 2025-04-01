@@ -12,7 +12,7 @@ $tabelaDeMedidas = $database->query(
     params: $params = ['id' => "$id"]
 )->fetchAll();
 
-$medidas = array_unique(
+$medidas = $tabelaDeMedidas ? array_unique(
     array_reduce($tabelaDeMedidas, function ($carry, $item) {
         foreach ($item as $key => $value) {
             if ($value !== null) {
@@ -21,7 +21,7 @@ $medidas = array_unique(
         }
         return $carry;
     })
-);
+) : [];
 
 $dimensoes = array_filter($tabelaDeMedidas, fn($item) => $item !== null);
 
