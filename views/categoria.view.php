@@ -1,6 +1,6 @@
 <section class="flex py-[1.4vh] text-[1.2vh] gap-6">
     <div class="font-medium uppercase cursor-pointer focus:bg-gray-900 focus:text-gray-50 rounded-xl p-2">
-        <span class="mr-1"> Calças </span>
+        <span class="mr-1"> <?= $categoria ?> </span>
         <span> > </span>
     </div>
     <a href="/<?= $categoria ?>" class="font-normal uppercase cursor-pointer focus:bg-gray-900 focus:text-gray-50 rounded-xl p-2">Ver todos</a>
