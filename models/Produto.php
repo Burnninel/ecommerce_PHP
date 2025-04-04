@@ -19,7 +19,7 @@ class Produto
 
     public function setImagens($imagens)
     {
-        $this->imagens = explode(',', $imagens);
+        $this->imagens = $imagens ? explode(',', $imagens) : [];
         return $this->imagens;
     }
 }
