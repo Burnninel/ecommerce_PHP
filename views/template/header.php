@@ -6,7 +6,7 @@
                 ">shopninel</a>
                 <form class="border-b-2 flex px-2" action="/pesquisar" method="GET">
                     <input type="text"
-                        class="h-xl bg-zinc-900 outline-none text-gray-200 text-lg 
+                        class="bg-zinc-900 outline-none text-gray-200 text-lg 
                             placeholder:text-gray-400 placeholder:italic w-full"
                         placeholder="Pesquisar..."
                         name="produto">
