@@ -1,7 +1,15 @@
 <?php
 
-$retorno = $_REQUEST['retorno'] ?? '';
+$retornoProduto = $_REQUEST['retornoProduto'] ?? '';
+$retornoMedidas = $_REQUEST['retornoMedidas'] ?? '';
+
+$produtos = $database->query(
+    query: "SELECT id, nome  FROM produtos",
+    class: Produto::class
+);
 
 view('admin', [
-    'retorno' => $retorno
+    'retornoProduto' => $retornoProduto,
+    'retornoMedidas' => $retornoMedidas,
+    'produtos' => $produtos
 ]);
