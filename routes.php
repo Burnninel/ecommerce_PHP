@@ -8,6 +8,8 @@ $routes = [
     'calcas' => 'categoria',
     'bermudas' => 'categoria',
     'pesquisar' => 'pesquisar',
+    'admin' => 'admin',
+    'cadastrar' => 'cadastrar',
 ];
 
 $controller = str_replace('/', '', parse_url($_SERVER['REQUEST_URI'])['path']);
