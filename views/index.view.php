@@ -57,7 +57,7 @@
     <div class="w-full">
         <h1 class="text-[2.5vh] font-bold text-gray-900 uppercase my-[4vh] text-center">Lançamentos</h1>
         <ul class="flex flex-wrap gap-[1vh]">
-            <?php foreach ($lancamentos as $produto): ?>
+            <?php foreach (array_slice($lancamentos, 0, 8) as $produto): ?>
                 <li class="w-[calc(50%-1vh)] md:w-[calc(33.33%-1vh)] lg:w-[calc(25%-1vh)] cursor-pointer">
                     <?php require "views/template/cardProduto.php"; ?>
                 </li>
